@@ -1,0 +1,210 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/managerBackgroundColor"
+    tools:context="info.dkapp.flow.bottommenu.menuitemsmanager.fragments.FeedSettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:text="Display"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:paddingLeft="@dimen/_15sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:gravity="center_vertical">
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Show HD images"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center_vertical"/>
+            <Switch
+                android:id="@+id/swHdImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:theme="@style/SCBSwitch"/>
+        </LinearLayout>
+
+        <info.dkapp.flow.fontstyles.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/dark_grey"
+            android:text="When this feature is turned off, we will compress Images before displaying them"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/managerBackgroundColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Autoplay GIFs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center_vertical"/>
+
+            <Switch
+                android:id="@+id/swAutoPlayGIF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:theme="@style/SCBSwitch"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/managerBackgroundColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Autoplay Videos"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center_vertical"/>
+
+            <Switch
+                android:id="@+id/swAutoPlayVIDEOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:theme="@style/SCBSwitch"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/managerBackgroundColor"/>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:text="Style"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/managerBackgroundColor"
+            android:paddingLeft="@dimen/_15sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="@dimen/_15sdp">
+            <LinearLayout
+                android:id="@+id/llCollage"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_96sdp"
+                    android:layout_height="@dimen/_96sdp"
+                    app:srcCompat="@drawable/ic_collage"/>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="@dimen/_96sdp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Collage"/>
+
+                <RadioButton
+                    android:id="@+id/rbCollage"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/rediobutton_background"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:clickable="false"
+                    android:enabled="false"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:id="@+id/llGrid"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_96sdp"
+                    android:layout_height="@dimen/_96sdp"
+                    app:srcCompat="@drawable/ic_grid"/>
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="@dimen/_96sdp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Grid"/>
+                <RadioButton
+                    android:id="@+id/rbGrid"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/rediobutton_background"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:clickable="false"
+                    android:enabled="false"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/mp3"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iVPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/ic_play_arrow_black"/>
+
+        <ImageView
+            android:id="@+id/iVPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/black"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_pause_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sanam teri kasam"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration : 4:30"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

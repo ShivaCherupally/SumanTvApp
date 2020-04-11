@@ -1,0 +1,28 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?android:actionBarSize"
+                                   android:background="@color/white"
+                                   android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                   app:contentInsetLeft="10dp"
+                                   app:contentInsetStart="10dp"
+                                   app:contentInsetStartWithNavigation="10dp"
+                                   app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                                   app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <info.dkapp.flow.fontstyles.TextViewSemiBold
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        />
+
+
+</androidx.appcompat.widget.Toolbar>

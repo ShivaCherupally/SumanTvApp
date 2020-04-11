@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_margin="@dimen/five"
+                                                     android:background="@drawable/rectangle_white_bg"
+                                                     android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/help_icon"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_placeholder" />
+
+            <TextView
+                    android:id="@+id/nodata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Coming Soon...!"
+                    android:layout_below="@+id/help_icon"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textAlignment="center"
+                    android:textColor="@color/list_group_title"
+                    android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

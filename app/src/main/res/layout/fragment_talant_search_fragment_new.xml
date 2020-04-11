@@ -1,0 +1,619 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roleType"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeRoleType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageview_arrow_spinner_industry"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_drop_down" />
+
+                    <Spinner
+                        android:id="@+id/spinnerRoleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_26sdp"
+                        android:layout_marginStart="-7dp"
+                        android:background="@null"
+                        android:entries="@array/roletype"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/preference_grey" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btSearch"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/corner_radius_blue"
+                android:drawableStart="@drawable/ic_search"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="Search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/advanced_search"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/ivApplyFilter"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:tint="@color/appcolor"
+                    app:srcCompat="@drawable/ic_filter_list_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llAdvandedSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llGender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GENDER"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/gender"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+
+                                />
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llAge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AGE RANGE"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativeAgeRange"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinAgeRange"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/bodytype"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llEthnicity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ETHENICITY"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeethenicity"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinEthnicity"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/gender"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llBodyType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BODY TYPE"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeBodyType"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinBodyType"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/bodytype"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llHairColor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HAIR COLOR"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeHairColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinHairColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/gender"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llEyeColor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EYE COLOR"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeEyeColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinEyeColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/bodytype"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llHeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HEIGHT"
+                            android:textColor="@color/approved"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativeHeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/spinHeight"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="-7dp"
+                                android:background="@null"
+                                android:drawableTint="@color/hash_text_color"
+                                android:entries="@array/gender"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="BODY TYPE" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerHorizontal="true"
+                            android:drawableTint="@color/hash_text_color"
+                            android:entries="@array/bodytype"
+                            android:textColor="@color/normal_text_color"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key Word Search"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etKeyWordSerach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_gray"
+                    android:drawableRight="@drawable/places_ic_search"
+                    android:gravity="left"
+                    android:hint="Separated by Comma,"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/cbPassport"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custom_checkbox_profile_new"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/passport"
+                        android:textAllCaps="true"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="14sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/cbLicenses"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custom_checkbox_profile_new"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Driving licence"
+                        android:textAllCaps="true"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnFilterSearch"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/corner_radius_blue"
+                    android:fontFamily="@string/also_signup"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Advanced Search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSearchAuditions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/toolbarheader"
+        layout="@layout/toolbar_back_icon" />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/app_promotionimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/referral_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/share_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:visibility="gone">
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Referral Code"
+                        android:textAlignment="center"
+                        android:textColor="@color/skyblue"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectangle_white_bg"
+                        android:backgroundTint="@color/grey">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/promotional_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Share your promotion Code"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center">
+
+                    <info.dkapp.flow.fontstyles.ButtonMedium
+                        android:id="@+id/invite_code_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_60sdp"
+                        android:layout_marginRight="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/submit_rectangle"
+                        android:text="Share Code"
+                        android:textSize="@dimen/_12sdp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textColor="@color/white" />
+
+                    <info.dkapp.flow.fontstyles.ButtonMedium
+                        android:id="@+id/generate_code_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginRight="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/submit_rectangle_normal_rad"
+                        android:text="Generate Your Code Now"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/apppromotions_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/skyblue"
+            android:paddingBottom="@dimen/_50sdp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

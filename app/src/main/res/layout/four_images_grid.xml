@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_1sdp"
+    android:weightSum="4.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/country_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/ic_placeholder"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/mDeleteMedia"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#70000000"
+                android:src="@drawable/delete_icon"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iVPlayButton"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:background="@drawable/playbutton"
+                android:scaleType="centerCrop" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/country_photo"
+            android:layout_alignRight="@+id/country_photo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/download_grey"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/country_photo"
+            android:background="#BF000000"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/eye"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fav_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/fav"
+                android:gravity="center"
+                android:text="$200"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Credits_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/comments"
+                android:gravity="center"
+                android:text="200"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

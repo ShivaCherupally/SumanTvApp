@@ -1,0 +1,684 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="info.dkapp.flow.bottommenu.preferencemanager.PrefrencesExpentableListviewFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <info.dkapp.flow.fontstyles.ButtonMedium
+            android:id="@+id/btnContinue"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@color/skyblueNew"
+            android:text="Select any 3 to Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnContinue">
+
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_55sdp"
+                android:backgroundTint="@color/black"
+                android:childDivider="#00000000"
+                android:divider="@color/transparent"
+                android:groupIndicator="@drawable/group_indicator" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/llEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgError"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_placeholder" />
+
+            <info.dkapp.flow.fontstyles.TextViewBold
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgError"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="CelebKonect"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvError"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="No data"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/llHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+                    android:id="@+id/imgUser"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    app:baseColor="#fffbfbfb"
+                    app:deepColor="#fff2f2f2"
+                    app:duration="1500"
+                    app:interval="1000"
+                    app:progressLength="120.0dip"
+                    app:radius="25dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        app:baseColor="#fffbfbfb"
+                        app:deepColor="#fff2f2f2"
+                        app:duration="1500"
+                        app:interval="1000"
+                        app:progressLength="120.0dip"
+                        app:radius="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+                            android:id="@+id/tvTimeAgo"
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="3 days ago"
+                            android:textSize="14sp"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/circle_white"
+                            android:tint="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hyderabad"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    app:baseColor="#fffbfbfb"
+                    app:deepColor="#fff2f2f2"
+                    app:duration="1500"
+                    app:interval="1000"
+                    app:progressLength="120.0dip"
+                    app:radius="25dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        app:baseColor="#fffbfbfb"
+                        app:deepColor="#fff2f2f2"
+                        app:duration="1500"
+                        app:interval="1000"
+                        app:progressLength="120.0dip"
+                        app:radius="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="3 days ago"
+                            android:textSize="14sp"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/circle_white"
+                            android:tint="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hyderabad"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    app:baseColor="#fffbfbfb"
+                    app:deepColor="#fff2f2f2"
+                    app:duration="1500"
+                    app:interval="1000"
+                    app:progressLength="120.0dip"
+                    app:radius="25dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        app:baseColor="#fffbfbfb"
+                        app:deepColor="#fff2f2f2"
+                        app:duration="1500"
+                        app:interval="1000"
+                        app:progressLength="120.0dip"
+                        app:radius="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="3 days ago"
+                            android:textSize="14sp"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/circle_white"
+                            android:tint="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hyderabad"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    app:baseColor="#fffbfbfb"
+                    app:deepColor="#fff2f2f2"
+                    app:duration="1500"
+                    app:interval="1000"
+                    app:progressLength="120.0dip"
+                    app:radius="25dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        app:baseColor="#fffbfbfb"
+                        app:deepColor="#fff2f2f2"
+                        app:duration="1500"
+                        app:interval="1000"
+                        app:progressLength="120.0dip"
+                        app:radius="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="3 days ago"
+                            android:textSize="14sp"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/circle_white"
+                            android:tint="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hyderabad"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    app:baseColor="#fffbfbfb"
+                    app:deepColor="#fff2f2f2"
+                    app:duration="1500"
+                    app:interval="1000"
+                    app:progressLength="120.0dip"
+                    app:radius="25dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        app:baseColor="#fffbfbfb"
+                        app:deepColor="#fff2f2f2"
+                        app:duration="1500"
+                        app:interval="1000"
+                        app:progressLength="120.0dip"
+                        app:radius="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="3 days ago"
+                            android:textSize="14sp"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/circle_white"
+                            android:tint="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hyderabad"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    app:baseColor="#fffbfbfb"
+                    app:deepColor="#fff2f2f2"
+                    app:duration="1500"
+                    app:interval="1000"
+                    app:progressLength="120.0dip"
+                    app:radius="25dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        app:baseColor="#fffbfbfb"
+                        app:deepColor="#fff2f2f2"
+                        app:duration="1500"
+                        app:interval="1000"
+                        app:progressLength="120.0dip"
+                        app:radius="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="3 days ago"
+                            android:textSize="14sp"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/circle_white"
+                            android:tint="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <com.omjoonkim.skeletonloadingview.SkeletonLoadingView
+
+                            android:layout_width="80dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hyderabad"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:baseColor="#fffbfbfb"
+                            app:deepColor="#fff2f2f2"
+                            app:duration="1500"
+                            app:interval="1000"
+                            app:progressLength="120.0dip"
+                            app:radius="5dip" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

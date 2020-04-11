@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="@dimen/_120sdp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <info.dkapp.flow.commonuses.TopCropImageView
+            android:id="@+id/celeb_profile_img"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_profile_square_pleace_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/gradient_bg_black"/>
+
+    <LinearLayout
+            android:layout_above="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:textStyle="normal"
+                android:id="@+id/celeb_profession"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp"
+                android:textAllCaps="true"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/celeb_name_main"
+                android:text=""
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/newviewbackground"
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                <info.dkapp.flow.fontstyles.ButtonRegular
+                        android:id="@+id/fanOrunfanBtn"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/newviewbackground"
+                        android:layout_height="@dimen/_20sdp"
+                        android:text="fan"/>
+
+                <ProgressBar
+                        android:id="@+id/progressBarFan"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/white"
+                        android:progressTint="@color/white"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/newviewbackground"/>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                <info.dkapp.flow.fontstyles.ButtonRegular
+                        android:id="@+id/followorUnfollowBtn"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:textStyle="normal"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/newviewbackground"
+                        android:layout_height="@dimen/_20sdp"
+                        android:text="unfollow"/>
+
+                <ProgressBar
+                        android:id="@+id/progressBarFollow"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/white"
+                        android:progressTint="@color/white"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/profileLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginTop="@dimen/five"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:civ_border_color="@color/gray_icon"
+                        app:civ_border_width="0.5dp"
+                        android:src="@drawable/ic_grey_celebkonect_logo"
+                        android:transitionName="popup_profile_image_trans"/>
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Profile"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold|normal"/>
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cicleLayout"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Actor"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_9sdp"/>
+
+                <ImageView
+                        android:id="@+id/profileCheck"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/tick_blue"
+                        android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="2">
+
+                <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/fannn"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_9sdp"/>
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"/>
+
+                <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/fallow"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_9sdp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

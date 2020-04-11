@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/submit_rectangle_right"
+    android:orientation="vertical">
+
+    <info.dkapp.flow.fontstyles.TextViewMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Select Credits"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slot_values_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

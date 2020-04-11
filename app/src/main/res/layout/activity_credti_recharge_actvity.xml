@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/backLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblueNew"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/ic_header_back" />
+
+        <info.dkapp.flow.fontstyles.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="Credits"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        android:id="@+id/credit_bal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_22sdp" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/creditbalance"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:id="@+id/refferalcreditstxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="REFERRAL CREDITS : -"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="#184B98" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/referLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:id="@+id/refertxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/referandearn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:id="@+id/reffercodetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/refertxt"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/sharelayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_2sdp"
+                                app:srcCompat="@drawable/ic_copycode" />
+
+                            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/refertxt"
+                                android:layout_gravity="center"
+                                android:text="@string/share"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/copyLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_2sdp"
+                                app:srcCompat="@drawable/ic_sharecode" />
+
+                            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/copyy"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/schudule_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/refertxt"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Currency"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlAgeRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+
+                        <Spinner
+                            android:id="@+id/currencySpn"
+                            style="@style/etUnderline_credit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-3dp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:clickable="false"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:tint="@color/skyblueNew"
+                            app:srcCompat="@drawable/ic_drop_down_credits" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_below="@+id/currencySpn"
+                            android:background="#B5b5b5" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/refertxt"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Add Credits"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp">
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:id="@+id/amounttxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:text="0"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <info.dkapp.flow.fontstyles.EditTextMedium
+                            android:id="@+id/entercreditEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:backgroundTint="#b5b5b5"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:ems="10"
+                            android:hint="Enter Credits"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/credits_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@color/white" />
+
+                <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/credit_recharge_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/submit_rectangle_for_settings_empty_5dp"
+                    android:text="Continue"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/bottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:gravity="left"
+                        android:text="Note"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:id="@+id/notetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="@string/all_our_payments_are_processed_in_the_inr_currency_ngst_18_will_be_added_to_the_selected_package_as_nper_the_regulations"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:visibility="gone">
+
+                        <info.dkapp.flow.fontstyles.ButtonMedium
+                            android:id="@+id/cancel_payment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/submit_rectangle"
+                            android:text="@string/cancel"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImage"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_profile_square_pleace_holder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvNameTalentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/approved" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibFavourite"
+            style="@style/ibToolbar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/ic_fan_blackone" />
+
+        <ImageButton
+            android:id="@+id/ibShare"
+            style="@style/ibToolbar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/share_blue" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0" />
+
+</LinearLayout>

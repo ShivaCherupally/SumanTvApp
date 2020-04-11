@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit_rectangle_for_settings_empty_10ra"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/llParent"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_13sdp"
+            android:minWidth="180dp"
+            android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:minHeight="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:padding="@dimen/_3sdp"
+                app:civ_border_color="@color/light_gray"
+                app:civ_border_width="0.5dp"
+                android:src="@drawable/ic_profile_circle_pleace_holder"/>
+
+        <info.dkapp.flow.fontstyles.TextViewBold
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="User name"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_3sdp"/>
+
+        <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Profession"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_10sdp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp">
+
+            <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:visibility="gone"
+                    android:id="@+id/btnFan"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/submit_rectangle"
+                    android:text="Fan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="0dp"
+                    android:layout_marginRight="15dp"/>
+
+            <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/btnFollow"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/submit_rectangle_normal_rad"
+                    android:text="Follow"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

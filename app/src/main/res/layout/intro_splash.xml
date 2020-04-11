@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/intro_splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <!--    <include layout="@layout/intro_slide1" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty"
+            android:text="@string/step"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/twenty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/konect"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/twenty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/desc_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dots_height"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" />
+
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/layoutDots"
+        android:alpha=".5"
+        android:background="@android:color/white" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottomdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:text="@string/skip"
+                android:textColor="@color/skyblue" />
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="@string/next"
+                android:textColor="@color/skyblue" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <!--  <include layout="@layout/dividerview" />-->
+
+        </LinearLayout>
+        <!--<View
+            android:id="@+id/i_am_id"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/twenty"
+            android:background="@color/skyblue"
+            android:textSize="17sp" />-->
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/insert_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/twenty"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:orientation="horizontal">
+
+        <!--<include layout="@layout/dividerview" />-->
+
+    </TableLayout>
+
+</RelativeLayout>

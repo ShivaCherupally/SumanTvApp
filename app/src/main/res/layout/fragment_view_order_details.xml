@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/managerBackgroundColor"
+    android:orientation="vertical"
+    tools:context="info.dkapp.flow.menu_list.transactions.ViewOrderDetailsFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@drawable/schudule_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Order date:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvOrderDate"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Order number:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvOrderNumber"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Order total:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvOrdersubTotal"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@drawable/schudule_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/tvCallType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:text="Audio slot with sriram"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Transaction date"
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvTransactionDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/_20sdp"
+                android:text=""
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Transaction time"
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvTransactionTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="right"
+                android:paddingRight="@dimen/_20sdp"
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/schudule_background" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Order Summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/editTexttint_color"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:text="Call charges"
+                    android:textColor="@color/list_group_title"
+                    android:textSize="@dimen/_14sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvCallCharges"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="50"
+                    android:textColor="@color/list_group_title"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:text="Order Total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvOrderTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

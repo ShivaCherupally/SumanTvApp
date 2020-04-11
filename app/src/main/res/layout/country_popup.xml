@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="450sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/eigth"
+                    android:text="Select country"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold|normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/searchgrey"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+                <info.dkapp.flow.fontstyles.EditTextMedium
+                    android:id="@+id/searchView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:theme="@style/WallSearchView"
+                    android:background="@color/transparent"
+                    android:cursorVisible="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Search..."
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:iconifiedByDefault="true"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/_14sdp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="4dp"
+                    android:queryHint="Country name" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/skyblueNew" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/countryRecyList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:scrollbars="vertical" />
+
+                    <ProgressBar
+                        android:id="@+id/progressCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/skyblue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>

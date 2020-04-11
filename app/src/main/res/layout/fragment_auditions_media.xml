@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinatorLayout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     tools:context="info.dkapp.flow.bottommenu.auditions.media.AuditionsMediaFragment">
+
+    <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/rlPhotosParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Photos"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvPhotosCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/btnPhotos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:text="ADD"
+                        android:textColor="@color/skyblueNew" />
+
+            </RelativeLayout>
+
+            <View
+                    android:id="@+id/viewLinePhotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/light_gray" />
+
+            <RelativeLayout
+                    android:id="@+id/rlVideosParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Videos"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvVideosCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/btnVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:text="ADD"
+                        android:textColor="@color/skyblueNew" />
+
+            </RelativeLayout>
+
+            <View
+                    android:id="@+id/viewLineVideos"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/light_gray" />
+
+            <RelativeLayout
+                    android:id="@+id/rlAudioParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Audio"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvAudioCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/btnAudio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:text="ADD"
+                        android:textColor="@color/skyblueNew" />
+
+            </RelativeLayout>
+
+            <View
+                    android:id="@+id/viewLineAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/light_gray" />
+
+            <RelativeLayout
+                    android:id="@+id/rlDocsParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Resumes and Documents"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvDocsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/btnDocument"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:text="ADD"
+                        android:textColor="@color/skyblueNew" />
+
+            </RelativeLayout>
+
+            <View
+                    android:id="@+id/viewLineDocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/light_gray" />
+        </LinearLayout>
+        <Button
+                android:id="@+id/btnSubmit"
+                android:text="Save"
+                style="@style/btnAuditionRectangle"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/corner_radius_blue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+
+        />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

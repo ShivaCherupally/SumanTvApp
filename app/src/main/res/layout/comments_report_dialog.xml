@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/ivClose"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:contentDescription="@string/image"
+                android:padding="8dp"
+                android:tint="@color/black"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cancel" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Feedback / Report"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <info.dkapp.flow.fontstyles.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:text="We use your feedback to help us learn when something's not right."
+            android:textColor="@color/color222"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/rectangle_bg_ccc">
+
+            <info.dkapp.flow.fontstyles.EditTextMedium
+                android:id="@+id/etRemarks"
+                style="@style/etUnderline"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_6sdp"
+                android:layout_height="wrap_content"
+                android:hint="Please specify if any (Max 250 characters)"
+                android:inputType="textMultiLine"
+                android:maxLength="250"
+                android:maxLines="3" />
+        </LinearLayout>
+
+        <info.dkapp.flow.fontstyles.ButtonMedium
+            android:id="@+id/btnSubmit"
+            style="@style/btnAuditionRectangle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/corner_radius_blue"
+            android:text="Submit" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

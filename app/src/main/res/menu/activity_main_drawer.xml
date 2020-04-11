@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_preference"
+            android:title="My Preferences" />
+        <item
+            android:id="@+id/nav_my_celeb"
+            android:title="My Celebrities" />
+
+        <item
+            android:id="@+id/nav_my_recom_celeb"
+            android:title="Recommended Celebrities" />
+
+        <item
+            android:id="@+id/nav_my_schedule"
+            android:title="My Schedule" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="My Settings" />
+        <item
+            android:id="@+id/nav_manager_desk"
+            android:visible="false"
+            android:title="Manager Settings" />
+        <item
+            android:id="@+id/nav_my_content"
+            android:title="My Content" />
+        <item
+            android:id="@+id/nav_my_calender"
+            android:title="My Calender" />
+        <item
+            android:id="@+id/nav_my_fans_followers"
+            android:title="My Fans &amp; Followers" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:title="Inventory Manager" />
+        <item
+            android:id="@+id/nav_order_manager"
+            android:title="Order Manager"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_report"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_app_promotion"
+            android:title="App Promotion" />
+        <item
+            android:id="@+id/nav_auditios"
+            android:title="@string/Auditions" />
+        <item
+            android:id="@+id/nav_my_reports"
+            android:title="My Reports" />
+
+        <item
+            android:id="@+id/nav_app_aboutus"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_app_contactus"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_app_faq"
+            android:title="Help" />
+
+
+        <item android:title="@string/version_name" />
+    </group>
+    <group
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/_3sdp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        <info.dkapp.flow.fontstyles.TextViewBlack
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="FeedBack"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold|normal"/>
+
+        <ImageView
+                android:id="@+id/close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/ic_close"/>
+    </LinearLayout>
+
+
+    <info.dkapp.flow.fontstyles.TextViewRegular
+            android:id="@+id/blockreport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_radius_white_3"
+            android:elevation="1dp"
+            android:text=""
+            android:gravity="left"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textColor="@color/appcolor"
+            android:textSize="12sp"/>
+
+
+    <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/blockreporttxt"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_radius_white_3"
+            android:elevation="1dp"
+            android:text="Block/Report"
+            android:gravity="left"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/appcolor"
+            android:textSize="16sp"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/managerBackgroundColor"/>
+
+    <LinearLayout
+            android:id="@+id/blokreasonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/five"
+            android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blockreasonRcy"
+                android:layout_width="match_parent"
+                android:padding="@dimen/five"
+                android:layout_height="wrap_content"/>
+
+        <info.dkapp.flow.fontstyles.EditTextMedium
+            android:id="@+id/unblock_other"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:hint="Write a unblock reason"
+            />
+
+    </LinearLayout>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/managerBackgroundColor"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp">
+
+        <CheckBox
+                android:visibility="gone"
+                android:id="@+id/blockuserCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:buttonTint="@color/skyblueNew"
+                android:paddingLeft="@dimen/_2sdp"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:checked="true"
+                android:layout_centerVertical="true"
+                android:text="Block User?"/>
+
+        <LinearLayout
+                android:id="@+id/linear_layout_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center|right"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/submit_rectangle"
+                android:paddingRight="@dimen/_2sdp">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_submit"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:text="Submit"
+                    android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

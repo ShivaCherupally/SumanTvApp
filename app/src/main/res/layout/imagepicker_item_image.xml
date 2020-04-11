@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info.dkapp.flow.imagepicker.widget.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundGravity="center"
+    tools:override="false">
+
+    <ImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/view_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/imagepicker_black" />
+    <ImageView
+        android:id="@+id/imageViewVideo"
+        android:visibility="visible"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_video_play"/>
+
+
+    <TextView
+        android:id="@+id/gif_indicator"
+        style="@style/imagepicker_TextSmall"
+        android:layout_gravity="bottom"
+        android:background="@color/imagepicker_black_alpha_50"
+        android:paddingBottom="@dimen/imagepicker_padding_small"
+        android:paddingLeft="@dimen/imagepicker_padding_large"
+        android:paddingRight="@dimen/imagepicker_padding_large"
+        android:paddingTop="@dimen/imagepicker_padding_small"
+        android:text="@string/imagepicker_text_gif"
+        android:textColor="@color/imagepicker_white"
+        android:visibility="visible" />
+</info.dkapp.flow.imagepicker.widget.SquareFrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_radius_white_3"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <info.dkapp.flow.fontstyles.TextViewSemiBold
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="Title?"
+        android:textColor="@color/normal_text_color"
+        android:textSize="16sp" />
+
+    <info.dkapp.flow.fontstyles.TextViewRegular
+        android:id="@+id/tvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="details...."
+        android:textColor="@color/light_new_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/tvNo"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="@string/text_no"
+            android:textColor="@color/light_new_gray"
+            android:textSize="15sp" />
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/tvYes"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:text="@string/text_yes"
+            android:textColor="@color/skyblue"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

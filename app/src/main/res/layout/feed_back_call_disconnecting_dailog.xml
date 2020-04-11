@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/_3sdp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="Reject Manager"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/ic_close"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:gravity="center|left"
+            android:text="Select your reasons for rejecting the manager"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:textSize="@dimen/_10sdp"/>
+
+    <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/managerBackgroundColor"/>
+
+    <LinearLayout
+            android:id="@+id/blokreasonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/five"
+            android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blockreasonRcy"
+                android:layout_width="match_parent"
+                android:padding="@dimen/five"
+                android:layout_height="wrap_content"/>
+
+        <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/blockreasonradiogrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RadioButton
+                    android:id="@+id/member_not_politeBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:buttonTint="@color/black"
+                    android:text="@string/impolite"
+                    android:textColor="@color/appcolor"
+                    android:textSize="15sp"/>
+
+            <RadioButton
+                    android:id="@+id/member_abusiveBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:buttonTint="@color/black"
+                    android:text="@string/abusive"
+                    android:textColor="@color/appcolor"
+                    android:textSize="15sp"/>
+
+            <RadioButton
+                    android:id="@+id/memberrudeBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:buttonTint="@color/black"
+                    android:text="@string/sensitive"
+                    android:textColor="@color/appcolor"
+                    android:textSize="15sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/extraboxLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:gravity="center">
+
+
+        <EditText
+                android:id="@+id/editText_reason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:backgroundTint="@color/managerBackgroundColor"
+                android:hint="Write your reason"
+                android:textSize="@dimen/_10sdp"
+                android:maxLength="100"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/managerBackgroundColor"/>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                >
+
+
+            <CheckBox
+                    android:id="@+id/blockuserCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/skyblueNew"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:layout_centerVertical="true"
+                    android:text="Block User?"
+
+                    />
+
+
+            <LinearLayout
+                    android:id="@+id/linear_layout_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:background="@drawable/submit_rectangle"
+                    android:paddingRight="@dimen/_2sdp">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/ic_submit"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:text="Submit"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

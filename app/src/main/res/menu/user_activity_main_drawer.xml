@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/gp_dashboard"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard"
+      />
+    </group>
+    <group
+        android:id="@+id/gp_edt_profile"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:title="Edit Profile" />
+    </group>
+
+    <group
+        android:id="@+id/gp_celeb_konect"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_celebs"
+            android:title="CelebKonect" />
+    </group>
+    <group
+        android:id="@+id/gp_myfeeds"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_feeds"
+            android:title="Feeds" />
+    </group>
+    <group
+        android:id="@+id/gp_my_schedules"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_schedules"
+            android:title="My Schedules" />
+    </group>
+    <group
+        android:id="@+id/gp_book_schedules"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_book_schedules"
+            android:title="Book Schedules" />
+    </group>
+    <group
+        android:id="@+id/gp_following_list"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fan_following_list"
+            android:title="Fan / Following" />
+    </group>
+    <group
+        android:id="@+id/gp_buy_credits"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_buy_credits"
+            android:title="Buy Credits" />
+    </group>
+    <group
+        android:id="@+id/gp_subscriptions"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_subscriptions"
+            android:title="Subscriptions" />
+    </group>
+    <group
+        android:id="@+id/gp_myhistory"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myhistory"
+            android:title="History" />
+    </group>
+    <!-- <group
+         android:id="@+id/gp_charity_system"
+         android:checkableBehavior="single">
+         <item
+             android:id="@+id/nav_charity_system"
+             android:title="Charity System" />
+     </group>-->
+
+    <group
+        android:id="@+id/gp_about_us"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="About Us" />
+    </group>
+    <group
+        android:id="@+id/gp_help"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+    </group>
+    <group
+        android:id="@+id/gp_preferences"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_preferences"
+            android:title="Preferences" />
+    </group>
+    <group
+        android:id="@+id/gp_logout"
+        android:visible="false"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

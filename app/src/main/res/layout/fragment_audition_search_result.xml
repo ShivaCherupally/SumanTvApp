@@ -1,0 +1,22 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/audition_background"
+                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.talentSearch.TalentSearchFragment">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/swipeRefreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

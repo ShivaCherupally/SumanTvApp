@@ -1,0 +1,530 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.dkapp.flow.bottommenu.menuitemsmanager.fragments.EditProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_header_back"
+            android:tint="@color/black" />
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/imageViewUpdate"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_check"
+            android:tint="@color/black" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp">
+
+                <ImageView
+                    android:id="@+id/imageViewCoverPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cover_picture_place_holder" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:background="@drawable/ic_upload_picture"
+                    android:tint="@color/white" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageViewProfilePic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/imageViewCoverPic"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="-40dp"
+                    android:src="@drawable/profile_picture_placeholder"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@+id/imageViewCoverPic"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="-17dp"
+                    android:background="@drawable/ic_upload_picture"
+                    android:tint="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/iLProfileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="User Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <info.dkapp.flow.fontstyles.EditTextRegular
+                        android:id="@+id/etUser_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/preference_grey"
+                        android:defaultFocusHighlightEnabled="false"
+                        android:digits="abcdefghijklmnopqrstuvwxyz._"
+                        android:ems="10"
+                        android:hint="User Name"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="First Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <info.dkapp.flow.fontstyles.EditTextRegular
+                        android:id="@+id/et_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/preference_grey"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:hint="First Name * (Max 24 characters)"
+                        android:imeOptions="actionNext"
+                        android:maxLength="24"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="Last Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <info.dkapp.flow.fontstyles.EditTextRegular
+                        android:id="@+id/et_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/preference_grey"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:hint="Last Name *(Max 24 characters)"
+                        android:imeOptions="actionDone"
+                        android:maxLength="24"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/industryProfessionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:text="Select Industry"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview_arrow_spinner_industry"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_7sdp"
+                                android:visibility="visible"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/industrySpn"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:backgroundTint="@color/black"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@color/preference_grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:text="Select Category"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview_arrow_spinner_category"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_7sdp"
+                                android:visibility="visible"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/categorySpinner"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:background="@null"
+                                android:backgroundTint="@color/black"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@color/preference_grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <info.dkapp.flow.fontstyles.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:text="Select Profession"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview_arrow_spinner_proff"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_7sdp"
+                                android:visibility="visible"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                            <Spinner
+                                android:id="@+id/proffesionspinner"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:background="@null"
+                                android:backgroundTint="@color/black"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view_pro"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@color/preference_grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="Email"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <info.dkapp.flow.fontstyles.EditTextRegular
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/preference_grey"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:ems="10"
+                            android:hint="Email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="254"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/imageviewVerifyEmail"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_verify_icon"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/textViewEmailVerify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="Verify"
+                            android:textColor="@color/skyblueNew"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="Phone"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <info.dkapp.flow.fontstyles.EditTextRegular
+                            android:id="@+id/edt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title"
+                            android:backgroundTint="@color/preference_grey"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:ems="10"
+                            android:hint="Phone"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="13"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/_50sdp"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvCountryCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:text="IN+ 91"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:id="@+id/imageviewVerifyMobileNumber"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_verify_icon"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/textViewPhoneVerify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="Verify"
+                            android:textColor="@color/skyblueNew"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="Bio"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <info.dkapp.flow.fontstyles.EditTextRegular
+                        android:id="@+id/edt_aboutme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/preference_grey"
+                        android:defaultFocusHighlightEnabled="false"
+                        android:ems="10"
+                        android:hint="Write something about yourself"
+                        android:imeOptions="actionDone"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/textViewManagerProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center|right"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Manager Profile >"
+                    android:textColor="@color/skyblueNew"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

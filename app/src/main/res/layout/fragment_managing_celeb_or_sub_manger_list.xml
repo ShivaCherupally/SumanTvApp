@@ -1,0 +1,115 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinatorLayout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     tools:context="info.dkapp.flow.managermodule.fragments.Managing_celeb_or_sub_manger_list">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:id="@+id/linerlayout_manager_request"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:weightSum="10"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/imageViewPlaceHolder"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_above="@+id/tv_recyclerviewManagerRequest_empty"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_no_data"/>
+
+            <TextView
+                android:id="@+id/tv_recyclerviewManagerRequest_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/manager_empty_list" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewManagerRequest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerlayout_sub_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:weightSum="10"
+            >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewSubPlaceHolder"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_above="@+id/tv_recyclerviewSubManager_empty"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_no_data"/>
+
+
+            <TextView
+                android:id="@+id/tv_recyclerviewSubManager_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/submanager_empty_list" />
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewSubManager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

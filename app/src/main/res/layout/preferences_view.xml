@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:id="@+id/linearChild"
+             >
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_40sdp"
+        app:srcCompat="@drawable/ic_placeholder"
+        android:padding="@dimen/_2sdp"
+        android:layout_height="@dimen/_20sdp" />
+    <TextView android:id="@+id/tv_movies"
+        android:text="Uday"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+
+        android:layout_marginLeft="@dimen/_10sdp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textSize="@dimen/_11sdp"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rlHeader"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:id="@+id/rlAddMedia"
+       android:layout_margin="10dp"
+       android:backgroundTint="@color/black"
+       android:background="@drawable/hallow_corner_radius_3"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:padding="15dp"
+           android:tint="@color/hash_text_color"
+           app:srcCompat="@drawable/ic_add_black"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+   </RelativeLayout>
+
+</RelativeLayout>

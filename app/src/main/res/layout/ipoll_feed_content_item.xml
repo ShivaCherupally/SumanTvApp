@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <info.dkapp.flow.fontstyles.TextViewMedium
+        android:id="@+id/tvFeedContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:autoLink="web"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="Can't believe its is going well in all side india total dark from west eastern india
+dark from west eastern india
+dark from west eastern india"
+        android:textColor="@color/black"
+        android:textColorLink="@color/sky_blue"
+        android:textSize="@dimen/_11sdp"/>
+
+    <info.dkapp.flow.fontstyles.TextViewRegular
+        android:id="@+id/tvFeedDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:autoLink="web"
+        android:ellipsize="end"
+        android:text="Can't believe its is going well in all side india total dark from west eastern india"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textColorLink="@color/sky_blue"
+        android:textSize="@dimen/_11sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:gravity="right"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="more"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:textColor="#a9a9a9"
+            android:padding="@dimen/_5sdp"
+            android:gravity="end"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_camera"
+        android:icon="@drawable/ic_photo_camera"
+        android:title="Camera"
+        app:iconTint="@color/color222"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/menu_done"
+        android:icon="@drawable/ic_check"
+        android:title="Done"
+        app:iconTint="@color/color222"
+        app:showAsAction="always|withText"/>
+</menu>

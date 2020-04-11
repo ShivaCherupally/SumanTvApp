@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/view_foreground"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center">
+
+    <LinearLayout
+            android:id="@+id/llEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/imgError"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:elevation="@dimen/five"
+                app:srcCompat="@drawable/ic_placeholder"/>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="No Data Available"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_12sdp"/>
+
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="drag to retry...!"
+                android:textAlignment="center"
+                android:textColor="@color/lite_gray"
+                android:textSize="@dimen/_10sdp"/>
+    </LinearLayout>
+
+</RelativeLayout>

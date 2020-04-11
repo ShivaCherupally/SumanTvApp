@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llNoFeeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_below="@id/recyclerView"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        app:srcCompat="@drawable/ic_no_data"
+                        android:contentDescription="@string/image"/>
+                    <info.dkapp.flow.fontstyles.TextViewBold
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Uh-oh!"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"/>
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="No Feeds"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llFooterParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_48sdp"
+                    android:layout_alignParentBottom="true">
+                    <LinearLayout
+                        android:id="@+id/llFeedNetworkError"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+                        <TextView
+                            android:ellipsize="end"
+                            android:textSize="18sp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="Network Error"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/tvFeedRetry"
+                            android:textSize="15sp"
+                            android:background="@drawable/blue_radius"
+                            android:textColor="@color/white"
+                            android:text="Retry"
+                            android:textStyle="bold"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_7sdp"
+                            android:paddingBottom="@dimen/_7sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llFeedLoader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/ivFeedLoader"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            android:background="@drawable/progressbar_gif" />
+                    </LinearLayout>
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_3sdp"
+                        android:background="@color/homescreenbackground" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/move_to_top_item"/>
+
+        <info.dkapp.flow.fontstyles.EditTextRegular
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ccc"
+            android:padding="@dimen/_10sdp"
+            android:hint="Add a comment..."
+            android:layout_gravity="bottom"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

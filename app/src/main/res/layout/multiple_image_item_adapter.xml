@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/gradient_bg_light_black"
+        android:rotation="180" />
+
+    <RelativeLayout
+
+        android:id="@+id/rLVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <info.dkapp.flow.utils.videoTrimmer.HgLVideoTrimmer
+            android:id="@+id/timeLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLImage"
+        android:layout_above="@+id/linerlayoutComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iVImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <info.dkapp.flow.stories.emojiView.BrushDrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/delete_rl"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/delete_tv"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/iVClose"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/white" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iVfilters"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_toLeftOf="@+id/iVCrop"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_delete_notification"
+                android:tint="@color/white"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iVEmoji"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_toLeftOf="@+id/iVCrop"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_sticker"
+                android:tint="@color/white"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iVCrop"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_toStartOf="@+id/iVRortate"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_crop"
+                android:tint="@color/white"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iVRortate"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_rotate"
+                android:tint="@color/white"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--  <info.celebkonnect.flow.fontstyles.TextViewMedium
+          android:id="@+id/tvDone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="@dimen/_15sdp"
+          android:text="Done"
+          android:textColor="@color/white"
+          android:textSize="@dimen/_16sdp"
+          android:visibility="gone" />-->
+
+    <!-- <HorizontalScrollView
+         android:id="@+id/filterHV"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_70sdp"
+         android:layout_alignParentBottom="true">
+
+         <LinearLayout
+             android:id="@+id/filterImagelayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/gradient_bg_light_black"
+             android:orientation="horizontal"
+             android:visibility="gone" />
+     </HorizontalScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/linerlayoutComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_bg_light_black"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+        <info.dkapp.flow.fontstyles.EditTextMedium
+            android:id="@+id/etCaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:backgroundTint="@color/transparent"
+            android:hint="Add a caption (Max 250 characters)"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="6"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/submit_rectangle_for_settings_empty_10ra"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="Share"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/image_emoji_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent100"
+        android:visibility="gone">
+
+        <info.dkapp.flow.stories.emojiView.RealtimeBlurView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:realtimeBlurRadius="10dp"
+            app:realtimeOverlayColor="#33ffffff" />
+
+        <ImageView
+            android:id="@+id/iVCloseEmoji"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_main_photo_edit_image_rv"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/fragment_main_photo_edit_image_rv"
+            android:id="@+id/fragment_main_photo_edit_emoji_rv"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="wrap_content" />
+
+        <!--  <com.viewpagerindicator.CirclePageIndicator
+              android:layout_below="@+id/iVCloseEmoji"
+              android:id="@+id/image_emoji_indicator"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="center_horizontal"
+              android:padding="12dp"
+              app:fillColor="#999999"
+              android:visibility="gone"
+              app:pageColor="#e7e7e7" />
+          <androidx.viewpager.widget.ViewPager
+              android:layout_below="@+id/image_emoji_indicator"
+              android:id="@+id/image_emoji_view_pager"
+              android:layout_width="match_parent"
+              android:clickable="false"
+              android:visibility="gone"
+              android:focusable="false"
+              android:focusableInTouchMode="false"
+              android:layout_height="match_parent"/>-->
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

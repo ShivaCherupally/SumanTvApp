@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="7dp"
+              android:layout_marginTop="7dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/submit_rectangle"
+            android:backgroundTint="#F4F3F3"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:paddingRight="5dp"
+                android:text="Uday"/>
+
+
+        <TextView
+                android:id="@+id/tvTitleExtra"
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/tvTitle"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/llExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tvExProductionType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dubbing"
+                android:textColor="@color/quiestion"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ProjectName : "
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"/>
+
+            <TextView
+                    android:id="@+id/tvExProjectName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role : "
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"/>
+
+            <TextView
+                    android:id="@+id/tvExRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Director : "
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"/>
+
+            <TextView
+                    android:id="@+id/tvExDirector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Date : "
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"/>
+
+            <TextView
+                    android:id="@+id/tvExFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Date : "
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"/>
+
+            <TextView
+                    android:id="@+id/tvToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

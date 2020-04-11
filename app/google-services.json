@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "258137510360",
+    "firebase_url": "https://celebkoncetgcm.firebaseio.com",
+    "project_id": "celebkoncetgcm",
+    "storage_bucket": "celebkoncetgcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258137510360:android:4992e574d78308db",
+        "android_client_info": {
+          "package_name": "info.dkapp.flow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258137510360-ciacn5dtdd23sd4m2afg728e91820jhj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.dkapp.flow",
+            "certificate_hash": "204f50c3a26534edc01e6f9a11ef1ff339e4af86"
+          }
+        },
+        {
+          "client_id": "258137510360-q83si6qt80e71i10ssjivdbim65jht1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDam30Gg1WCG4vQOQt0zEzgkLz6PcA1Xws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258137510360-q83si6qt80e71i10ssjivdbim65jht1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "258137510360-l7rk9u9u1d8jvm4uidgkhj0ej4lnemu9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CelebKonect"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

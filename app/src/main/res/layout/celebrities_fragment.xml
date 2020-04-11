@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/tab_layout_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <include
+                    layout="@layout/hiderlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            <include layout="@layout/common_tab_layout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/netissueLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center">
+            <include layout="@layout/internet_error_popup" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

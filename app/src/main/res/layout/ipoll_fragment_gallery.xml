@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+       android:id="@+id/coordinatorLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+           <ProgressBar
+               android:visibility="visible"
+               android:id="@+id/progressBar"
+               style="?android:attr/progressBarStyleHorizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:indeterminateTint="@color/app_snack_bar_true"
+               android:indeterminate="true"/>
+
+       </RelativeLayout>
+
+
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

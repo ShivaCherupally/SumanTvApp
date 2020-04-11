@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/tools"
+    android:id="@+id/notificationlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbarheader"
+        layout="@layout/toolbar_back_icon"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/toolbarheader"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/toolbarheader"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ten"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/ten"
+                android:text="Application Settings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="@dimen/ten"
+                    android:text="Night Mode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <Switch
+                    android:id="@+id/nigthmodeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:theme="@style/SwitchTheme" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="@dimen/ten"
+                    android:text="Do Not Disturb"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <Switch
+                    android:id="@+id/donnotmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:theme="@style/SwitchTheme" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/donotdistrub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="@dimen/ten"
+                        android:text="Specify minutes to snooze"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false">
+
+                        <SeekBar
+                            android:id="@+id/rangeSeekbar1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:max="60"
+                            android:progressDrawable="@drawable/seekbar_progressbar"
+                            android:thumbTintMode="multiply" />
+
+                        <!--<com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar-->
+                        <!--android:id="@+id/rangeSeekbar1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:bar_color="@color/grey" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rangeSeekbar1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3.0">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1.0"
+                                android:text="0 Min"
+                                android:textColor="@color/appcolor"
+                                android:textSize="@dimen/ten" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1.0"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/textMin1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@color/appcolor"
+                                    android:textSize="@dimen/ten" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:text="Min"
+                                    android:textColor="@color/appcolor"
+                                    android:textSize="@dimen/ten" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/textMax1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1.0"
+                                android:text="60 Minutes"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/appcolor"
+
+                                android:textSize="@dimen/ten"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/submit_rectangle"
+            android:gravity="center"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <!--<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <info.celebkonnect.flow.commonuses.ProportionalImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/notificationsettingsicon"
+            android:visibility="gone" />
+
+    </ScrollView>-->
+
+
+</RelativeLayout>

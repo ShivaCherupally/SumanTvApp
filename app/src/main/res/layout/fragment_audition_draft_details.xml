@@ -1,0 +1,299 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+        >
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="?android:actionBarSize">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/ic_arrow_back_white"/>
+
+            <TextView
+                    android:id="@+id/tvToolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imgClose"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:visibility="visible"
+
+                    />
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="Edit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginEnd="50dp"/>
+
+
+            <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/ic_home_fill_white"
+                    android:visibility="visible"
+                    android:id="@+id/ivHomeImage"
+                    android:tint="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvPostTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:text="Post Audition"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvAuditionsDraftDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Riverwalk Theatre welcomes auditioners as diverse as our community."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvDraftDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="12:30 PM"
+                    android:textSize="11sp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Company"
+                    android:textSize="11sp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvDraftProductionCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/light_gray"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:text="Production Personal"
+                    android:textSize="11sp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvDraftProductionPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/light_gray"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Production Type"
+                    android:textSize="11sp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/productionType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/light_gray"/>
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Production Sub Type"
+                    android:textSize="11sp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/productionSubType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="N/A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/light_gray"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:text="Production Expires"
+                    android:textSize="11sp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/productionExpires"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/light_gray"/>
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:text="Roles"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="visible"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"/>
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvApply"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:text="Publish"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/corner_radius_blue"
+                    />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

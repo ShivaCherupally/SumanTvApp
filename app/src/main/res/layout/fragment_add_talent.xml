@@ -1,0 +1,360 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     android:layout_gravity="top"
+                                                     android:orientation="vertical"
+    >
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:background="@color/skyblueNew">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_back_white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/imgClose"
+                        android:text="Talent"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/light_gray" />
+
+
+            <Spinner
+                android:id="@+id/spinnerTalent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:entries="@array/Talent"></Spinner>
+
+
+            <!--style="@style/Widget.AppCompat.Spinner.Underlined"-->
+            <!--android:theme="@style/ThemeSpinner.Blue"-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_gray" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight=".28"
+                android:visibility="gone"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_drop_down_blue" />
+
+            </RelativeLayout>
+
+
+
+            <Spinner
+                android:id="@+id/spinnerSubTalent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:entries="@array/SubTalent"></Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@color/light_gray" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:id="@+id/etOther"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="gone"
+                android:hint=" Enter your talent"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Rate your talent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/llBigenner"
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/rbBeginner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:numStars="1"
+                    android:progressTint="@color/colorPrimary"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    android:stepSize="1"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/tvBeginner"
+                    android:gravity="right"
+                    android:text="Beginner"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/llSkillfull"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/rbSkillfull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:numStars="2"
+                    android:progressTint="@color/colorPrimary"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    android:stepSize="1"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:id="@+id/tvSkillful"
+                    android:text="Skillfull"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llProficient"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/rbProficient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:numStars="3"
+                    android:progressTint="@color/colorPrimary"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    android:stepSize="1"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:id="@+id/tvProficient"
+                    android:text="Proficient"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/llExpert"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/rbExpert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:numStars="4"
+                    android:progressTint="@color/colorPrimary"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    android:stepSize="1"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:id="@+id/tvExpert"
+                    android:text="Expert"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/light_gray" />
+
+            <Button
+                android:id="@+id/btSave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/corner_radius_blue"
+                android:fontFamily="@string/also_signup"
+                android:paddingLeft="5dp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="  Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTalent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

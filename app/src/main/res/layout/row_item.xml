@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/scheduleDurationtxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text=""
+                android:textSize="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/iVMoreOptions"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_2sdp"
+                android:rotation="90"
+                android:tint="@color/gray"
+                android:visibility="gone"
+                app:srcCompat="@drawable/more_options" />
+        </LinearLayout>
+
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Schedule Duration"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lineatLayout_day_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/ten">
+
+                <ImageView
+                    android:id="@+id/imageView_clock"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calendar"
+                    android:tint="@color/gray" />
+
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/dateinfotxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Date"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/yeartxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Year"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="@dimen/fifteen"
+                    android:layout_height="@dimen/fifteen"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:tint="@color/gray"
+                    app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/textView_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Start time"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="-"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/textView_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="End time"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

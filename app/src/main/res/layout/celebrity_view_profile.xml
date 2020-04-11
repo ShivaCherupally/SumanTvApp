@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTopContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/refreshImageview"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:background="@drawable/ic_refresh"
+                        android:backgroundTint="@color/white"
+                        android:foregroundGravity="left"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imageViewCoverPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_140sdp"
+                        android:contentDescription="@string/image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cover_picture_place_holder" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageviewceleb"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_below="@+id/imageViewCoverPic"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_minus40sdp"
+                        android:src="@drawable/profile_picture_placeholder"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="@dimen/_2sdp"
+                        app:layout_collapseMode="parallax"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+
+                    <LinearLayout
+                        android:id="@+id/service_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageViewCoverPic"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/audio_call_icon"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:tint="@color/audio_icon_color"
+                            app:srcCompat="@drawable/ic_audio" />
+
+                        <ImageView
+                            android:id="@+id/video_call_icon"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:tint="@color/video_icon_color"
+                            app:srcCompat="@drawable/ic_video" />
+
+                        <ImageView
+                            android:id="@+id/chaticons"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:tint="@color/chat_icon_color"
+                            app:srcCompat="@drawable/ic_chat" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/proffesion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/agolay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/profession">
+
+                            <ImageView
+                                android:id="@+id/ivOnlineCircle"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/green_bg_round"
+                                android:visibility="gone" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:id="@+id/activetime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_toEndOf="@+id/ivOnlineCircle"
+                                android:text="Online"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <info.dkapp.flow.fontstyles.TextViewBold
+                        android:id="@+id/profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/total_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/posts_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:orientation="vertical">
+
+                            <info.dkapp.flow.fontstyles.TextViewBold
+                                android:id="@+id/posts_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:id="@+id/textViewPosts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posts"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fans_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <info.dkapp.flow.fontstyles.TextViewBold
+                                android:id="@+id/fans_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:id="@+id/textViewFans"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fans"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/followers_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:orientation="vertical">
+
+                            <info.dkapp.flow.fontstyles.TextViewBold
+                                android:id="@+id/followers_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:id="@+id/textViewFollowers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Follows"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/schedules_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:orientation="vertical">
+
+                            <info.dkapp.flow.fontstyles.TextViewBold
+                                android:id="@+id/schedules_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Schedules"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iLfan_following_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/iLself_fan_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <info.dkapp.flow.fontstyles.TextViewBold
+                                android:id="@+id/tv_self_fan_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:id="@+id/tv_self_textViewFan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fan"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/iLself_following_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:orientation="vertical">
+
+                            <info.dkapp.flow.fontstyles.TextViewBold
+                                android:id="@+id/tv_self_following_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:id="@+id/tv_self_textViewFollowing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Following"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fan_follow_buttons_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:visibility="gone">
+
+                        <info.dkapp.flow.fontstyles.ButtonMedium
+                            android:id="@+id/fanBtn"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:background="@drawable/submit_rectangle_normal_rad"
+                            android:text="Fan"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <info.dkapp.flow.fontstyles.ButtonMedium
+                            android:id="@+id/follow_button"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_marginLeft="@dimen/_36sdp"
+                            android:background="@drawable/submit_rectangle_normal_rad"
+                            android:text="Follow"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lLEditprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <info.dkapp.flow.fontstyles.ButtonMedium
+                            android:id="@+id/btEditprofile"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="@dimen/_236sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:background="@drawable/submit_rectangle_for_settings_empty_5dp"
+                            android:text="Edit Profile"
+                            android:textAllCaps="false"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:id="@+id/tvAboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:id="@+id/tvAboutMeMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:text="more"
+                        android:textColor="#a9a9a9"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/userDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="#DAD9D9"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llTabsParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_44sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="#DAD9D9" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="#DAD9D9" />
+                </LinearLayout>
+
+                <info.dkapp.flow.utils.WrapContentHeightViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/llTabsParentAnimated"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_44sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTabsAnimated"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#DAD9D9" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ivToolbarBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/skyblueNew"
+            android:contentDescription="@string/image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backComplete"
+                android:layout_width="@dimen/_44sdp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_11sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_header_back"
+                android:tint="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/llToolbarTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_44sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvProfessionToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Comedian"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewBold
+                    android:id="@+id/tvProfileNameToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="User name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_44sdp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMoveUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:background="@drawable/corner_radius_primary_30"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="@string/image"
+            android:rotation="90"
+            android:tint="@color/hash_text_color"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/text_back_to_top"
+            android:textColor="@color/hash_text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

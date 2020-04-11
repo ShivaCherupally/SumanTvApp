@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_130sdp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_boxss"
+        android:backgroundTint="@color/sky_blue">
+
+        <!-- <ImageView
+             android:id="@+id/selecteimage"
+             android:layout_width="@dimen/_15sdp"
+             android:layout_height="@dimen/_15sdp"
+             android:layout_alignParentEnd="true"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:layout_marginEnd="@dimen/_10sdp"
+             android:background="@drawable/actorflagicon"
+             android:backgroundTint="@color/gray"
+             android:visibility="visible" />-->
+
+        <TextView
+            android:id="@+id/selecteimage"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/actorflagicon"
+            android:drawableStart="@drawable/ic_tick"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingTop="@dimen/_1sdp"
+
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:minWidth="180dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_13sdp">
+
+
+            <info.dkapp.flow.fontstyles.TextViewBlack
+                android:id="@+id/creditsCounttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="499"
+                android:textAllCaps="false"
+                android:textColor="@color/sky_blue"
+                android:textSize="@dimen/_22sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                android:id="@+id/creditlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/credits"
+                android:textAllCaps="false"
+                android:textColor="@color/sky_blue"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:id="@+id/dividerView"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/sky_blue" />
+
+            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                android:id="@+id/creditAmounttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="$499"
+                android:textAllCaps="false"
+                android:textColor="@color/sky_blue"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

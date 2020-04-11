@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="@color/white"
+                                   app:cardCornerRadius="5dp"
+                                   app:cardElevation="5dp"
+                                   app:cardMaxElevation="5dp"
+                                   app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnCompanyData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Company Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/ibFavorite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_favorite_role_stroke"
+                    android:tint="@color/sky_blue"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/image"/>
+                <ImageButton
+                    android:id="@+id/ibShare"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_share_role"
+                    android:tint="@color/sky_blue"
+                    android:contentDescription="@string/image"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expires On"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <TextView
+                        android:id="@+id/tvMyAuditionsExpDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tvPostTitle"
+                        android:layout_marginTop="3dp"
+                        android:text="12:30 PM"
+                        android:textSize="@dimen/_7sdp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Sri Venkateswara Creations"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="No Description"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Role"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Role Name  :"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tvRoleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/skyblueNew"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Male"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvStartAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" - "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tvEndAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAuditionsDetailsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attach Media "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <ImageView
+                android:id="@+id/tvAttchments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/ic_add_media"
+                android:text="Show reel,Photos"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp"
+                android:tint="@color/skyblueNew" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btApply"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/skyblueNew"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

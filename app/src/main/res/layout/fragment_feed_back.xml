@@ -1,0 +1,52 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     tools:context="info.dkapp.flow.managermodule.fragments.FeedBackFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_radius_border"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/editTextFeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:cursorVisible="true"
+                android:hint="Kindly provide reason to reject"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonFeedBackSubmit"
+                android:layout_width="140dp"
+                android:layout_height="@dimen/fourty"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/submit_rectangle"
+                android:text="Submit"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:padding="@dimen/_50sdp"
+            android:src="@drawable/feedback" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

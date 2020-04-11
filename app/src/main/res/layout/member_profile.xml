@@ -1,0 +1,139 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:fitsSystemWindows="true"
+                                                     app:layout_scrollFlags="scroll|enterAlways">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:visibility="visible">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleGravity="bottom|center_vertical"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+                <ImageView
+                    android:id="@+id/expandedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+
+                    app:srcCompat="@drawable/ic_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/gradient_bg_black"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/pokeBtn"
+                        android:layout_width="80dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:background="@drawable/submit_rectangle"
+                        android:gravity="center"
+                        android:text="Poke"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageviewback"
+                        android:layout_width="@dimen/_40sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_back"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient_bg_black"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="#fdfcfc"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/book_appointment"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/submit_rectangle"
+                    android:gravity="center"
+                    android:text="Poke"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_scrolling" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

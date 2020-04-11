@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <info.dkapp.flow.commonuses.zoomable.ZoomableDraweeView
+                    android:id="@+id/imgContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <ImageView
+                    android:padding="9dp"
+                    android:id="@+id/imgEdit"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_edit"
+                    android:background="@drawable/circle_dark_transparent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:text="UPLOAD"
+                    android:id="@+id/tvUpload"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/corner_radius_dark_transparent_3"
+                    android:layout_height="40dp"/>
+
+            <LinearLayout
+                    android:layout_above="@+id/llBottom"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_height="wrap_content">
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:id="@+id/textviewUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/white"/>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:id="@+id/textviewPostTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+            <!--like comments-->
+            <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/llBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:id="@+id/llLike"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                    android:id="@+id/imgLike"
+                                    android:layout_width="28dp"
+                                    android:tint="@color/white"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_thumb_up"
+                                    />
+
+                            <ProgressBar
+                                    android:id="@+id/progressBar"
+                                    android:layout_width="28dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="25dp"
+                                    android:layout_alignParentTop="true"
+                                    android:indeterminate="true"
+                                    android:indeterminateTint="@color/white"
+                                    android:progressTint="@color/white"/>
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                                android:id="@+id/tvLikeCount"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:maxLines="1"
+                                android:text="@string/text_like"
+                                android:textColor="@color/icon_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:id="@+id/llComment"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:id="@+id/imgComment"
+                                android:layout_width="28dp"
+                                android:layout_height="25dp"
+                                android:tint="@color/white"
+                                android:src="@drawable/comment_other"
+                                />
+
+                        <TextView
+                                android:id="@+id/tvCommentCount"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:maxLines="1"
+                                android:text="@string/text_comment"
+                                android:textColor="@color/icon_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:id="@+id/llShare"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:id="@+id/imgShare"
+                                android:layout_width="28dp"
+                                android:layout_height="25dp"
+                                android:tint="@color/white"
+                                android:src="@drawable/share"
+                                />
+
+                        <TextView
+                                android:id="@+id/tvShare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:maxLines="1"
+                                android:text="@string/text_share"
+                                android:textColor="@color/icon_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <ProgressBar
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/app_snack_bar_true"
+                android:indeterminate="true"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

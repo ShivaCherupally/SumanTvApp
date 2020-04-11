@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHidePost"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp">
+
+
+        <ImageView
+            android:id="@+id/closeIcon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_hide_post" />
+
+        <LinearLayout
+            android:id="@+id/middleLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/closeIcon"
+            android:orientation="vertical">
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hiddenpost"
+                android:textColor="@color/color222"
+                android:textSize="@dimen/_12sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hideyoupost"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <info.dkapp.flow.fontstyles.ButtonMedium
+            android:id="@+id/undobtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/submit_rectangle_for_settings_empty_10ra"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/undostr"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

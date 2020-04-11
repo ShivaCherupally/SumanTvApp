@@ -1,0 +1,875 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:rsb="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.createAuditionProfile.ProfessionalFragment">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+        <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age Range : "
+                            android:textColor="@color/color222"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvMinAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/color222"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" - "
+                            android:textColor="@color/color222"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvMaxAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/color222"
+                            android:textSize="14sp" />
+                </LinearLayout>
+
+                <org.florescu.android.rangeseekbar.RangeSeekBar
+                        android:id="@+id/rangeSeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        rsb:absoluteMaxValue="100"
+                        rsb:absoluteMinValue="1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1"
+            >
+                <TextView
+                        style="@style/tvEditTextLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:id="@+id/tvheightinFeets"
+                        android:gravity="left"
+                        android:text="Height* (in Feets)  " />
+
+                <TextView
+                        style="@style/tvEditTextLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/heightinFeets"
+                        android:layout_toRightOf="@+id/tvheightinFeets"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:text="" />
+
+            </RelativeLayout>
+
+            <!--android:text="Height* (in cms)"-->
+            <!--<org.florescu.android.rangeseekbar.RangeSeekBar-->
+            <!--android:id="@+id/seekBarHeight"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--rsb:absoluteMaxValue="250"-->
+            <!--rsb:absoluteMinValue="0"-->
+            <!--rsb:textAboveThumbsColor="@color/color222" />-->
+
+
+            <com.warkiz.widget.IndicatorStayLayout
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <!--your layout-->
+
+                <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/seekBarHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_min="0"
+                        app:isb_max="250"
+                        android:tooltipText="Cms"
+                        app:isb_thumb_size="@dimen/_15sdp"
+                        app:isb_thumb_color="@color/colorPrimary"
+                        app:isb_track_progress_color="@color/light_gray_sb"
+                        app:isb_show_indicator="rounded_rectangle"
+                        app:isb_indicator_text_color="@color/white"
+                        app:isb_indicator_color="@color/skyblueNew"
+                        app:isb_indicator_top_content_layout="@layout/custom_top_content_view_round_miles"
+                        app:isb_show_tick_texts="false"
+                        app:isb_tick_texts_color="@color/black"
+                        app:isb_ticks_count="2"
+                />
+
+
+                <!--app:isb_tick_texts_color="@color/red"-->
+                <!--app:isb_ticks_count="5"-->
+                <!--app:isb_show_tick_marks_type="divider"-->
+                <!--app:isb_tick_marks_ends_hide="true"-->
+                <!--app:isb_tick_texts_array="@array/small_normal_middle_large_length_7-->
+                <!--your layout-->
+
+            </com.warkiz.widget.IndicatorStayLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1">
+                <TextView
+                        style="@style/tvEditTextLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:id="@+id/tvWeight"
+                        android:text="Weight* (in pounds) " />
+
+
+
+                <TextView
+                        style="@style/tvEditTextLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvWeightnPonuds"
+                        android:layout_toRightOf="@+id/tvWeight"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:text="" />
+            </RelativeLayout>
+            <!--<org.florescu.android.rangeseekbar.RangeSeekBar-->
+            <!--android:id="@+id/seekBarWeight"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--rsb:absoluteMaxValue="150"-->
+            <!--rsb:absoluteMinValue="0"-->
+            <!--rsb:textAboveThumbsColor="@color/color222" />-->
+
+
+            <com.warkiz.widget.IndicatorStayLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <!--your layout-->
+
+                <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/seekBarWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_min="0"
+                        app:isb_max="150"
+                        android:tooltipText="Cms"
+                        app:isb_thumb_size="@dimen/_15sdp"
+                        app:isb_thumb_color="@color/colorPrimary"
+                        app:isb_track_progress_color="@color/light_gray_sb"
+                        app:isb_show_indicator="rounded_rectangle"
+                        app:isb_indicator_text_color="@color/white"
+                        app:isb_indicator_color="@color/skyblueNew"
+                        app:isb_indicator_top_content_layout="@layout/custom_top_content_view_round_kgs"
+
+                        app:isb_show_tick_texts="false"
+                        app:isb_tick_texts_color="@color/black"
+                        app:isb_ticks_count="2" />
+
+                <!--your layout-->
+
+            </com.warkiz.widget.IndicatorStayLayout>
+
+
+            <TextView
+                    style="@style/tvEditTextLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:text="Age range* (in years)" />
+
+            <TextView
+                    android:id="@+id/tvAgeRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:backgroundTint="@color/skyblueNew"
+                    android:text="1 - 100 "
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            <org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:id="@+id/ageRangeSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:visibility="gone"
+                    rsb:absoluteMaxValue="100"
+                    rsb:absoluteMinValue="1"
+                    rsb:textAboveThumbsColor="@color/color222"
+            />
+
+
+
+            <TextView
+                    style="@style/tvEditTextLabel_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:textAllCaps="true"
+                    android:text="Age Range *" />
+
+            <LinearLayout
+                    style="@style/llAuditionSpinnerParent_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:id="@+id/rlAgeRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                >
+                    <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_drop_down_blue"/>
+                    <Spinner
+                            android:layout_centerHorizontal="true"
+                            android:drawableTint="@color/skyblueNew"
+                            android:background="@null"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
+                            android:id="@+id/spinAgeRange"
+                            style="@style/spinnerAudition_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/ageRangeArray"
+
+                    />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/image"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow_999"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+
+
+            <TextView
+                    style="@style/tvEditTextLabel_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:textAllCaps="true"
+                    android:text="Body Type" />
+
+            <LinearLayout
+                    style="@style/llAuditionSpinnerParent_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:id="@+id/relativeGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                >
+                    <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_drop_down_blue"/>
+                    <Spinner
+                            android:layout_centerHorizontal="true"
+                            android:drawableTint="@color/skyblueNew"
+                            android:background="@null"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
+                            android:id="@+id/spinnerBodyType"
+                            style="@style/spinnerAudition_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/bodyTypeArray"
+
+                    />
+                </RelativeLayout>
+
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/image"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow_999"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/light_gray" />
+
+            <TextView
+                    style="@style/tvEditTextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="Skin Tone"
+                    android:visibility="gone" />
+
+            <LinearLayout
+                    style="@style/llAuditionSpinnerParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                <Spinner
+                        android:id="@+id/spinnerSkinTone"
+                        style="@style/spinnerAudition"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/skinToneArray" />
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/image"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow_999"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <TextView
+                    style="@style/tvEditTextLabel_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:textAllCaps="true"
+                    android:text="Hair Color" />
+
+            <LinearLayout
+                    style="@style/llAuditionSpinnerParent_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerHairColor"-->
+                <!--style="@style/spinnerAudition_spinner"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:entries="@array/hairColorArray" />-->
+
+                <RelativeLayout
+                        android:id="@+id/relativeHairColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                >
+                    <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_drop_down_blue"/>
+                    <Spinner
+                            android:layout_centerHorizontal="true"
+                            android:drawableTint="@color/skyblueNew"
+                            android:background="@null"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/spinnerHairColor"
+                            style="@style/spinnerAudition_spinner"
+                            android:entries="@array/hairColorArray"
+
+                    />
+                </RelativeLayout>
+
+
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/image"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow_999"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <TextView
+                    style="@style/tvEditTextLabel_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:textAllCaps="true"
+                    android:text="Eye Color" />
+
+            <LinearLayout
+                    style="@style/llAuditionSpinnerParent_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerEyeColor"-->
+                <!--style="@style/spinnerAudition_spinner"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:entries="@array/eyeColorArray" />-->
+
+
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeEyeColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                >
+                    <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_drop_down_blue"/>
+                    <Spinner
+                            android:layout_centerHorizontal="true"
+                            android:drawableTint="@color/skyblueNew"
+                            android:background="@null"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinnerEyeColor"
+                            style="@style/spinnerAudition_spinner"
+                            android:layout_weight="1"
+                            android:entries="@array/eyeColorArray"
+
+                    />
+                </RelativeLayout>
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/image"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow_999"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <TextView
+                    style="@style/tvEditTextLabel_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:textAllCaps="true"
+                    android:text="Ethnicity" />
+
+            <LinearLayout
+                    style="@style/llAuditionSpinnerParent_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerEthnicity"-->
+                <!--style="@style/spinnerAudition_spinner"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:entries="@array/ethnicityArray" />-->
+
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeEthenicity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                >
+                    <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_drop_down_blue"/>
+                    <Spinner
+                            android:layout_centerHorizontal="true"
+                            android:drawableTint="@color/skyblueNew"
+                            android:background="@null"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinnerEthnicity"
+                            style="@style/spinnerAudition_spinner"
+                            android:layout_weight="1"
+                            android:entries="@array/ethnicityArray"
+
+                    />
+                </RelativeLayout>
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/image"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow_999"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Languages"
+                        android:textColor="@color/color222"
+                        android:textSize="16sp" />
+
+                <Button
+                        android:id="@+id/btnAddLanguages"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:text="ADD"
+                        android:textColor="@color/auditionBlue" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Key Skills *"
+                        android:textColor="@color/color222"
+                        android:textSize="16sp" />
+
+                <Button
+                        android:id="@+id/btnAddKeySkills"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:text="ADD"
+                        android:textColor="@color/auditionBlue" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvKeySkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Talent"
+                        android:textColor="@color/color222"
+                        android:textSize="16sp" />
+
+                <Button
+                        android:id="@+id/btnTalent"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:text="ADD"
+                        android:textColor="@color/auditionBlue" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTalent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Achievements"
+                        android:textColor="@color/color222"
+                        android:textSize="16sp" />
+
+                <Button
+                        android:id="@+id/btnAchievements"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:text="ADD"
+                        android:textColor="@color/auditionBlue" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcAchievements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Experience"
+                        android:textColor="@color/color222"
+                        android:textSize="16sp" />
+
+                <Button
+                        android:id="@+id/btnAddExperience"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:text="ADD"
+                        android:textColor="@color/auditionBlue" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Education &amp; Training"
+                        android:textColor="@color/color222"
+                        android:textSize="16sp" />
+
+                <Button
+                        android:id="@+id/btnAddEducation"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:text="ADD"
+                        android:textColor="@color/auditionBlue" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/light_gray" />
+
+            <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/btnAuditionRectangle"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="Save &amp; Continue"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="right"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/corner_radius_blue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+            />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

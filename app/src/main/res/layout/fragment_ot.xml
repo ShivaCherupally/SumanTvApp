@@ -1,0 +1,186 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     tools:context="info.dkapp.flow.otp.OTPFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llVerify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@mipmap/ic_phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_27sdp"
+                android:layout_marginRight="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Please verify your account"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVerifyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Please verify your account"
+                android:textAlignment="center"
+                android:textColor="@color/list_group_title"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:id="@+id/card_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:padding="@dimen/five"
+                android:visibility="visible">
+
+
+                <RadioButton
+                    android:id="@+id/rbMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_otp"
+                    android:buttonTint="@color/skyblueNew"
+                    android:padding="@dimen/_10sdp"
+                    android:text="" />
+
+
+                <RadioButton
+                    android:id="@+id/rbEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_otp"
+                    android:buttonTint="@color/skyblueNew"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llOtpBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:background="@drawable/rectangle_otp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="000000"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/otpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:background="@drawable/submit_rectangle"
+                android:text="Send Verification Code"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/llTryagain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn't recieve the text?"
+                    android:textAlignment="center"
+                    android:textColor="@color/list_group_title" />
+
+                <LinearLayout
+                    android:id="@+id/llTryagain_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonTryAgain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/btn_sky_blue_click"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Resend OTP" />
+
+                    <View
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="2dp"
+                        android:background="@color/skyblueNew"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCountDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textColor="@color/skyblueNew"
+                    android:textSize="@dimen/_18sdp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/skyblueNew"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbarheader"
+        layout="@layout/toolbar_back_icon"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/toolbarheader"
+        android:background="@color/grey" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarheader"
+
+        android:layout_marginTop="@dimen/five">
+
+        <ScrollView
+            android:id="@+id/middledata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:paddingBottom="@dimen/five"
+                            android:visibility="gone"
+                            android:paddingTop="@dimen/ten"
+                            android:text="Select charity Organization   "
+                            android:textAllCaps="true"
+                            android:textColor="@color/common_titlecolor"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/charity_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:backgroundTint="@color/common_titlecolor" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:visibility="gone"
+                            android:background="@color/common_titlecolor"
+                            android:paddingLeft="@dimen/ten" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/addownbtn"
+                        android:layout_width="140dp"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/twenty"
+                        android:background="@drawable/rectangel_box_grey_border"
+                        android:drawableRight="@drawable/ic_add_black_24dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:text="ADD YOUR OWN"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/common_titlecolor"
+                        android:visibility="gone" />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/ten"
+                            android:gravity="center|left"
+                            android:padding="@dimen/ten"
+                            android:background="@color/managerBackgroundColor"
+                            android:text="About Trust"
+                            android:textColor="@color/common_titlecolor"
+                            android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:backgroundTint="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/charity_about"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/five"
+                                android:backgroundTint="@color/managerBackgroundColor"
+                                android:ems="10"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:layout_marginRight="@dimen/ten"
+                                android:hint="Description"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapCharacters|textNoSuggestions"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/charity_registration_code"
+                            android:layout_width="match_parent"
+
+                            android:layout_marginTop="@dimen/five"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:ems="10"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:hint="Registration Code"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapCharacters|textNoSuggestions"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/charity_name"
+                            android:layout_width="match_parent"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:ems="10"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:hint="Foundation Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/charity_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:ems="10"
+                            android:hint="Address"
+                            android:imeOptions="actionNext"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/ten"
+                    android:gravity="center|left"
+                    android:padding="@dimen/ten"
+                    android:background="@color/managerBackgroundColor"
+                    android:textColor="@color/common_titlecolor"
+                    android:textSize="15sp"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/five"
+                    android:paddingTop="@dimen/ten"
+                    android:text="Payment Settings"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginTop="@dimen/five">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingTop="@dimen/ten"
+                        android:text="Instant Messaging Services"
+                        android:textColor="@color/common_titlecolor"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/chat_msg"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:gravity="left"
+                            android:hint="0"
+                            android:padding="@dimen/five"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/managerBackgroundColor"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignRight="@+id/messagedata"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:gravity="left"
+                            android:paddingBottom="@dimen/five"
+                            android:text="%"
+                            android:textColor="@color/common_titlecolor" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingTop="@dimen/ten"
+                        android:text="Audio Call Service"
+                        android:textColor="@color/common_titlecolor"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/audio_calls"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:gravity="left"
+                            android:hint="0"
+                            android:padding="@dimen/five"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/managerBackgroundColor"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignRight="@+id/messagedata"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:gravity="left"
+                            android:paddingBottom="@dimen/five"
+                            android:paddingTop="@dimen/ten"
+                            android:text="%"
+                            android:textColor="@color/common_titlecolor" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_marginTop="@dimen/five">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingTop="@dimen/ten"
+                        android:text="Audion/Video Call Services"
+                        android:textColor="@color/common_titlecolor"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/video_call"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:gravity="left"
+                            android:hint="0"
+                            android:padding="@dimen/five"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/managerBackgroundColor"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignRight="@+id/eCommerce"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:gravity="left"
+                            android:paddingBottom="@dimen/five"
+                            android:text="%"
+                            android:textColor="@color/common_titlecolor" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_marginTop="@dimen/five">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingTop="@dimen/ten"
+                        android:text="Fashion Commerce Sales"
+                        android:textColor="@color/common_titlecolor"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/eCommerce_text"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/managerBackgroundColor"
+                            android:gravity="left"
+                            android:hint="0"
+                            android:padding="@dimen/five"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/managerBackgroundColor"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignRight="@+id/eCommerce"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:gravity="left"
+                            android:paddingBottom="@dimen/five"
+                            android:text="%"
+                            android:textColor="@color/common_titlecolor" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/update_charity_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/submit_rectangle"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/_35sdp"
+                    android:layout_marginRight="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/appcolor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Want to add new Charity trust ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/contactus_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/submit_rectangle"
+                    android:gravity="center"
+                    android:text="Contact Us"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

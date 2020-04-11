@@ -1,0 +1,1365 @@
+<resources>
+    <string name="app_name">Digital Akshara</string>
+
+    <!--<string name="application_name">Demo</string>-->
+
+    <string name="version_name">
+        <font color="#3b68b1" size="10">Version 1.0</font>
+    </string>
+    <string name="collapsed">collapsed: %s</string>
+    <string name="expanded">expanded: %s</string>
+    <string name="demo_min_label"></string>
+    <string name="demo_max_label"></string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="skip_str">Skip</string>
+    <string name="start">GOT IT</string>
+
+    <string name="passwordValidation">Contain at least 1 special character from ! @ # $ % ^ &amp; * ( ) _ + [ ] { }
+    </string>
+
+    <string name="player_error">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+
+    <string name="ic_search">
+        <font size="15">Search a celebrity</font>
+    </string>
+    <string name="search_draft">
+        <font size="15">Search a draft</font>
+    </string>
+    <string name="manager_search">
+        <font size="15">Search a manager</font>
+    </string>
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="todays_event">Todays Events</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="edittext_hint">
+        <font size="10">Write your comments</font>
+    </string>
+    <string name="feed_edit_hint">
+        <font size="10">Add a Caption</font>
+    </string>
+    <string name="changepasowrd_newpassword">
+        <font size="15">New Password</font>
+    </string>
+    <string name="changepasowrd_confirmpassword">
+        <font size="15">Confirm Password</font>
+    </string>
+    <string name="media_upload_text">
+        <font size="8">Enter Text Here</font>
+    </string>
+
+
+    <string name="chatcredit">
+        <b>Credit(s)</b>
+    </string>
+    //Card Details
+    <string name="exdate">
+        <font size="10">Expiry Month</font>
+    </string>
+    <string name="exmonth">
+        <font size="10">Expiry Year</font>
+    </string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear
+        data
+    </string>
+    <string name="play_again">Play Again</string>
+    <string name="username">User Name</string>
+    <string name="referal">Referral Code (Optional)</string>
+    <string name="email_address">E-Mail Id</string>
+    <string name="email">Email</string>
+    <string name="emailormobile">Email/Mobile</string>
+    <string name="mobile">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="signin">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="signinnow">Sign In Now</string>
+
+    <string name="home">Home</string>
+
+    <string name="quickpostt">Sign In Now</string>
+
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="already_register">Already have an account?</string>
+    <string name="professional">From for all your professional and \npersonal designs</string>
+    <string name="signup_facebook">SIGN UP WITH FACEBOOK</string>
+    <string name="signup_twitter">SIGN UP WITH TWITTER</string>
+    <string name="signup_email">SIGN UP WITH EMAIL</string>
+
+    <!--<string name="com.twitter.sdk.android.CONSUMER_KEY">RW1sd4gscCDHFbhMNNTceFjt8</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">6zMAqtAVBnSc5yWHnJnmg2bnMlHlP3pXvGeR5uwynaeYdTRR9B</string>-->
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">Ccr6kPhB0eSCrBVn1j2LF57vN</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">3Ye7D8kQxzpXBZcWI2xJRYUoo1ZEHe8MP0lXbLz10xJzT09tvK</string>
+
+    <!--<string name="facebook_app_id">1672931952829086</string>-->
+    <string name="facebook_app_id">2010537322500421</string>
+    <string name="fb_login_protocol_scheme">fb2010537322500421</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--<string name="action_settings">Settings</string>-->
+    <string name="myfeed">My Feed</string>
+    <string name="myprofile">My Profile</string>
+    <string name="myschedule">My Schedules</string>
+    <string name="create_event">Create Event</string>
+    <string name="my_collections">My Collections</string>
+    <string name="auctions">Auctions</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="buy_credits">Buy Credits</string>
+    <string name="manage_my_orders">Manage My Orders</string>
+    <string name="manage_inventory">Manage Inventory</string>
+    <string name="manager_settings">Manager Settings</string>
+    <string name="my_reports">My Reports</string>
+    <string name="credits">Credits</string>
+    <string name="charity">Charity System</string>
+
+    <string name="available">Recommended Celebrities</string>
+
+    <string name="select_preference">Select Your Preferences</string>
+
+    <string name="coming_soon">Coming Soon</string>
+    <string name="Getcredits">Get credits to become a fan / follower and konect with your favourite Celebs</string>
+    <string name="konect_with_credits">Konect with Credits</string>
+    <string name="no_schedule">Presently you are not having any schedule please Schedule in Calender</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="place_details">
+        <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="my_celebs">Followers</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">
+        <u>Login?</u>
+    </string>
+    <string name="also_signup">Also Sign In</string>
+    <string name="konect_with">Konect with</string>
+    <string name="konect_with_celeb">Konect with Celeb</string>
+    <string name="new_user">New User</string>
+    <string name="signup_underline">Sign Up ?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="done">Done</string>
+    <string name="my_prefrences">My Preferences</string>
+    <string name="history">My History</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="myprofilesc">My Profile</string>
+    <string name="location">Location</string>
+    <string name="dob">Birthday</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="quickpost">Quick Content</string>
+    <string name="submit">Submit</string>
+    <string name="proceedlogin">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="help">Help</string>
+    <string name="about_us">About Us</string>
+    <string name="selected_celeb_profile">Celeb Profile</string>
+
+    <!--<string name="playtime"><u>It's playtime!</u>.</string>-->
+    <!--<string name="playtime"><u>underline</u>.</string>-->
+
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.
+    </string>
+    <string name="settings">Settings</string>
+    <string name="call_availability_time">Your Call Schedule on Monday,\n15-02-2018, at 10.00 am.\n Duration :15 Min.
+    </string>
+    //videocall hosting server
+    <string name="host">18.217.102.209</string>
+    <string name="port">3000</string>
+
+    <string name="logout">Logout</string>
+    <string name="changepassword">Change Password</string>
+
+    <string name="pleasewaitt">Please wait while we connect</string>
+
+
+    <string name="step">Step</string>
+    <string name="konect">Konect With Celebrity</string>
+
+    <string name="currentcredits">Current Credits</string>
+
+
+    <string name="viewall">View All</string>
+
+    <string name="offline">Offline</string>
+    <string name="title">Title</string>
+    <string name="something">Share Something Interesting ..!</string>
+    <string name="title_activity_media_post">MediaPostActivity</string>
+
+    <string name="quick_content">Quick Content</string>
+    <string name="media_content">Media Content</string>
+
+
+    <string name="nowonline">Now Online</string>
+    <string name="trendingactress">Trending</string>
+    <string name="editor_celeb">Editor\'s Choice</string>
+    <string name="recomended_celeb">Recommended</string>
+
+    <string name="hidepost">Hide this post</string>
+    <string name="reportpost">Report post</string>
+
+    <!---->
+
+    <string name="hiddenpost">Hidden post</string>
+    <string name="hideyoupost">You have hide this post.</string>
+    <string name="undostr">Undo</string>
+
+
+    <string name="Auditions">Auditions
+        <sup>
+            <small>
+                <font color="red">New</font>
+            </small>
+        </sup>
+        "
+    </string>
+
+    <string name="premium_content">Premium Content</string>
+    <string name="title_activity_my_cart">MyCart</string>
+
+
+    <string name="trendingcricket">Trending Cricket Stars</string>
+    <string name="promotedactress">Recommended</string>
+
+
+    <string name="audio_call">Audio Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="set_time">Service Timing</string>
+    <string name="set_credit">Service Charges</string>
+    <string name="min_time">Minimum Call Duration</string>
+    <string name="break_time">Break Time</string>
+    <string name="save">Save</string>
+    <string name="proceed">Proceed</string>
+    <string name="from_date">Date</string>
+    <string name="to_date">Date</string>
+    <string name="time">Time</string>
+    <string name="live_time">Live Status</string>
+
+    <string name="product_type">T-Shirt</string>
+    <string name="product_brand">Zara</string>
+    <string name="size">Size :</string>
+    <string name="qty">Qty :</string>
+
+    <string name="order">Order</string>
+    <string name="order_date">Order Date :</string>
+    <string name="order_total">Order Total :</string>
+    <string name="order_code">Order # :</string>
+    <string name="product_details">Product Details</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="delivery_estimate">Delivery Estimate : 18 Mar 2018 by 8.00 P.M</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="address_details">1250, Road No:62, Hyderabad, Telangana.</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="item_cost">Item Cost :</string>
+    <string name="postage_packing">Postage and Packing :</string>
+    <string name="duration">Duration :</string>
+
+
+    <string name="quickcontent">Quick Content</string>
+    <string name="newposter">New Poster in Coffee Louge</string>
+    <string name="posted">Posted on 12-03-18</string>
+
+    <string name="settings_name" translatable="false">AppRTC Settings</string>
+    <string name="disconnect_call">Disconnect Call</string>
+    <string name="room_description">
+        Please enter a room name. Room names are shared with everyone, so think
+        of something unique and send it to a friend.
+    </string>
+    <string name="favorites">Favorites</string>
+    <string name="no_favorites">No favorites</string>
+    <string name="invalid_url_title">Invalid URL</string>
+    <string name="invalid_url_text">The URL or room name you entered resulted in an invalid URL: %1$s
+    </string>
+    <string name="channel_error_title">Connection error</string>
+    <string name="connecting_to">Connecting to: %1$s</string>
+    <string name="missing_url">FATAL ERROR: Missing URL to connect to.</string>
+    <string name="camera2_texture_only_error">Camera2 only supports capturing to texture. Either disable Camera2 or
+        enable capturing to texture in the options.
+    </string>
+    <string name="ok">OK</string>
+    <string name="switch_camera">Switch front/back camera</string>
+    <string name="capture_format_change_text">Slide to change capture format</string>
+    <string name="muted">Muted</string>
+    <string name="toggle_debug">Toggle debug view</string>
+    <string name="toggle_mic">Toggle microphone on/off</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_loopback">Loopback connection</string>
+    <string name="connect_description">Connect to the room</string>
+    <string name="add_favorite_description">Add favorite</string>
+    <string name="format_description">%1$dx%2$d @ %3$d fps</string>
+    <!-- Settings strings. -->
+    <string name="pref_room_key">room_preference</string>
+    <string name="pref_room_list_key">room_list_preference</string>
+
+    <string name="pref_videosettings_key">video_settings_key</string>
+    <string name="pref_videosettings_title">WebRTC video settings.</string>
+
+    <string name="pref_videocall_key">videocall_preference</string>
+    <string name="pref_videocall_title">Video call.</string>
+    <string name="pref_videocall_dlg">Enable video in a call.</string>
+    <string name="pref_videocall_default">true</string>
+
+    <string name="pref_screencapture_key">screencapture_preference</string>
+    <string name="pref_screencapture_title">Use screencapture.</string>
+    <string name="pref_screencapture_default">false</string>
+
+    <string name="pref_camera2_key">camera2_preference</string>
+    <string name="pref_camera2_title">Use Camera2.</string>
+    <string name="pref_camera2_default">true</string>
+    <string name="pref_camera2_not_supported">Not supported on this device.</string>
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video resolution.</string>
+    <string name="pref_resolution_dlg">Enter AppRTC local video resolution.</string>
+    <string name="pref_resolution_default">Default</string>
+
+    <string name="pref_fps_key">fps_preference</string>
+    <string name="pref_fps_title">Camera fps.</string>
+    <string name="pref_fps_dlg">Enter local camera fps.</string>
+    <string name="pref_fps_default">Default</string>
+
+    <string name="pref_capturequalityslider_key">capturequalityslider_preference</string>
+    <string name="pref_capturequalityslider_title">Capture quality slider.</string>
+    <string name="pref_capturequalityslider_dlg">Enable slider for changing capture quality.</string>
+    <string name="pref_capturequalityslider_default">false</string>
+
+    <string name="pref_maxvideobitrate_key">maxvideobitrate_preference</string>
+    <string name="pref_maxvideobitrate_title">Maximum video bitrate setting.</string>
+    <string name="pref_maxvideobitrate_dlg">Maximum video bitrate setting.</string>
+    <string name="pref_maxvideobitrate_default">Default</string>
+
+    <string name="pref_maxvideobitratevalue_key">maxvideobitratevalue_preference</string>
+    <string name="pref_maxvideobitratevalue_title">Video encoder maximum bitrate.</string>
+    <string name="pref_maxvideobitratevalue_dlg">Enter video encoder maximum bitrate in kbps.</string>
+    <string name="pref_maxvideobitratevalue_default">1700</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec.</string>
+    <string name="pref_videocodec_dlg">Select default video codec.</string>
+    <string name="pref_videocodec_default">H264</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default">true</string>
+
+    <string name="pref_capturetotexture_key">capturetotexture_preference</string>
+    <string name="pref_capturetotexture_title">Video capture to surface texture.</string>
+    <string name="pref_capturetotexture_dlg">Capture video to textures (if available).</string>
+    <string name="pref_capturetotexture_default">true</string>
+
+    <string name="pref_flexfec_key">flexfec_preference</string>
+    <string name="pref_flexfec_title">Codec-agnostic Flexible FEC.</string>
+    <string name="pref_flexfec_dlg">Enable FlexFEC.</string>
+    <string name="pref_flexfec_default">false</string>
+
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+
+    <string name="recent">Recent</string>
+    <string name="clrhistory">Clear History</string>
+
+    <string name="pref_audiosettings_key">audio_settings_key</string>
+    <string name="pref_audiosettings_title">WebRTC audio settings.</string>
+
+    <string name="pref_startaudiobitrate_key">startaudiobitrate_preference</string>
+    <string name="pref_startaudiobitrate_title">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_dlg">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_default">Default</string>
+
+    <string name="pref_startaudiobitratevalue_key">startaudiobitratevalue_preference</string>
+    <string name="pref_startaudiobitratevalue_title">Audio codec bitrate.</string>
+    <string name="pref_startaudiobitratevalue_dlg">Enter audio codec bitrate in kbps.</string>
+    <string name="pref_startaudiobitratevalue_default">32</string>
+
+    <string name="pref_audiocodec_key">audiocodec_preference</string>
+    <string name="pref_audiocodec_title">Default audio codec.</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec.</string>
+    <string name="pref_audiocodec_default">OPUS</string>
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+
+    <string name="pref_aecdump_key">aecdump_preference</string>
+    <string name="pref_aecdump_title">Create aecdump.</string>
+    <string name="pref_aecdump_dlg">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default">false</string>
+    <string name="pref_enable_save_input_audio_to_file_key">enable_key</string>
+    <string name="pref_enable_rtceventlog_key">enable_rtceventlog_key</string>
+    <string name="missing_permissions_try_again">The application is missing permissions. It might not work correctly. Do you want to try again?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pref_enable_save_input_audio_to_file_default">false</string>
+    <string name="pref_enable_rtceventlog_default">false</string>
+
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default">false</string>
+
+    <string name="pref_disable_built_in_aec_key">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title">Disable hardware AEC.</string>
+    <string name="pref_disable_built_in_aec_dlg">Disable hardware AEC.</string>
+    <string name="pref_disable_built_in_aec_default">false</string>
+    <string name="pref_built_in_aec_not_available">Hardware AEC is not available</string>
+
+    <string name="pref_disable_built_in_agc_key">disable_built_in_agc_preference</string>
+    <string name="pref_disable_built_in_agc_title">Disable hardware AGC.</string>
+    <string name="pref_disable_built_in_agc_dlg">Disable hardware AGC.</string>
+    <string name="pref_disable_built_in_agc_default">false</string>
+    <string name="pref_built_in_agc_not_available">Hardware AGC is not available</string>
+
+    <string name="pref_disable_built_in_ns_key">disable_built_in_ns_preference</string>
+    <string name="pref_disable_built_in_ns_title">Disable hardware NS.</string>
+    <string name="pref_disable_built_in_ns_dlg">Disable hardware NS.</string>
+    <string name="pref_disable_built_in_ns_default">false</string>
+    <string name="pref_built_in_ns_not_available">Hardware NS is not available</string>
+
+    <string name="pref_use_legacy_audio_device_key">use_legacy_audio_device_key</string>
+    <string name="pref_use_legacy_audio_device_default">false</string>
+    <string name="pref_enable_level_control_key">enable_level_control_preference</string>
+    <string name="pref_enable_level_control_title">Enable level control.</string>
+    <string name="pref_enable_level_control_default">false</string>
+
+    <string name="pref_disable_webrtc_agc_and_hpf_key">disable_webrtc_agc_and_hpf_preference</string>
+    <string name="pref_disable_webrtc_agc_and_hpf_title">Disable WebRTC AGC and HPF.</string>
+    <string name="pref_disable_webrtc_agc_default">false</string>
+
+    <string name="pref_speakerphone_key">speakerphone_preference</string>
+    <string name="pref_speakerphone_title">Speakerphone.</string>
+    <string name="pref_speakerphone_dlg">Speakerphone.</string>
+    <string name="pref_speakerphone_default">auto</string>
+
+    <string name="pref_datasettings_key">data_settings_key</string>
+    <string name="pref_datasettings_title">WebRTC data channel settings.</string>
+
+    <string name="pref_enable_datachannel_key">enable_datachannel_preference</string>
+    <string name="pref_enable_datachannel_title">Enable datachannel.</string>
+    <string name="pref_enable_datachannel_default" translatable="false">true</string>
+
+    <string name="pref_ordered_key">ordered_preference</string>
+    <string name="pref_ordered_title">Order messages.</string>
+    <string name="pref_ordered_default" translatable="false">true</string>
+
+    <string name="pref_data_protocol_key">Subprotocol</string>
+    <string name="pref_data_protocol_title">Subprotocol.</string>
+    <string name="pref_data_protocol_dlg">Enter subprotocol.</string>
+    <string name="pref_data_protocol_default" translatable="false"></string>
+
+    <string name="pref_negotiated_key">negotiated_preference</string>
+    <string name="pref_negotiated_title">Negotiated.</string>
+    <string name="pref_negotiated_default" translatable="false">false</string>
+
+    <string name="pref_max_retransmit_time_ms_key">max_retransmit_time_ms_preference</string>
+    <string name="pref_max_retransmit_time_ms_title">Max delay to retransmit.</string>
+    <string name="pref_max_retransmit_time_ms_dlg">Enter max delay to retransmit (in ms).</string>
+    <string name="pref_max_retransmit_time_ms_default" translatable="false">-1</string>
+
+    <string name="pref_max_retransmits_key">max_retransmits_preference</string>
+    <string name="pref_max_retransmits_title">Max attempts to retransmit.</string>
+    <string name="pref_max_retransmits_dlg">Enter max attempts to retransmit.</string>
+    <string name="pref_max_retransmits_default" translatable="false">-1</string>
+
+    <string name="pref_data_id_key">data_id_preference</string>
+    <string name="pref_data_id_title">Data id.</string>
+    <string name="pref_data_id_dlg">Enter data channel id.</string>
+    <string name="pref_data_id_default" translatable="false">-1</string>
+
+    <string name="pref_miscsettings_key">misc_settings_key</string>
+    <string name="pref_miscsettings_title">Miscellaneous settings.</string>
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://appr.tc</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+
+
+    <!--Credit Page-->
+    <string name="creditbalance">Credit Balance</string>
+    <string name="referalcredits">REFERRAL CREDITS:</string>
+    <string name="referandearn">Invite &#38; Earn</string>
+    <string name="share">Share</string>
+    <string name="copyy">Copy</string>
+    <string name="selectcurrency">Select Currency</string>
+
+    <string name="inrcurrency">INR</string>
+    <string name="auscurrency">AUD</string>
+    <string name="uscurrency">USD</string>
+
+
+    <string name="pref_tracing_key">tracing_preference</string>
+    <string name="pref_tracing_title">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    //Chenna
+    <string name="digicode">6 digit code</string>
+    <string name="verifiyyouraccount_details">Verify your account details</string>
+    <string name="resend">Resend</string>
+    <string name="rechargeNote">
+        <b>NOTE:</b>
+        Currently our payment processing is under testing your cards will not be charged for this
+        check-out. Enjoy your FREE Credits !!!>
+    </string>
+
+    <string name="paypalurl">"https://api.sandbox.paypal.com/v1/oauth2/token"</string>
+    <!--<string name="paypalurl">"https://api.paypal.com/v1/oauth2/token"</string>-->
+
+    <string name="auditions_know">TERMS &#38; CONDITIONS</string>
+
+    <string name="termscondition">Terms &#38; Condition</string>
+
+    <string name="termsandconditions">Terms and Conditions are a set of rules and guidelines that a user must agree to
+        in order to use your website or mobile app. It acts as a legal contract between you (the company) who has the
+        website or mobile app and the user who access your website and mobile app.
+
+        It’s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and
+        Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the
+        event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so
+        on.
+
+        Terms and Conditions are also known as Terms of Service or Terms of Use.
+
+        This type of legal agreement can be used for both your website and your mobile app. It’s not required (it’s not
+        recommended actually) to have separate Terms and Conditions agreements: one for your website and one for your
+        mobile app
+        Terms and Conditions are a set of rules and guidelines that a user must agree to in order to use your website or
+        mobile app. It acts as a legal contract between you (the company) who has the website or mobile app and the user
+        who access your website and mobile app.
+
+        It’s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and
+        Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the
+        event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so
+        on.
+
+        Terms and Conditions are also known as Terms of Service or Terms of Use.
+
+        This type of legal agreement can be used for both your website and your mobile app. It’s not required (it’s not
+        recommended actually) to have separate Terms and Conditions agreements: one for your website and one for your
+        mobile app
+    </string>
+
+
+    <string name="profile_audi">Profile</string>
+    <string name="professional_info">Professional info</string>
+    <string name="media_audi">Media</string>
+
+    <string name="uploadprofilepic">Upload Profile Pic</string>
+
+    <string name="saveandcontinue">Save &#38; Continue</string>
+    <string name="saveandskip">Save &#38; Skip to Continue later</string>
+
+    <string name="select_body">Select Body Type</string>
+    <string name="skintone">Skin Tone</string>
+    <string name="eyetone">Eye Tone</string>
+    <string name="eyecolor">Eye Color</string>
+    <string name="agegroup">Age Group</string>
+
+    <string name="bodyy">Body Type</string>
+    <string name="skintonee">Skin Tone</string>
+    <string name="eyetonee">Eye Tone</string>
+    <string name="eyecolorr">Eye Color</string>
+    <string name="agegroupp">Age Group</string>
+
+    <string name="schedulecall">Your schedule call initiated </string>
+
+
+    <string name="portifoliopics">
+        <b>Portfolio Pictures</b>
+    </string>
+    <string name="videosaudio">
+        <b>Videos</b>
+    </string>
+    <string name="showreal">
+        <b>Showreel/Previous Works</b>
+    </string>
+
+    <string name="nointernet">
+        <b>You seem to be offline</b>
+        \nCheck your internet settings.
+    </string>
+    <string name="needupdate">
+        <b>You need to update the applications to get new features</b>
+    </string>
+
+
+    <string name="mediadatad">
+        <b>Media Links</b>
+    </string>
+
+    <!--\n (Only JPG,JPEG,PNG,less than )-->
+    <string name="portifoliopicss">
+        <b>Upload your Portfolio Picture\'s</b>
+    </string>
+    <string name="videosaudios">
+        <b>Videos</b>
+    </string>
+    <string name="showreals">
+        <b>Upload any audition / any previously Recorded</b>
+    </string>
+    <string name="mediadatads">
+        <b>Please enter Url\'s if any</b>
+    </string>
+
+    <string name="instructions_audition">INSTRUCTIONS</string>
+
+    <string name="backtohome">Back To Home</string>
+
+
+    <string name="firstname">
+        <b>First Name</b>
+    </string>
+
+
+    <string name="header_language">Language Proficiency</string>
+    <!--<string name="sub_language_header_language">Select your Language/Proficiency\n (Please specify one item at a time)</string>-->
+    <string name="sub_language_header_language">Select your language and proficiencies</string>
+
+    <string name="header_talent">Talent / Skill</string>
+    <!--<string name="sub_specify_talent">Specify your Talent/Skill\n (Please specify one item at a time)</string>-->
+    <string name="sub_specify_talent">Please mention your talent/skills.</string>
+
+    <string name="header_roles">Previous Acting Experience\'s</string>
+    <!--<string name="sub_specify_roles">Select Each of Roles Played \n (Please add one item at a time)</string>-->
+    <string name="sub_specify_roles">Please mention the below details</string>
+
+    <string name="roles_intrested_in">Interested Roles\'s</string>
+    <!--<string name="sub_intrested_roles">Specify Your Roles that your interested to play \n (Please specify one item at a time)</string>-->
+    <string name="sub_intrested_roles">Please enter a role that your are interested to play</string>
+
+    <string name="hobbies_data">Hobbies</string>
+    <!--<string name="sub_hobbies">Specify Your Hobbies \n (Please specify one item at a time)</string>-->
+    <string name="sub_hobbies">Please enter Hobbies(if any)</string>
+
+
+    <string name="nodataavailable">No Data</string>
+
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.
+    </string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.
+    </string>
+    <!--<string name="title_activity_bottom_menu">BottomMenuActivity</string>-->
+    <string name="celebKonectt">CelebKonect</string>
+
+
+    <string name="title_feed">
+        <font size="10">Feeds</font>
+    </string>
+    <string name="text_back_to_top">Back to top</string>
+    <string name="title_celebrites">
+        <font size="10">Celebrities</font>
+    </string>
+    <string name="title_photos">
+        <font size="10">Photos</font>
+    </string>
+    <string name="title_notifications">
+        <font size="10">Notifications</font>
+    </string>
+    <string name="title_menu">
+        <font size="10">Menu</font>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="all_celeb">All Celebrities</string>
+    <string name="all_celeb_tab">All</string>
+    <string name="trending_celeb">Trending</string>
+
+
+    <string name="fannn">Fan</string>
+    <string name="fallow">Follow</string>
+    <string name="add_preference">Add Preference</string>
+    <string name="image">image</string>
+
+
+    <string name="text_login">Login</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_skip">Skip</string>
+    <string name="text_username">User Name</string>
+    <string name="text_phone_number">Mobile Phone</string>
+    <string name="text_user_name">User Name</string>
+    <string name="text_password">Password</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_terms">Terms</string>
+    <string name="text_Conditions">Conditions</string>
+    <string name="text_forgot_password">Forgot Password</string>
+    <string name="text_not_register">If not registered ?</string>
+    <string name="text_already_register">Already registered ?</string>
+    <string name="text_no_internet">Please check internet</string>
+    <string name="text_network_error">Network Error</string>
+    <string name="text_fill_fields">Please fill fields</string>
+    <string name="text_continue">Continue</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_sign_up_through_mobile">Sign up through mobile</string>
+    <string name="text_details_sign_up">Registration</string>
+    <string name="text_party">TRS</string>
+    <string name="text_party_full_name">Telangana Rashtra Samithi</string>
+    <string name="text_send_otp">Please enter 4 digit code sent to</string>
+    <string name="text_verification_code">Verification Code</string>
+    <string name="text_verify_your_mobile">Verify your mobile</string>
+    <string name="text_resend_otp">Resend Otp</string>
+    <string name="text_not_received_otp">If not received otp ?</string>
+    <string name="text_invalid_mobile_phone">Invalid phone number</string>
+
+
+    <!--//feed -->
+    <string name="text_suggestions">Suggestions</string>
+    <string name="text_view_more">View more</string>
+    <string name="text_follow">Follow</string>
+    <string name="text_unfollow">Unfollow</string>
+    <string name="text_like">Like</string>
+    <string name="text_comment">Comment</string>
+    <string name="text_likes">Likes</string>
+    <string name="text_comments">Comments</string>
+    <string name="text_share">Share</string>
+    <string name="text_add_comment_here">Add a comment... (Max 250 characters)</string>
+    <string name="text_add_caption">Add caption</string>
+    <string name="text_title">Add Title</string>
+    <string name="text_description">Add Description</string>
+    <string name="text_location">Location</string>
+    <string name="text_create_a_post_here">Create your story...</string>
+    <string name="text_media">Media</string>
+    <string name="text_add_more_media">Add Images / Videos</string>
+    <string name="text_updating_feed">Updating feed</string>
+    <string name="text_uploading_feed">Uploading feed</string>
+
+
+    <!--// bottom menu-->
+    <string name="text_home">Home</string>
+    <string name="text_leader">Leaders</string>
+    <string name="text_live">Live</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_menu">Menu</string>
+    <string name="text_search">Search</string>
+
+    <!--//  alert-->
+    <string name="text_yes">YES</string>
+    <string name="text_no">NO</string>
+
+    <!--// options -->
+    <string name="text_options">Options</string>
+
+    <!--//Audions-->
+    <string name="titleOfProduction">Title for Production *</string>
+    <string name="productionCompany">Production Company *</string>
+    <string name="productionPersonal">Production Personal</string>
+    <string name="skills">Skills</string>
+    <string name="productionDescription">Production Description (3000 Characters)</string>
+
+    <!--//AddRoles-->
+
+    <string name="roleName">Search by Role Type</string>
+    <string name="roleType">ROLE TYPE</string>
+    <string name="awardName">AWARD</string>
+    <string name="educationLevel">Education Level</string>
+    <string name="yearOfPassout">Year of Passout</string>
+    <string name="awardYear">YEAR</string>
+    <string name="roleDesciption">Role Description</string>
+    <string name="hairColor">Hair Color</string>
+    <string name="manager_empty_list">No requests to show</string>
+    <string name="submanager_empty_list">No managers added</string>
+    <string name="roleDesc">Role Description</string>
+
+    <string name="switchtoceleb_alert">Are you sure you want to switch into</string>
+
+    <string name="donthavepermission">Sorry!! \nYou don\'t have permissions \nto perform this action.</string>
+
+
+    <string name="ownprofile_access">Switching Own Profile</string>
+
+    <string name="transition_dialog">transition_dialog</string>
+
+    <string name="transition_dialog_Text">transition_dialog_text</string>
+
+    <string name="d_o_b">D.O.B</string>
+
+    <string name="pleasefan">Please become a FAN to</string>
+
+    <string name="tomakecall">to make the call</string>
+
+    <string name="charge_credits">credit(s) per minute charges apply for this call</string>
+
+
+    <!--Switch Account To Celebrity-->
+    <string name="no_feed_per">You don\'t have permission to create Feed</string>
+    <string name="no_feed_per_edit">You don\'t have permission to Edit Feed</string>
+    <string name="no_feed_per_del">You don\'t have permission to delete Feed</string>
+    <string name="no_edit_per">You don\'t have permission to Edit Profile</string>
+    <string name="no_create_per">You don\'t have permission to Create Slot</string>
+    <string name="no_media_add">You don\'t have permission to Add Media</string>
+
+    <!--<string name="pleasefan">You cannot make\n a call to celebrity without \nbecoming a fan</string>-->
+    <string name="no_service_per">You don\'t have service permissions</string>
+    <string name="no_fanfollow_per">You don\'t have permission to fan or follow the celebrity</string>
+
+    <string name="no_feed_pers">Sorry!! \nYou don\'t have permissions \nto perform this action.</string>
+
+
+    <string name="no_preference_per">You dont have permission to update preference</string>
+    <string name="driving_license">Driving license</string>
+    <string name="passport">Passport</string>
+    <string name="for_manager">Manager</string>
+    <string name="for_ass_manager">Sub Manager</string>
+    <string name="no_permission_access">Sorry!! \nYou don\'t have permissions \nto perform this action.</string>
+
+    <string name="uploading_media_please_wait">Uploading media, please wait...</string>
+
+    <string name="no_permission_access_profile">Sorry!! \nYou don\'t have permissions \nto perform this action.</string>
+
+    <string name="invalid_url">Invalid URL</string>
+
+    <string name="no_contracts_avail">No Contract for this Celebrity</string>
+    <string name="you_following_status">You\'re already a follower</string>
+    <string name="time_expired">Time Expired</string>
+    <string name="fan_status_message">You are now a fan of</string>
+    <string name="unfan_status_message">You have successfully unsubscribed to</string>
+    <string name="follow_status_message">You are now a follower of</string>
+    <string name="unfollow_status_message">You have stopped following</string>
+    <string name="auditionPermissionMessage">"Sorry!! You don't have permissions to perform this action."</string>
+    <string name="textview_underline">This is an <u>underline</u>.
+    </string>
+
+
+    <string name="not_intrest">"Not interested"</string>
+    <string name="celebrude">"Celebrity rude/unprofessional"</string>
+
+    <string name="poornetwork">Poor Network</string>
+
+
+    <string name="highnetwork">High Network</string>
+    <string name="poornetworkfound">Poor network found please \n connect with proper network</string>
+
+
+    <string name="no_internet_connect">No active internet \n connection!!</string>
+    <string name="no_internet_connection">No active internet connection!!</string>
+
+    <string name="choosereason">"Choose a reason"</string>
+
+    <string name="call_completed">"Call Completed"</string>
+    <string name="member_not_polite">"Member not polite"</string>
+    <string name="member_abusive">"Member abusive"</string>
+
+    <string name="memberrude">"Member rude"</string>
+    <string name="previous_block">"Previously blocked / reported"</string>
+    <string name="bad_network">"Bad Network"</string>
+    <string name="otherr">"Other"</string>
+
+    <string name="selectreason">Select Reason</string>
+
+    <string name="blocked_mistake">Blocked by mistake</string>
+    <string name="blocked_other">Other</string>
+    <string name="harassment">Harassment</string>
+    <string name="impolite">Impolite</string>
+    <string name="abusive">Abusive</string>
+
+    <string name="sensitive">Sensitive/Irrelevant</string>
+
+    <string name="call_label">"Call"</string>
+    <string name="search_enter_data_empty">Please enter data to search</string>
+    <string name="sorry_no_data_found">Sorry !!! No data found.</string>
+    <string name="teams_amp_conditions_and_data_policy">By Clicking Next, You Agree to Our Terms &amp; Conditions and Data Policy</string>
+
+
+    <string name="forgotTitle">Enter "<b>"phone number"</b>" or "<b>"email"</b>" or "<b>"username"</b>" \n associated to your account</string>
+
+    <string name="all_our_payments_are_processed_in_the_inr_currency_ngst_18_will_be_added_to_the_selected_package_as_nper_the_regulations">All our payments are processed in the INR currency.  \nGST 18% will be added to the selected package as  \nper the regulations</string>
+
+    <string name="stories">Stories</string>
+
+    <string name="addstory">Add a Story</string>
+
+    <string name="selection_limiter_pix">Can\'t select more than %d items.</string>
+    <string name="message_to_drag_up">Drag images up for gallery</string>
+    <string name="pix_ok">OK</string>
+
+
+    <string name="pix_tap_to_select">Tap photo to select</string>
+
+
+    <!--Un Fan Remark Disconnect-->
+    <string name="pix_selected">Selected</string>
+    <string name="pix_recent">Recent</string>
+
+
+    <string name="pix_last_month">Last Month</string>
+
+    <string name="pix_last_week">Last Week</string>
+
+
+    <string name="cannot_click_image_pix">Can not add more than %s images</string>
+
+    <string-array name="gender">
+        <!--<item>Gender</item>-->
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+
+    </string-array>
+
+    <string-array name="roletype">
+        <item>Role Type</item>
+    </string-array>
+
+
+    <!--Celeb Call Remark Disconnect-->
+    <string-array name="Talent">
+        <item>Talent</item>
+    </string-array>
+    <string-array name="SubTalent">
+        <item>Talented In</item>
+    </string-array>
+    <string-array name="ethnicity">
+        <item>Ethnicity</item>
+    </string-array>
+    <string-array name="bodytype">
+        <item>Body Type</item>
+        <item>Black</item>
+        <item>Brown</item>
+    </string-array>
+    <string-array name="hairColor">
+        <item>Hair Color</item>
+        <item>Light Blonde</item>
+        <item>Medium Blonde</item>
+        <item>Dark Blonde</item>
+
+    </string-array>
+    <string-array name="mediRequired">
+        <item>Media required</item>
+    </string-array>
+    <string-array name="eyeColor">
+        <item>Eye Color</item>
+        <item>Black</item>
+        <item>Brown</item>
+    </string-array>
+    <string-array name="auditionsTitleArray">
+        <!--<item>Select Title*</item>-->
+        <item>Title*</item>
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Mrs</item>
+        <item>Dr</item>
+        <!--<item>None</item>-->
+    </string-array>
+
+
+    <string-array name="auditionsGenderArray">
+        <item>Gender*</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="bodyTypeArray">
+        <item>Select Body type</item>
+    </string-array>
+    <string-array name="ageRangeArray">
+        <item>Select age range</item>
+        <item>0-1</item>
+        <item>2-5</item>
+        <item>6-10</item>
+        <item>11-15</item>
+        <item>16-20</item>
+        <item>21-30</item>
+        <item>31-40</item>
+        <item>41-50</item>
+        <item>51-60</item>
+        <item>61+</item>
+    </string-array>
+    <string-array name="skinToneArray">
+        <item>Select Skin tone</item>
+    </string-array>
+    <string-array name="hairColorArray">
+        <item>Select Hair color</item>
+    </string-array>
+    <string-array name="eyeColorArray">
+        <item>Select Eye color</item>
+    </string-array>
+    <string-array name="catageory">
+        <item>Select Sub Producution *</item>
+    </string-array>
+
+
+    <string-array name="languagesArray">
+        <item>Select Languages</item>
+        <item>Telugu</item>
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+    <string-array name="ethnicityArray">
+        <item>Select Ethnicity</item>
+    </string-array>
+    <string-array name="productionTypeArray">
+        <item>Select Production Type *</item>
+    </string-array>
+    <string-array name="projectNameArray">
+        <item>Select Project Name</item>
+    </string-array>
+
+
+    <!--All Celebritis tabs-->
+
+    <string-array name="yearOfCompletionArray">
+        <item>Please select year of passout</item>
+    </string-array>
+
+    <string-array name="yearOfAward">
+        <item>Please select award year</item>
+    </string-array>
+    <string-array name="yearsArrayWorkfor">
+        <item>YY</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>10+</item>
+
+    </string-array>
+
+
+    <!--Create Stories-->
+    <string-array name="yearsArray">
+        <item>Select Year</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="monthsArrayWorkfor">
+        <item>MM</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+
+    <!--Story Lib constants-->
+
+    <string-array name="monthsArray">
+        <item>Select Month</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="monthsArrayNew">
+        <item>Select Month</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="monthsArrayLatest">
+        <item>Select Month la</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="roleTypeArray">
+        <item>Role Type</item>
+    </string-array>
+    <string-array name="awardType">
+        <item>Please select award</item>
+    </string-array>
+    <string-array name="educationLevel">
+        <item>Please select education</item>
+    </string-array>
+    <string-array name="yearsExperience">
+        <item>Select Experience</item>
+        <item>0</item>yearsExperience
+        <item>&lt;1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>10+</item>
+    </string-array>
+    <string-array name="blockedReasons">
+        <item>Harassment</item>
+        <item>Impolite</item>
+        <item>Abusive</item>
+        <item>Sensitive/Irrelevent</item>
+    </string-array>
+    <string-array name="allCelebsTabs">
+        <item>All</item>
+        <item>Trending</item>
+        <item>Editor\'s Choice</item>
+        <item>Recommended</item>
+    </string-array>
+
+    <string name="trimming_progress">Trimming your video...</string>
+    <string name="Desc">Welcome!!! \n this example will tell that yor that how we can trim video, like whatsapp use when we share video to anyone.</string>
+    <string name="Get_Started">Get Started</string>
+
+    <dimen name="fab_elevation">5dp</dimen>
+    <dimen name="fab_rise">3dp</dimen>
+    <integer name="fab_duration">100</integer>
+
+    <string name="Ok">Ok</string>
+    <string name="short_seconds">sec</string>
+    <string name="megabyte">MB</string>
+    <string name="kilobyte">KB</string>
+
+
+    <string name="label_select_video">Select Video</string>
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="toast_cannot_retrieve_selected_video">Cannot retrieve selected video</string>
+    <string name="video_saved_at">Video saves at : $%1s</string>
+    <string name="title_description">A library with UI and mechanisms to trim local videos on Android applications</string>
+    <string name="description_app">
+            # Provide UI to preview and select start/end of the video to trim
+        \n\n# Thumbnails with frame by frame overview of the video
+        \n\n# Works with gallery and recorded videos
+    </string>
+
+    <string name="activity_title_main">Filters</string>
+    <string name="filters">FILTERS</string>
+    <string name="edit">EDIT</string>
+
+    <string name="lbl_brightness">BRIGHTNESS</string>
+    <string name="lbl_contrast">CONTRAST</string>
+    <string name="lbl_saturation">SATURATION</string>
+    <string name="tab_filters">FILTERS</string>
+    <string name="tab_edit">EDIT</string>
+
+
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="filter_normal">Normal</string>
+    <string name="action_save">SAVE</string>
+    <string name="action_open">OPEN</string>
+
+    <string name="imagepicker_action_ok">OK</string>
+    <string name="imagepicker_action_done">DONE</string>
+
+    <string name="imagepicker_title_folder">Albums</string>
+    <string name="imagepicker_title_image">Galleries</string>
+
+    <string name="imagepicker_text_gif">GIF</string>
+    <string name="imagepicker_photo_count_multiple">%d images</string>
+    <string name="imagepicker_photo_count_single">%d image</string>
+
+    <string name="imagepicker_error_no_camera">No camera found</string>
+    <string name="imagepicker_error_create_image_file">Failed to create image file</string>
+    <string name="imagepicker_error_images_not_exist">Images not exist</string>
+    <string name="imagepicker_error_unknown">Unknown error</string>
+
+    <string name="imagepicker_msg_no_images">No images</string>
+    <string name="imagepicker_msg_no_write_external_storage_permission">To continue, please give access to your photos</string>
+    <string name="imagepicker_msg_no_camera_permission">To continue, please give access to take pictures</string>
+    <string name="imagepicker_msg_no_write_external_storage_camera_permission">To continue, please give access to take pictures</string>
+    <string name="imagepicker_msg_limit_images">Limit selection to %d images</string>
+    <string name="text_filter_normal">Original image</string>
+    <string name="text_filter_meifu">Natural beauty</string>
+    <string name="text_filter_meishi">Food</string>
+    <string name="text_filter_amaro">fleeting time</string>
+    <string name="text_filter_rise">Sen</string>
+    <string name="text_filter_hudson">film</string>
+    <string name="text_filter_xproii">Trendy</string>
+    <string name="text_filter_sierra">Fresh</string>
+    <string name="text_filter_lomofi">personality</string>
+    <string name="text_filter_early_bird">Yishang</string>
+    <string name="text_filter_sutro">modern</string>
+    <string name="text_filter_toaster">Beautiful</string>
+    <string name="text_filter_brannan">Elegant</string>
+    <string name="text_filter_inkwell">Black and white</string>
+    <string name="text_filter_walden">Japanese</string>
+    <string name="text_filter_hefe">Yogurt</string>
+    <string name="text_filter_valencia">elegant</string>
+    <string name="text_filter_nashville">Retro</string>
+    <string name="text_filter_in1977">Innovation</string>
+    <string name="text_filter_lord_kelvin">Memories</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="search">Search</string>
+</resources>

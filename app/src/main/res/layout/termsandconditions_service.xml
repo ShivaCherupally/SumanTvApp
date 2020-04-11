@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toolbarheader"
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/rectangel_box_grey_border">
+
+        <TextView
+            android:id="@+id/knowtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginTop="@dimen/five"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/five"
+            android:background="@color/emptycolor"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/auditions_know"
+            android:textColor="@color/skyblue" />
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_close_circular_button_symbol"/>
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_above="@+id/proceedLayout"
+            android:layout_below="@+id/knowtitle"
+            android:padding="@dimen/eigth">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contentdatatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appcolor" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/button_accept"
+            android:layout_below="@+id/scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/submit_rectangle"
+            android:text="Accept"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/proceedLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/five"
+            android:layout_marginBottom="@dimen/five"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/five"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/iagreecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:buttonTint="@color/black"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="I Agree" />
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/ten"
+                android:background="@drawable/submit_rectangle_grey"
+                android:fontFamily="@font/open_sans_regular"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

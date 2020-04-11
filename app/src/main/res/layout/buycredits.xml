@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_300sdp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        card_view:cardCornerRadius="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/contenttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="Looks like you don't have enough credits."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            >
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvAddCredits"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/skyblueNew"
+                android:layout_height="wrap_content"
+                android:text="Add Credits"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

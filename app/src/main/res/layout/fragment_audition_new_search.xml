@@ -1,0 +1,640 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:layout_gravity="top"
+                                                     android:orientation="vertical"
+                                                     >
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_8sdp"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/roleType" />
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spinnerRoleType"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_26sdp"-->
+            <!--android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--android:layout_marginRight="@dimen/_5sdp"-->
+            <!--android:entries="@array/roletype">-->
+            <!--</Spinner>-->
+
+
+            <RelativeLayout
+                    android:id="@+id/relativeRoleType"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp">
+                <ImageView
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_drop_down_blue"/>
+                <Spinner
+                        android:background="@null"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/hash_text_color"
+                        android:textColor="@color/skyblueNew"
+                        android:textSize="15sp"
+                        android:id="@+id/spinnerRoleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_26sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:entries="@array/roletype"
+
+                />
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/light_gray" />
+
+            <Button
+                    android:id="@+id/btSearch"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="right"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:drawableStart="@drawable/ic_search"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/corner_radius_blue"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:text="Advanced Search"
+                        android:textStyle="bold"
+                        android:textColor="@color/skyblueNew"
+                        android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                        android:id="@+id/ivApplyFilter"
+                        android:layout_width="30dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_filter_list_black_24dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llAdvandedSearch"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llGender"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="GENDER" />
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinGender"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:drawableTint="@color/skyblueNew"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:background="@null"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:theme="@style/ThemeOverlay.AppCompat.Light"-->
+                    <!--android:entries="@array/gender"-->
+                    <!--android:textSize="15sp" />-->
+
+
+
+                    <RelativeLayout
+                            android:id="@+id/relativeGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp">
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:id="@+id/spinGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTint="@color/skyblueNew"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@null"
+                                android:textColor="@color/normal_text_color"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:entries="@array/gender"
+                                android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llAgeRange"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:text="AGE RANGE" />
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinAgeRange"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:drawableTint="@color/hash_text_color"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:entries="@array/bodytype"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                    <RelativeLayout
+                            android:id="@+id/relativeAgeRange"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:background="@null"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:id="@+id/spinAgeRange"
+                                android:layout_width="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/hash_text_color"
+                                android:textColor="@color/normal_text_color"
+                                android:entries="@array/bodytype"
+                                android:textSize="15sp"
+                        />
+                    </RelativeLayout>
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llBodyType"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:orientation="vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="BODY TYPE" />
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinBodyType"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:drawableTint="@color/hash_text_color"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:entries="@array/bodytype"-->
+                    <!--android:textSize="15sp" />-->
+
+                    <RelativeLayout
+                            android:id="@+id/relativeBodyType"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:background="@null"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:id="@+id/spinBodyType"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/hash_text_color"
+                                android:textColor="@color/normal_text_color"
+                                android:entries="@array/bodytype"
+                                android:textSize="15sp"
+
+                        />
+                    </RelativeLayout>
+
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:id="@+id/llHairColor"
+                        android:orientation="vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:text="HAIR COLOR" />
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinHairColor"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:entries="@array/eyeColor"-->
+                    <!--android:drawableTint="@color/hash_text_color"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                    <RelativeLayout
+                            android:id="@+id/relativeHairColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:background="@null"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:id="@+id/spinHairColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_centerHorizontal="true"
+                                android:drawablePadding="5dp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:entries="@array/eyeColor"
+                                android:drawableTint="@color/hash_text_color"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+
+                        />
+                    </RelativeLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llEyeColor"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:orientation="vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:text="EYE COLOR" />
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinEyeColor"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:entries="@array/eyeColor"-->
+                    <!--android:drawableTint="@color/hash_text_color"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:textSize="15sp" />-->
+
+
+
+                    <RelativeLayout
+                            android:id="@+id/relativeEyeColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:background="@null"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:id="@+id/spinEyeColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_centerHorizontal="true"
+                                android:drawablePadding="5dp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:entries="@array/eyeColor"
+                                android:drawableTint="@color/hash_text_color"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+
+                        />
+                    </RelativeLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llEthenicity"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="ETHENICITY" />
+
+
+
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinEthnicity"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:entries="@array/ethnicity"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:drawableTint="@color/hash_text_color"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:textSize="16sp" />-->
+
+
+                    <RelativeLayout
+                            android:id="@+id/relativeEthenicity"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:background="@null"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:id="@+id/spinEthnicity"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_centerHorizontal="true"
+                                android:entries="@array/ethnicity"
+                                android:drawablePadding="5dp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:drawableTint="@color/hash_text_color"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="16sp"
+
+                        />
+                    </RelativeLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llHeight"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:orientation="vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:text="HEIGHT" />
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinHeight"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_26sdp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:entries="@array/eyeColor"-->
+                    <!--android:drawableTint="@color/hash_text_color"-->
+                    <!--android:textColor="@color/normal_text_color"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                    <RelativeLayout
+                            android:id="@+id/relativeHeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                        <ImageView
+                                android:layout_width="@dimen/_23sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_drop_down_blue"/>
+                        <Spinner
+                                android:background="@null"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                android:id="@+id/spinHeight"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_centerHorizontal="true"
+                                android:drawablePadding="5dp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:entries="@array/eyeColor"
+                                android:drawableTint="@color/hash_text_color"
+                                android:textColor="@color/normal_text_color"
+                                android:textSize="15sp"
+
+                        />
+                    </RelativeLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/light_gray" />
+
+                </LinearLayout>
+
+
+                <Button
+                        android:id="@+id/btnFilterSearch"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/corner_radius_blue"
+                        android:text="Advanced Search"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_gravity="right"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

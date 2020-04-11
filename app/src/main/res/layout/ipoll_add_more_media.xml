@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:elevation="1dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/llAddMoreMedia"
+        android:backgroundTint="@color/light_gray"
+        android:background="@drawable/green_border"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:id="@+id/tvAddMoreMedia"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="@string/text_add_more_media"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llDayParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_divider_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:id="@+id/tvDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/any_view_click"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginRight="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_circle_pleace_holder" />
+
+            <ImageView
+                android:id="@+id/ivSelection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_selecticons" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            tools:ignore="NestedWeights">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/color222"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message will show here"
+                android:textColor="@color/color222"
+                android:textSize="@dimen/_12sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00 AM"
+                android:textColor="@color/color_aaa"
+                android:textSize="@dimen/_10sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewBold
+                android:id="@+id/tvBookNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Book Now"
+                android:textColor="@color/skyblueNew"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/image"
+            android:padding="9dp"
+            android:rotation="90"
+            android:src="@drawable/more_options"
+            android:tint="@color/color_aaa" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_71sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:background="@color/managerBackgroundColor" />
+</LinearLayout>

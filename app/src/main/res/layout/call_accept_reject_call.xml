@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/incomingimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblueNew"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/callingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CALLING..."
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/caller_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="Call from Fan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_ongoing_call_icon" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/incominglogo1"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:src="@drawable/celebicon_iogo"
+                app:civ_border_color="@color/skyblueNew"
+                app:civ_border_width="@dimen/_2sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/rejectCall"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_55sdp"
+                android:layout_marginRight="30dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_audioreject" />
+
+
+            <ImageView
+                android:id="@+id/liftCallIcon"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/accepticon"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/incominglogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/transparent_black_9"
+            android:gravity="center"
+            android:text="Disclaimer : Please ensure to have better and stable connectivity for quality service."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

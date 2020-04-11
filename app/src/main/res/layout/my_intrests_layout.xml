@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/ivIntrest"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_add_audition"
+            />
+
+        <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:id="@+id/tvIntrestName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Music"
+            android:fontFamily="@font/sf_semibold"
+            android:textColor="@color/preference_text_color"
+            android:textSize="@dimen/_13sdp"
+            android:layout_toRightOf="@+id/imageviewSelected"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:indeterminateTint="@color/skyblueNew"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

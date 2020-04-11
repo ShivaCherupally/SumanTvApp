@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/list_item">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center_vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblListHeader"
+        android:text=""
+        android:textStyle="normal"
+        android:gravity="center|left"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_10sdp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/list_item_text_subscriptions"
+        style="?android:attr/preferenceStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lblListHeader"
+        android:layout_marginLeft="45dp"
+        android:text=""
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/_10sdp"
+        android:paddingBottom="3dp"
+        />
+
+</RelativeLayout>
+</LinearLayout>

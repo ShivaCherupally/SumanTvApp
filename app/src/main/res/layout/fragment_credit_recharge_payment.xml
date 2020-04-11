@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/managerBackgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/parentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/managerBackgroundColor"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:background="@drawable/ic_header_back" />
+
+            <TextView
+                android:id="@+id/tbTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/backicon"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Payment Option "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/LLMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/creditsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Credits Price"
+                            android:textAllCaps="false"
+                            android:textColor="@color/appcolor"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <info.dkapp.flow.fontstyles.TextViewRegular
+                            android:id="@+id/creditsamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textAllCaps="false"
+                            android:textColor="@color/appcolor"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+
+                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            android:id="@+id/gstpercentageLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="GST "
+                            android:textAllCaps="false"
+                            android:textColor="@color/appcolor"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <info.dkapp.flow.fontstyles.TextViewRegular
+                            android:id="@+id/gstamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="@color/appcolor"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/managerBackgroundColor" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Total Payable"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:id="@+id/totalamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:id="@+id/prefererLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Preferred Payments"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:id="@+id/walletlabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Wallet"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:id="@+id/paytmSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_paytm" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Paytm"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:id="@+id/paytmCheck"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        android:src="@drawable/manager_settings_checkbox_unselected" />
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:id="@+id/creditCardLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Credit/Debit Card/Net Banking"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/instamojoSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_instamojo" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Instamojo"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:id="@+id/instamojoCheck"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        android:src="@drawable/manager_settings_checkbox_unselected" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/payPalSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_paypal_icon" />
+
+                    <info.dkapp.flow.fontstyles.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Paypal"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:id="@+id/paypalCheck"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_15sdp"
+                        android:src="@drawable/manager_settings_checkbox_unselected" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_40sdp">
+
+            <info.dkapp.flow.fontstyles.ButtonMedium
+                android:id="@+id/button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/submit_rectangle"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <info.dkapp.flow.fontstyles.ButtonMedium
+                android:id="@+id/paynowbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit_rectangle"
+                android:backgroundTint="@color/grey"
+                android:clickable="false"
+                android:text="Pay Now"
+                android:textColor="@color/gray"
+
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pleasewaitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/progress_bar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/progressbar_gif"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait... "
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/instamojoWebLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/webViewInstamojo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/progressinstamojo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/progressbar_gif"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

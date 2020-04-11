@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     tools:context="info.dkapp.flow.bottommenu.activity.BottomMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_back"
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/header_strip"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                app:titleTextColor="@color/white">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="@dimen/ten"-->
+            <!--android:layout_marginLeft="@dimen/fifteen"-->
+            <!--android:src="@drawable/full_circle_icon"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:elevation="7dp">
+
+                <Button
+                    android:id="@+id/navigationIcon"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@drawable/hamburgericon"
+                    android:backgroundTint="@color/pn_blue_dark"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+
+            <include layout="@layout/content_main" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

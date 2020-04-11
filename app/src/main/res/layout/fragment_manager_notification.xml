@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.dkapp.flow.managermodule.fragments.ManagerNotificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycerview_managerNotifications"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/textViewGoToManagerSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+</RelativeLayout>

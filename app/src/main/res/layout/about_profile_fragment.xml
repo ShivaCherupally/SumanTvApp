@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_margin="@dimen/five"
+                                                     android:background="@drawable/rectangle_white_bg"
+                                                     android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/fifteen"
+                android:text="About :"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/professiontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginTop="@dimen/fifteen"
+                android:text=""
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_10sdp" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@null"
+                android:text="More Info"
+                android:textColor="@color/skyblueNew" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

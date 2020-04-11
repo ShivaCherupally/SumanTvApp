@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/fifteen">
+
+        <TextView
+            android:id="@+id/avail_creditstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/ten"
+            android:text="Avail Bal : "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/celeImage"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/appiconandroid"
+                app:civ_border_color="@color/skyblue"
+                app:civ_border_width="@dimen/_1sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/celebchargetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="Charge"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="wish to spend with celebrity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/approx_credits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="20C"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/totalcreditvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Are you sure you want to connect"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/totaltimevalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/nobtn"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/submit_rectangle"
+                        android:text="No"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/yesbtn"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:background="@drawable/submit_rectangle"
+                        android:text="Yes"
+                        android:textColor="@color/white" />
+
+
+                    <!--<Button
+                        android:id="@+id/nocancel"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_heighst="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:background="@drawable/shape"
+                        android:text="No,Cancel"
+                        tools:ignore="ButtonStyle" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/termsconditiontxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/termscondition"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/fifteen" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

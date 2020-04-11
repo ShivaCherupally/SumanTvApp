@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_done"
+        android:icon="@drawable/ic_cancel"
+        android:title="Done"
+        app:iconTint="@color/color222"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_update"
+        android:title="UPDATE"
+        app:showAsAction="always|withText" />
+</menu>

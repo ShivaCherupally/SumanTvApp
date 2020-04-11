@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rLCreateStore"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_3sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <FrameLayout
+                android:id="@+id/circleFramelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addImage"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_profile_circle_pleace_holder"
+                    android:transitionName="popup_profile_image_trans"
+                    app:civ_border_color="@color/light_gray"
+                    app:civ_border_width="0.5dp" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_below="@+id/circleFramelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_minus13sdp"
+                android:src="@drawable/ic_add_a_stories"
+                android:transitionName="popup_profile_image_trans" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circleFramelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/addstory"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

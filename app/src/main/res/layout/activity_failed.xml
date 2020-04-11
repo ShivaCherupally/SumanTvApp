@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/toolbarheader"
+            layout="@layout/toolbar_back_icon"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarheader"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_50sdp">
+
+        <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+            <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/ic_placeholder"/>
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/fail_96"/>
+
+        </RelativeLayout>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Check-out Failed for"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/order_failure_credits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"/>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/failure_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Your Payment has been declined by your bank as the card details you have entered are incorrect. Please try again with correct card details"
+                android:textAlignment="center"
+                android:textColor="@color/lite_gray"
+                android:textSize="@dimen/_9sdp"
+                android:visibility="visible"/>
+
+        <View
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/skyblue"/>
+
+        <TextView
+                android:id="@+id/order_failure_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="02:10 PM, 12 Apr 2018"
+                android:textColor="@color/lite_gray"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="gone"/>
+
+        <TextView
+                android:id="@+id/order_failure_ref_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Order Id -"
+                android:textColor="@color/lite_gray"
+                android:textSize="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/failure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/submit_rectangle"
+                android:text="Try Again"
+                android:textColor="@color/white"/>
+
+        <Button
+                android:id="@+id/backc_to_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@null"
+                android:text="Back to Home"
+                android:textColor="@color/skyblue"
+                android:textSize="@dimen/_12sdp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

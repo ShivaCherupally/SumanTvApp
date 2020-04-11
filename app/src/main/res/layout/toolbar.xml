@@ -1,0 +1,80 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?android:actionBarSize"
+                                   android:background="@color/white"
+                                   android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                   app:contentInsetLeft="10dp"
+                                   app:contentInsetStart="10dp"
+                                   app:contentInsetStartWithNavigation="10dp"
+                                   app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                                   app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/subiconsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_3sdp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/mSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:theme="@style/WallSearchView"
+                app:defaultQueryHint="Search.." />
+
+
+            <RelativeLayout
+                android:id="@+id/subbdatalayout"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:actionBarSize"
+                android:layout_toRightOf="@+id/mSearch">
+
+
+                <ImageView
+                    android:id="@+id/ibListGridView"
+                    android:layout_width="40dp"
+                    android:layout_height="?android:actionBarSize"
+                    android:contentDescription="@string/image"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_grid_view"
+                    android:tint="@color/skyblueNew"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btPreferenceSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="UPDATE"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/swicthAccountIconOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/subbdatalayout"
+                android:background="@drawable/ic_my_orders"
+                android:backgroundTint="@color/skyblueNew"
+                android:rotation="25"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

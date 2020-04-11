@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_weight="0.7">
+
+        <info.dkapp.flow.fontstyles.ButtonMedium
+            android:id="@+id/bt_celebrity_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/submit_rectangle_for_settings"
+            android:text="Celebrity Settings" />
+
+        <info.dkapp.flow.fontstyles.ButtonMedium
+            android:id="@+id/bt_manager_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/skyblueNew"
+            android:layout_weight="1"
+            android:textSize="@dimen/_12sdp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/submit_rectangle_for_settings_empty"
+            android:text="Manager Settings" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/managerBackgroundColor"/>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="9.3" />
+
+</LinearLayout>

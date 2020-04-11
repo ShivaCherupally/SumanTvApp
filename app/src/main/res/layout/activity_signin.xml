@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/logoIconSignLayout"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    app:srcCompat="@drawable/logo" />
+
+                <info.dkapp.flow.fontstyles.EditTextMediumWithoutEmoji
+                    android:id="@+id/email_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/newviewbackground"
+                    android:hint="Email / Phone number"
+                    android:imeOptions="actionNext"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@color/newviewbackground"
+                    android:gravity="center_vertical">
+
+                    <info.dkapp.flow.fontstyles.EditTextMediumWithoutEmoji
+                        android:id="@+id/password_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_weight="1"
+                        android:background="@color/newviewbackground"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/login_text_color"
+                        android:textColorHint="@color/login_text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewpasswordhide"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/ic_eye_hide"
+                        android:padding="@dimen/_7sdp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/remember_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:buttonTint="@color/skyblueNew" />
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Remember Me"
+                        android:textColor="@color/login_text_color"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/forgot_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right|end"
+                            android:text="Forgot Password?"
+                            android:textColor="@color/login_text_color"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/loginbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@color/skyblueNew"
+                    android:text="Log In"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/newviewbackground" />
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:gravity="center"
+                        android:text="Other"
+                        android:textColor="@color/login_text_color"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/newviewbackground" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facebook_icon"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        app:srcCompat="@drawable/ic_facebook" />
+
+                    <ImageView
+                        android:id="@+id/google_plus_icon"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/ic_google" />
+
+                    <ImageView
+                        android:id="@+id/twitter_icon"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_twitter" />
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvBackToMultiple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="Back"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/five"
+                        android:layout_marginBottom="@dimen/five"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <CheckBox
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:gravity="center"
+                                tools:ignore="MissingPrefix" />
+
+                            <info.dkapp.flow.utils.MyTextview
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/remember_me"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="MissingPrefix" />
+
+
+                        </LinearLayout>
+
+                        <info.dkapp.flow.utils.MyTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_marginRight="@dimen/ten"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/forgotpassword"
+                            android:textColor="@color/skyblue"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="@dimen/ten"
+                        android:background="@drawable/submit_rectangle"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:text="@string/signin"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fifteen" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <info.dkapp.flow.utils.MyTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:text="@string/new_user"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <info.dkapp.flow.utils.MyTextview
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/five"
+                            android:layout_marginTop="@dimen/five"
+                            android:layout_marginBottom="@dimen/five"
+                            android:text="@string/signup_underline"
+                            android:textColor="@color/skyblue"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white" />
+
+                        <info.dkapp.flow.utils.MyTextview
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/konect_with"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten"
+                        android:layout_marginBottom="@dimen/ten"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/social_media_facebook_icon"
+                            tools:ignore="MissingPrefix" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            app:srcCompat="@drawable/social_media_google_plus" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/social_media_twitter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="@dimen/ten"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="@dimen/ten"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/fifteen"
+                                android:layout_marginRight="@dimen/ten"
+                                android:drawablePadding="@dimen/ten"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/fifteen" />
+
+                            <!--<RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_below="@+id/btn_sign_in"
+                                android:visibility="gone">
+
+                                <com.facebook.login.widget.LoginButton
+                                    android:id="@+id/loginButton"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_gravity="center_vertical|center"
+                                    android:layout_marginTop="@dimen/ten"
+                                    android:visibility="gone" />
+                            </RelativeLayout>-->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <!--   <Button
+                                   android:id="@+id/twitter_loginbtn"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center_vertical"
+                                   android:layout_marginLeft="@dimen/fifteen"
+                                   android:layout_marginRight="@dimen/ten"
+                                   android:background="@drawable/twitter_signup"
+                                   android:drawablePadding="@dimen/ten"
+                                   android:textAllCaps="false"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/fifteen" />-->
+
+                            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                                android:id="@+id/twitter_login2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/fifteen"
+                                android:layout_marginRight="@dimen/ten"
+                                android:background="#55ADEE"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <Button
+                                android:id="@+id/googleplus_loginbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/fifteen"
+                                android:layout_marginRight="@dimen/ten"
+
+                                android:drawablePadding="@dimen/ten" />
+
+                            <com.google.android.gms.common.SignInButton
+                                android:id="@+id/sign_in_button12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <!--  <Button
+                            android:id="@+id/signupemailbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/fifteen"
+                            android:layout_marginRight="@dimen/ten"
+                            android:background="@drawable/email" />-->
+
+                            <Button
+                                android:id="@+id/signupemailbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/fifteen"
+                                android:layout_marginRight="@dimen/ten"
+                                android:drawablePadding="@dimen/ten"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/fifteen" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/five"
+                            android:layout_marginBottom="@dimen/five"
+                            android:text="@string/already_register"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMultipleAccounts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_30sdp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_80sdp"
+                        android:layout_marginRight="@dimen/_60sdp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/image"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/logo" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Continue as"
+                        android:textColor="@color/color222" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMultipleAccounts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:id="@+id/tvManageAccounts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Manage accounts"
+                        android:textColor="@color/color222" />
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:id="@+id/tvNewAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Log in with another account"
+                        android:textColor="@color/color222" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMultipleAccountLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/ivMAProfileImage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_profile_square_pleace_holder" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvMAUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="User name"
+                    android:textColor="@color/color222"
+                    android:textSize="@dimen/_10sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:text="Please enter your password"
+                    android:textColor="@color/color222"
+                    android:textSize="@dimen/_10sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvMAEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:text=""
+                    android:textColor="@color/color222"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/newviewbackground"
+                    android:gravity="center_vertical">
+
+                    <info.dkapp.flow.fontstyles.EditTextMediumWithoutEmoji
+                        android:id="@+id/etMAPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_weight="1"
+                        android:background="@color/newviewbackground"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/login_text_color"
+                        android:textColorHint="@color/login_text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivMAViewPassword"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/ic_eye_hide"
+                        android:padding="@dimen/_7sdp" />
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/btnMALogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/skyblueNew"
+                    android:text="Log In"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvMABackToMultiple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:text="Back"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvMAForgetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llManageAccounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:contentDescription="@string/image"
+                        android:padding="@dimen/_5sdp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_header_back" />
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Manage Accounts"
+                        android:textColor="@color/color222"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvManageAccounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/signLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:background="#7395C9"
+        android:gravity="center">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/newuser_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+</LinearLayout>

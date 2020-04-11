@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00 min"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"/>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Duration"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/light_gray"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_calender"
+                    android:drawableTint="@color/color777"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="00 JAN 0000"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_time"
+                    android:drawableTint="@color/color777"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="00:00 AM - 00:00 PM"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_eee"/>
+</LinearLayout>

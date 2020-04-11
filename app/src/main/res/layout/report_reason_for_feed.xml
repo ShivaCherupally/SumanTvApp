@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <!--<info.celebkonnect.flow.fontstyles.TextViewSemiBold
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="7dp"
+        android:text="User name"
+        android:textColor="@color/color222"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivRadioBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/image"
+        android:tint="@color/skyblueNew"
+        app:srcCompat="@drawable/ic_radio_btn_off" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp" />
+
+</LinearLayout>

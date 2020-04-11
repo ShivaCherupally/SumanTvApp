@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:text="@string/recomended_celeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:textSize="@dimen/_16sdp"
+            />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecommended"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_55sdp"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

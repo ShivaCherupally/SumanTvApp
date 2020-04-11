@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/llParent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/managerBackgroundColor"
+              android:orientation="horizontal">
+
+    <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:id="@+id/sProfile"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+            android:background="@color/app_background_color"
+            android:src="@drawable/ic_profile_square_pleace_holder"/>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/textViewManagerProf"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:textColor="@color/approved"
+                android:paddingLeft="@dimen/_7sdp"
+                android:textSize="@dimen/_9sdp"
+                android:text=""/>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/sName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:paddingLeft="@dimen/_7sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text=""/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+            <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/button_viewProfile"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="View Profile"
+                    android:textColor="@color/skyblueNew"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_height="match_parent"/>
+
+            <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/button_accept"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:text="Accept"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="@color/skyblueNew"
+                    android:layout_height="match_parent"/>
+            <!--<Button-->
+            <!--android:id="@+id/button_reject"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="@dimen/_10sdp"-->
+            <!--android:text="Reject"-->
+            <!--style="@null"-->
+            <!--android:textColor="@color/skyblueNew"-->
+            <!--android:layout_height="match_parent" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

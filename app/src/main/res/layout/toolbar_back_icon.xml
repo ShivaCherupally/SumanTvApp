@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbar_back_main"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="@color/skyblueNew"
+                                   app:popupTheme="@style/AppTheme.PopupOverlay"
+                                   app:subtitleTextColor="@color/white"
+                                   app:titleTextAppearance="@style/Toolbar.TitleText"
+                                   app:titleTextColor="@color/skyblueNew">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_centerVertical="true"
+            android:id="@+id/toolbar_back_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center_vertical"
+            android:text="CelebKonect"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backbtntollbar"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginRight="@dimen/ten"
+
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:foregroundGravity="left" />
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/relative_credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/title_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp">
+
+                    <ImageView
+                        android:id="@+id/help_icon"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/help_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        android:gravity="center_vertical"
+                        android:text="CelebKonect"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:foregroundGravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/fifteen"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/toolbar_creditslayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:gravity="center|right"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/toolbar_credits_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Button
+                            android:id="@+id/toolbar_edit_profile_add_credits"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@drawable/submit_rectangle"
+                            android:backgroundTint="@color/skyblue"
+                            android:text="Add"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/slot_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:gravity="end|center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView_slots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_22sdp"
+                            android:text="My Slots"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <Button
+                            android:id="@+id/addBtn"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/plusblueicon" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/allCelebBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/ten"
+                    android:background="@drawable/submit_rectangle"
+                    android:paddingLeft="@dimen/five"
+                    android:paddingRight="@dimen/five"
+                    android:text="All Celebrities"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/five"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/notificationicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/fifteen"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_notifications_none_black_24dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/usersmallimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:src="@drawable/celebicon_iogo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

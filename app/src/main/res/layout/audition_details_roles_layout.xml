@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:orientation="vertical"
+            >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content">
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:id="@+id/tvRoleCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/skyblueNew"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"/>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:text="Role Name"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@+id/tvRoleCount"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:textColor="@color/approved"
+                        android:textSize="@dimen/_10sdp"/>
+            </RelativeLayout>
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Role Type"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/llGender"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Gender"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/llAgeRange"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Age Range"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleAgeRange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/llHeightRange"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Height Range"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleHeightRange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/llEthnicity"
+                android:orientation="horizontal">
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Ethnicity"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleEthnicity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Media"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleMedia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llHairColor"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Hair Color"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleHair"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llBodyType"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Body Type"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleBody"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llEyeColor"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Eye Color"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleEye"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:text="Role Description"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/approved"
+                    android:textSize="@dimen/_10sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvRoleDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="N/A"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onlineLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:id="@+id/nowonlinetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/nowonline"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/viewallonlinetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:padding="@dimen/_8sdp"
+            android:text="View all"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOnline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_5sdp" />
+
+</LinearLayout>

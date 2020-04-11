@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/trLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                android:id="@+id/tTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:tint="@color/black"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <LinearLayout
+                android:id="@+id/tLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/appiconandroid"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/seachLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iVAddBack"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/ic_header_back" />
+                    <ImageView
+                        android:id="@+id/iVLogoText"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/ic_celebkonect_logo" />
+
+                    <info.dkapp.flow.fontstyles.EditTextMedium
+                        android:id="@+id/eSearchBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_55sdp"
+                        android:backgroundTint="@color/emptycolor"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/white"
+                        android:focusable="false"
+                        android:hint="Search"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/rlRecentChat"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone">
+
+                            <ImageButton
+                                android:id="@+id/ibRecentChat"
+                                style="@style/ibToolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/image"
+                                android:tint="@color/skyblueNew"
+                                app:srcCompat="@drawable/ic_recent_chat" />
+
+                            <TextView
+                                android:id="@+id/tvChatCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/circle_background"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_6sdp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlNoticationLayout"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/rlRecentChat">
+
+                            <ImageView
+                                android:id="@+id/iNotifications"
+                                style="@style/ibToolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/image"
+                                android:tint="@color/black"
+                                app:srcCompat="@drawable/ic_notifications" />
+
+                            <ImageView
+                                android:id="@+id/badgeCounttxt"
+
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="top|center_horizontal"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:background="@drawable/circle_background"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:id="@+id/swicthAccountIconFeed"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/rlNoticationLayout"
+                            android:contentDescription="@string/image"
+                            android:padding="@dimen/_3sdp"
+                            android:tint="@color/black"
+                            app:srcCompat="@drawable/ic_my_orders" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:searchIcon="@drawable/ic_search_white"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/iVStartChat"
+                android:theme="@style/WallSearchView"
+                android:visibility="gone"
+                app:defaultQueryHint="Search.." />
+
+            <ImageView
+                android:id="@+id/iVStartChat"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/black"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_add_new_chat" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/callMinimizeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_27sdp"
+            android:background="@color/green"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvcallCelebName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="On Call"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvcallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text="10:11"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/bottom_sub_layout"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

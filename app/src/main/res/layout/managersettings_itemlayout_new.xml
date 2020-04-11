@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <info.dkapp.flow.fontstyles.TextViewMedium
+        android:id="@+id/textView_itemName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="@dimen/_11sdp" />
+
+    <ImageView
+        android:id="@+id/imageView_view"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:checked="true"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/manager_settings_checkbox_unselected" />
+    <ImageView
+        android:id="@+id/imageView_edit"
+        android:layout_width="@dimen/_40sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/manager_settings_checkbox_unselected"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/imageView_full"
+        android:layout_width="@dimen/_40sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/manager_settings_checkbox_unselected"
+        android:layout_height="match_parent" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView_itempermissions"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="No data"
+        android:textColor="@color/letusknow"
+        android:textSize="@dimen/_9sdp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/managerBackgroundColor"/>
+
+    <TextView
+        android:cursorVisible="true"
+        android:id="@+id/textView_itempermissions_celeb"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toLeftOf="@+id/imageView_Check"
+        android:layout_toStartOf="@+id/textView_itempermissions"
+        android:gravity="center|left"
+        android:padding="@dimen/_5sdp"
+        android:text="No data"
+        android:textColor="@color/letusknow"
+        android:textSize="@dimen/_9sdp"
+        android:visibility="gone" />
+
+
+    <ImageView
+
+        android:id="@+id/imageView_Check"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
+        android:tint="@color/skyblueNew"
+        android:visibility="gone" />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/textView_itemName"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/divider" />
+</LinearLayout>

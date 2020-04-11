@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        android:id="@+id/list_item_child"
+        android:gravity="center_vertical">
+    <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+            android:layout_toRightOf="@+id/view"
+            android:id="@+id/imageviewSelected"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+    <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:id="@+id/lblListItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageviewSelected"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:text="Uday"
+            android:textColor="@color/preference_text_color"
+            android:textSize="@dimen/_13sdp"/>
+    <CheckBox
+            android:buttonTint="@color/skyblueNew"
+            android:id="@+id/cbItem"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

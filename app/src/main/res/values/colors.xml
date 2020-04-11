@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b68b1</color>
+    <color name="colorPrimaryDark">#3b68b1</color>
+    <color name="colorAccent">#3b68b1</color>
+    <!--<color name="colorAccent">#aa000000</color>-->
+    <color name="login_text_color">#8b8b8b</color>
+    <!--Manager Screens Colors-->
+    <color name="managerBackgroundColor">#f4f3f3</color>
+    <color name="editTexttint_color">#dbdbdb</color>
+
+    <color name="audio_icon_color">#14bb83</color>
+    <color name="video_icon_color">#ffab40</color>
+    <color name="chat_icon_color">#2785ff</color>
+
+    <color name="imagepicker_white">#FFFFFF</color>
+    <color name="imagepicker_black">#000000</color>
+    <color name="imagepicker_black_alpha_50">#80000000</color>
+    <color name="imagepicker_grey">#9E9E9E</color>
+    <color name="imagepicker_dark">#323232</color>
+    <color name="imagepicker_teal">#009688</color>
+    <color name="imagepicker_teal_dark">#00796B</color>
+    <color name="imagepicker_pink">#E91E63</color>
+    <color name="profile_audio_color">#4451ff</color>
+    <color name="profile_video_color">#4451ff</color>
+    <color name="profile_chat_color">#4451ff</color>
+
+    <!--New Screens Views Background Color -->
+    <color name="newviewbackground">#eeeeee</color>
+    <color name="textHintColorNewDesign">#8b8b8b</color>
+    <color name="grey">#e6e3e3</color>
+    <color name="preference_grey">#ebebeb</color>
+    <color name="recommended_grey">#f2f0f0</color>
+    <color name="gray_background">#f4f2f3</color>
+    <color name="preference_text_color">#474747</color>
+    <color name="menu_text_color">#505050</color>
+    <color name="black">#000000</color>
+    <color name="black_150">#96000000</color>
+    <color name="feed_text_color">#262627</color>
+    <color name="approved">#959595</color>
+    <color name="black_light">#393838</color>
+    <color name="lite_gray">#90959B</color>
+    <color name="dark_gray">#a3a3a3</color>
+    <color name="homescreenbackground">#d7d7d7</color>
+    <color name="spinner_color">#2e2e2e</color>
+    <color name="emptycolor">#00000000</color>
+    <color name="splashbgcolor">#FB868C</color>
+    <color name="edittext_tint_color">#b9b9b9</color>
+    <color name="spinner_arrow_color">#a2a2a2</color>
+
+    <color name="lite_grey">#e2e2e2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="audition_background">#f4f3f3</color>
+    <color name="notification_background">#eff1f4</color>
+    <color name="redbackg">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="user_book">#ff8080</color>
+
+    <color name="letusknow">#ACACAC</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3b68b1</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="bg_sc">#e9e9e9</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="dot_light_screen5">#e4b5fc</color>
+
+    <color name="notification_count_color">#ee5061</color>
+
+
+
+    <color name="grey_heading_color">#959595</color>
+
+
+
+    <array name="array_dot_active">
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/skyblue</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+        <item>@color/appcolor</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/sky_blue</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/appcolor</item>
+    </array>
+
+    <color name="ligthwhite">#f2f2f2</color>
+
+    <color name="yellowligth">#ffff66</color>
+
+    <color name="navagation_view_background">#BDBDBD</color>
+    <color name="navagation_view_selected_item">#757575</color>
+    <color name="tablayout_color">#E0E0E0</color>
+    <color name="transparent_thick">#A0000000</color>
+    <color name="transparent_light">#11000000</color>
+    <color name="toolbar_color">#373536</color>
+    <color name="nav_selection_color">#989898</color>
+    <color name="nav_header_color">#363636</color>
+    <color name="nav_drawer_color">#adadad</color>
+    <color name="transparent_black_9">#aa000000</color>
+    <color name="transparent_black_color">#b3b3b3</color>
+    <color name="statusbar_color">#0b1029</color>
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+    <color name="line_color">#383A41</color>
+    <color name="lite_gray_txt">#BDBDC0</color>
+    <color name="expandable_child_bg">#141B42</color>
+    <color name="skyblue">#3b68b1</color>
+
+    <color name="skyblueNew">#3b68b1</color>
+    <color name="skyblueNew_150">#963b68b1</color>
+    <color name="skyblue_dark">#18355B</color>
+    <color name="bgcolor">#22242C</color>
+    <color name="gray">#7A7B80</color>
+    <color name="feed_des_color">#ababac</color>
+    <color name="auditions_color">#464646</color>
+    <color name="gray_icon">#f3f2f3</color>
+    <color name="lightgrey">#E4E4E4</color>
+    <color name="bg_color_book_now">#c5c6c6</color>
+    <color name="list_group_title">#808080</color>
+    <color name="appcolor">#3c3c3c</color>
+
+    <color name="pn_blue_dark">#ff187998</color>
+    <color name="green_color">#00ff00</color>
+    <color name="green_switch_color">#38da62</color>
+    <color name="green_switch_light_color">#7aec97</color>
+    <color name="dark_grey">#565656</color>
+
+
+    <color name="pn_blue">#3b68b1</color>
+    <color name="recycler_bg_color">#E9E7E4</color>
+    <color name="sharecolor">#3b68b1</color>
+
+    <color name="common_titlecolor">#2b2c30</color>
+    <color name="color">#3b68b1</color>
+
+    <color name="pn_red">#d02129</color>
+    <color name="green">#ff1ce322</color>
+    <color name="divider">#bebebe</color>
+
+    <color name="quizbackground">#1A2B40</color>
+    <color name="quizToolbar">#2b486c</color>
+    <color name="quizbuttoncolor">#3b68b1</color>
+
+    //Movie Quiz
+    <color name="quiestion">#505050</color>
+    <color name="quizAnswer">#82929a</color>
+
+    <color name="status_color_red">#FF304B</color>
+
+    <color name="green_circle">#00cc66</color>
+
+    <color name="green_process">#00cc66</color>
+
+    <color name="disable_blue">#92d0ed</color>
+
+    <color name="tabcolor">#d6e2e7</color>
+
+    <color name="cart_color">#ECF7E9</color>
+
+
+    <color name="mainColorPrimary">#C4172C</color>
+    <color name="mainColorPrimaryDark">#C4172C</color>
+    <color name="colorPrimaryOther">#f74895</color>
+
+    <color name="app_background_color">#f7f7f7</color>
+    <color name="badge_color">#FF5757</color>
+    <color name="love_color">#3b68b1</color>
+    <color name="bold_text_color">#B91A30</color>
+    <color name="little_gray_background">#8CECECEF</color>
+
+
+    <color name="app_hash_pool">#ECECEF</color>
+    <color name="app_snack_bar_true">#3b68b1</color>
+    <color name="light_new_gray">#C45C5C5C</color>
+    <color name="app_transparent">#00000000</color>
+    <color name="map_transparent">#4D7A7A7A</color>
+    <color name="other_transparent">#55000000</color>
+
+    <color name="albtint">#757575</color>
+
+    <color name="splash_background">#C4172C</color>
+    <color name="icon_color">#525252</color>
+    <color name="badge_color1">#ff6c5f</color>
+
+    <color name="text_color">#404040</color>
+    <color name="normal_text_color">#5c5c5c</color>
+    <color name="hash_text_color">#999999</color>
+    <color name="light_gray">#C4c4c4</color>
+    <color name="invite_fried_box">#f5f5f5</color>
+
+    <color name="konect_color">#4DAD51</color>
+
+    <color name="status_bar">#f7f7f7</color>
+
+    <color name="light_gray_sb">#dfdddd</color>
+
+    <color name="light_auditions">#f4f3f3</color>
+
+
+    <color name="light_primary">#848FD6</color>
+    <color name="green_checkout">#5FB343</color>
+    <color name="light_orange">#fe5722</color>
+
+    <color name="sky_blue">#275CDC</color>
+
+
+    <color name="new_light">#A9B8D4</color>
+    <color name="black_brown">#2C2827</color>
+
+
+    <color name="white50">#32ffffff</color>
+    <color name="white100">#64ffffff</color>
+    <color name="white150">#96ffffff</color>
+    <color name="white200">#c8ffffff</color>
+    <color name="whiteLight">#f2f2f2</color>
+    <color name="whiteGrey">#fafafa</color>
+    <color name="red">#ff0004</color>
+    <color name="black150">#96000000</color>
+    <color name="black50">#32000000</color>
+    <color name="color111">#111111</color>
+    <color name="color222">#222222</color>
+    <color name="color333">#333333</color>
+    <color name="color444">#444444</color>
+    <color name="color555">#555555</color>
+    <color name="color666">#666666</color>
+    <color name="color777">#777777</color>
+    <color name="color888">#888888</color>
+    <color name="color999">#999999</color>
+    <color name="color_aaa">#aaaaaa</color>
+    <color name="color_bbb">#bbbbbb</color>
+    <color name="color_ccc">#cccccc</color>
+    <color name="color_ddd">#dddddd</color>
+    <color name="color_eee">#eeeeee</color>
+    <color name="chat_blue_bg">#bdd6fb</color>
+    <color name="chat_blue_bg_center">#60bdd6fb</color>
+    <color name="theme150">#963b68b1</color>
+    <color name="blue_light_notify_bg">#D9E6FD</color>
+
+    <color name="fab_background_color">#3b68b1</color>
+    <color name="dialog_background_color">#fafafa</color>
+    <color name="dialog_background_scrim">#99323232</color>
+
+    <color name="transparent20">#14000000</color>
+    <color name="transparent30">#1e000000</color>
+    <color name="transparent40">#28000000</color>
+    <color name="transparent50">#32000000</color>
+    <color name="transparent100">#64000000</color>
+    <color name="transparent150">#96000000</color>
+    <color name="transparent200">#c8000000</color>
+    <color name="auditionBlue">#3b68b1</color>
+    <color name="auditionBlueDark">#1b749c</color>
+
+    <color name="color_option_menu">#FF3990</color>
+    <color name="filter_label_normal">#8A8889</color>
+    <color name="filter_label_selected">#221F20</color>
+
+    <color name="gray_medium_tranparent">#75171d29</color>
+
+
+    <color name="konnect_green">#4DAD51</color>
+
+    <!--Menu items colors-->
+    <color name="menu_bg_credit">#209af0</color>
+    <color name="menu_bg_preferences">#34BB99</color>
+    <color name="menu_bg_celebrities">#fa5a20</color>
+
+    <color name="menu_bg_transaction">#ccdc34</color>
+    <color name="menu_bg_fan_follows">#4dae51</color>
+    <color name="menu_bg_invite_friend">#00c0d2</color>
+
+    <color name="menu_bg_auditions">#6937aa</color>
+    <color name="menu_bg_settings">#2097f5</color>
+    <color name="menu_bg_content">#04b7d5</color>
+
+    <color name="menu_bg_calender">#ccdb44</color>
+    <color name="menu_bg_search_manager">#627f8f</color>
+    <color name="menu_bg_clients">#8dceff</color>
+
+    <color name="menu_bg_about">#ff9700</color>
+    <color name="menu_bg_help">#49b24d</color>
+
+    <color name="background_video_color">#2f3031</color>
+    <color name="background_progress_color">#6C6D6D</color>
+    <color name="progress_color">@color/colorPrimary</color>
+    <color name="line_color_seekbar">#0DC143</color>
+    <color name="shadow_color">#FF000000</color>
+    <color name="line_button">#565758</color>
+    <color name="black_translucent">#50000000</color>
+
+    <color name="audio_icon_color_150">#14bb83</color>
+    <color name="video_icon_color_150">#ffab40</color>
+
+</resources>

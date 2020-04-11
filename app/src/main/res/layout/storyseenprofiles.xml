@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/removeimg"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/profileDataLayout"
+            android:background="@drawable/ic_close"
+            android:backgroundTint="@color/lite_gray_txt"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/profileRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sProfile"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_circle_pleace_holder"
+                app:civ_border_color="@color/light_gray"
+                app:civ_border_width="@dimen/_1sdp" />
+
+            <ImageView
+                android:id="@+id/ivOnline"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_celebrity_likes_icon"
+                android:visibility="gone" />
+
+            <!--   <ImageView
+                   android:id="@+id/isCelebflag"
+                   android:layout_width="10dp"
+                   android:layout_height="10dp"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentBottom="true"
+                   android:contentDescription="@string/image"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/ic_celebrity_likes_icon"
+                   android:visibility="visible" />-->
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/profileDataLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/profileRL"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/sName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/sProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/lite_gray_txt"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/seentime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lite_gray_txt"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

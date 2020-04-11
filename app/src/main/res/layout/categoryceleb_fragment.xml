@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/rlParent"
+                android:background="@color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <include
+                layout="@layout/common_recyclerview_page"/>
+
+        <Button
+                android:id="@+id/addpreferenceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rectangle_skyblue"
+                android:padding="@dimen/ten"
+                android:text="@string/add_preference"
+                android:textColor="@color/appcolor"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llNoResultsFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_no_results_to_show"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image"/>
+
+        <info.dkapp.flow.fontstyles.TextViewBold
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/imgError"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="Sorry"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+
+        <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tvError"
+                android:gravity="center"
+                android:text="Drag to Retry"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_12sdp"/>
+
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayout"
+        android:background="@color/managerBackgroundColor"
+        android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:background="@color/managerBackgroundColor"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/iLNotioficationSettings"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+            <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <!--<ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#6937aa"
+                            android:tint="@color/white"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_notifications_settings"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>-->
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:backgroundTint="#6937aa"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_notifications_settings"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Applications Notifications"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Configure app notifications"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/dark_gray"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/iLManagerSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#04b7d5"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_manager_settings"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Manager Settings"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Configure manager settings"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/dark_gray"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/iLCharitySettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#f06eaa"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_business_charity"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Business Charity"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Configure charity settings"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/dark_gray"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/iLFeedSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#627f8f"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_feeds"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Feeds"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Configure feed display settings"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/dark_gray"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/iLActivityLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#116ac1"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_activity_log"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Activity Log"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/iLSearchHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#34bb99"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_search_history"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Pause Search History"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                        <Switch
+                                android:id="@+id/swSearchHistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:checked="false"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:theme="@style/SCBSwitch"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/iLNightMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#8e8e93"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_night_mode"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Night Mode"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                        <Switch
+                                android:id="@+id/swNightMode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:checked="false"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:theme="@style/SCBSwitch"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/iLChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:backgroundTint="#4dae51"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_change_password"
+                            android:layout_gravity="center"
+                            android:background="@drawable/submit_rectangle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Change Password"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/iLLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/ic_log_out"
+                            android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Logout"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/managerBackgroundColor"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

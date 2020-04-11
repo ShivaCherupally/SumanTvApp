@@ -1,0 +1,236 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:rsb="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/coordinator_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.auditionSearch.fragment.AuditionsFilterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imgClose"
+                    android:text="Apply Filters"
+                    android:textColor="@color/skyblueNew"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="Reset"
+                    android:textColor="@color/skyblueNew" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/hash_text_color"
+                    android:textColor="@color/normal_text_color"
+                    android:entries="@array/gender"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:backgroundTint="@color/skyblueNew"
+                        android:text="Age Range: "
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tvMinAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@null"
+                        android:backgroundTint="@color/skyblueNew"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@null"
+                        android:backgroundTint="@color/skyblueNew"
+                        android:text=" - "
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMaxAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@null"
+                        android:backgroundTint="@color/skyblueNew"
+                        android:text="100"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <org.florescu.android.rangeseekbar.RangeSeekBar
+                        android:id="@+id/rangeSeekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        rsb:absoluteMaxValue="100"
+                        rsb:absoluteMinValue="1" />
+
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerHairColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:entries="@array/hairColor">
+
+                </Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/light_gray" />
+
+                <Spinner
+                    android:id="@+id/spinBodyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/hash_text_color"
+                    android:textColor="@color/normal_text_color"
+                    android:entries="@array/bodytype"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray" />
+
+                <Spinner
+                    android:id="@+id/spinEyeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:entries="@array/eyeColor"
+                    android:drawableTint="@color/hash_text_color"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray" />
+
+                <Spinner
+                    android:id="@+id/spinEthnicity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/ethnicity"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/hash_text_color"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray" />
+
+                <Button
+                    android:id="@+id/btnFilterSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@color/skyblueNew"
+                    android:fontFamily="@string/also_signup"
+                    android:text="Set Filters"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

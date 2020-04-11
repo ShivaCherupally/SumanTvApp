@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style parent="@android:style/Theme.Dialog" name="AlertDialogCustom">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/skyblue</item>
+        <item name="android:button">@color/white</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="MainAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/appcolor</item>
+        <item name="background">@drawable/submit_rectangle</item>
+        <item name="backgroundTint">#ffaa00</item>
+
+    </style>
+
+    <style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/gray</item>
+        <item name="backgroundTint">@color/gray</item>
+    </style>
+
+    <style name="AppTheme_Bottom" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/skyblueNew</item>
+        <item name="colorPrimaryDark">@color/lightgrey</item>
+        <item name="colorAccent">@color/skyblueNew</item>
+        <item name="android:statusBarColor">@color/dark_grey</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

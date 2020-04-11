@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewTalent"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appiconandroid" />
+
+        <TextView
+            android:id="@+id/tvNameTalent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/firstname" />
+
+        <TextView
+            android:id="@+id/tvPermissionTalent"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvAccessTalent"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_suspendManager"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/button_skybluebackground"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:text="Suspend"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+</LinearLayout>

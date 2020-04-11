@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/white"
+              android:orientation="vertical"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:text="@string/editor_celeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:textSize="@dimen/_16sdp"
+            />
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/recyclerViewEditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:layout_gravity="left"
+            />
+</LinearLayout>

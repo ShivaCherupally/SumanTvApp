@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/three"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/slottime"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/three"
+        android:textAlignment="center"
+        android:background="@drawable/rectangle_background"
+        android:text="07.20 A.M"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@color/black" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_talent_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:backgroundTint="@color/skyblueNew"
+        android:drawablePadding="13dp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="MY INTERESTS"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:textColor="@color/nav_selection_color"
+        android:textSize="13dp" />
+
+    <CheckBox
+        android:id="@+id/cb_industry"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_40sdp"/>
+</RelativeLayout>

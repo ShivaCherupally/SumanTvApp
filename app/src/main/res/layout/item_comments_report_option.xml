@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <info.dkapp.flow.fontstyles.TextViewSemiBold
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:text="User name"
+            android:textColor="@color/color222"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"/>
+    <ImageView
+            android:id="@+id/ivRadioBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_radio_btn_off"
+            android:tint="@color/skyblueNew"
+            android:contentDescription="@string/image"/>
+</LinearLayout>

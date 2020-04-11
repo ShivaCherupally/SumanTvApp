@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_49sdp">
+        <ImageView
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/imageViewItemLogo"
+            android:layout_width="@dimen/_25sdp"
+            app:srcCompat="@drawable/ic_placeholder"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_height="@dimen/_25sdp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Uday"
+            android:id="@+id/tv_movie_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+        <ImageView
+
+            android:id="@+id/iv_arrow_expand"
+            android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_rigth_arrow"
+            android:tint="@color/black" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:background="@color/managerBackgroundColor" />
+</LinearLayout>

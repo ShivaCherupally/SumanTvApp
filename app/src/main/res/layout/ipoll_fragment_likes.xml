@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <!-- TODO: Update blank fragment layout -->
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:id="@+id/coordinatorLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:elevation="2dp"
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="55dp">
+
+          <ImageView
+              android:id="@+id/imgClose"
+              android:padding="12dp"
+              android:src="@drawable/ic_header_back"
+              android:tint="@color/black"
+              android:layout_gravity="center"
+              android:layout_width="45dp"
+              android:layout_height="45dp" />
+
+          <info.dkapp.flow.fontstyles.TextViewMedium
+              android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:text="@string/text_likes"
+              android:textSize="18sp"
+              android:maxLines="1"
+              android:gravity="center_vertical"
+              android:textColor="@color/black"
+              android:layout_height="match_parent" />
+
+      </LinearLayout>
+      <RelativeLayout
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+              android:id="@+id/swipeRefreshLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerView"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+              </androidx.recyclerview.widget.RecyclerView>
+
+          </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+          <ProgressBar
+              android:visibility="visible"
+              android:id="@+id/progressBar"
+              style="?android:attr/progressBarStyleHorizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:indeterminateTint="@color/app_snack_bar_true"
+              android:indeterminate="true"/>
+
+      </RelativeLayout>
+      </LinearLayout>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="@color/white"
+                                   app:cardElevation="1dp"
+                                   app:cardMaxElevation="5dp"
+                                   app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/tvPostTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:text="Post Audition"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    android:id="@+id/tvDraftDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/tvPostTitle"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_gray"
+                    android:text="12:30 PM"
+                    android:textSize="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/tvAuditionsDraftDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:maxLines="3"
+                android:text="Riverwalk Theatre welcomes auditioners as diverse as our community."
+                android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+                android:id="@+id/tvAuditionsDraftPublish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Publish"
+                android:textColor="@color/skyblueNew"
+                android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

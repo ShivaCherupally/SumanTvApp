@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/managerBackgroundColor">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/ic_header_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Schedule"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/managerBackgroundColor"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Service Type"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lineatLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heading"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="13dp">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonAudio"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/audio_call"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonVideo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/video_call"
+                            android:textSize="@dimen/_12sdp" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/textView_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/lineatLayout"
+                    android:background="@color/managerBackgroundColor"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="@string/set_time"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/lineatLayout_setTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_time"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/relatvelayout_fromDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/textViewfrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:text="From"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/textView_fromDate"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/textViewfrom"
+                            android:gravity="center|left"
+                            android:hint="Date"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:id="@+id/viewFromdate"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/textView_fromDate"
+                            android:background="@color/light_gray" />
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/textView_fromTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/viewFromdate"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center|left"
+                            android:hint="@string/time"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:id="@+id/viewFromTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/textView_fromTime"
+                            android:background="@color/light_gray" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/five"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_arrow_pointing_right_in_a_circle" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relatvelayout_toDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/textViewTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:text="To"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/textView_toDate"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/textViewTo"
+                            android:gravity="center|left"
+                            android:hint="Date"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:id="@+id/viewTodate"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/textView_toDate"
+                            android:background="@color/light_gray" />
+
+
+                        <info.dkapp.flow.fontstyles.TextViewMedium
+                            android:id="@+id/textView_toTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/viewTodate"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center|left"
+                            android:hint="@string/time"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:id="@+id/viewTotime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/textView_toTime"
+                            android:background="@color/light_gray" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:id="@+id/textView_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/lineatLayout_setTime"
+                    android:background="@color/managerBackgroundColor"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="@string/set_credit"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_credit"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:id="@+id/tv_credit_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <info.dkapp.flow.fontstyles.TextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_credit_value"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="Credits"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_drop_down"
+                        android:tint="@color/dark_grey" />
+
+                    <com.warkiz.widget.IndicatorStayLayout
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <!--your layout-->
+
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:id="@+id/seekBar_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:isb_indicator_color="@color/colorPrimary"
+                            app:isb_indicator_top_content_layout="@layout/custom_top_content_view_round"
+                            app:isb_max="500"
+                            app:isb_min="25"
+                            app:isb_show_indicator="rounded_rectangle"
+                            app:isb_show_tick_texts="false"
+                            app:isb_thumb_color="@color/colorPrimary"
+                            app:isb_tick_texts_color="@color/black"
+                            app:isb_ticks_count="2"
+                            app:isb_track_progress_color="@color/colorPrimary"
+                            app:isb_track_progress_size="@dimen/_5sdp" />
+
+                        <!--your layout-->
+
+                    </com.warkiz.widget.IndicatorStayLayout>
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="1dp"
+                        android:max="500"
+                        android:progress="25"
+                        android:progressDrawable="@drawable/seekbar_progressbar"
+                        android:thumbTintMode="multiply"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/mincount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="25 credits"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/chargeCreditstxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_centerHorizontal="true"
+                        android:text="25 credits"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="500 credits"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativelayout_seekBar"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView_min_callTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/min_time"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner_minTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_min_callTime"
+                        android:layout_alignParentLeft="true"
+                        android:backgroundTint="@color/black"
+                        android:prompt="@string/time"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView_breakTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/break_time"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spinner_breakTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_breakTime"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/black"
+                        android:prompt="@string/time"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/submitLayout"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/middleLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/submit_rectangle_for_settings"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/button_searchinside"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_active" />
+
+                <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/button_proceed"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

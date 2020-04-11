@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/listitemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/ivBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menu_bg_violet"
+                android:padding="8dp"
+                android:tint="#666666" />
+
+            <ImageView
+                android:id="@+id/imageView_item_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="3dp"
+                android:tint="@color/white" />
+        </RelativeLayout>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:id="@+id/textView_item_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_weight="8"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/managerBackgroundColor" />
+
+    <LinearLayout
+        android:id="@+id/divideview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@drawable/menu_divider_bg"
+        android:orientation="vertical" />
+</LinearLayout>

@@ -1,0 +1,290 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/managerBackgroundColor"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="info.dkapp.flow.managermodule.fragments.ManagerSearchfragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSwicth"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="0.75"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="Search for"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etSearch"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtManager"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="@string/for_manager"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtAssManager"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="@string/for_ass_manager"
+                    android:textSize="@dimen/_11sdp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:orientation="horizontal">
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Search"
+                android:textColor="@color/spinner_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <info.dkapp.flow.fontstyles.TextViewMedium
+                android:id="@+id/textViewClearAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Clear All"
+                android:textColor="@color/skyblueNew"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <info.dkapp.flow.fontstyles.EditTextMedium
+                android:id="@+id/editTextManagerName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Manager By Name"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/edittext_tint_color"
+                android:textSize="@dimen/_11sdp" />
+
+            <ImageView
+                android:id="@+id/imageViewSearh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/skyblueNew" />
+        </LinearLayout>
+
+        <info.dkapp.flow.fontstyles.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Or"
+            android:textColor="@color/spinner_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_drop_down"
+                android:tint="@color/spinner_arrow_color" />
+
+            <Spinner
+                android:id="@+id/spinnerIndustry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="@dimen/_7sdp"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeCategory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_drop_down"
+                android:tint="@color/spinner_arrow_color" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="@dimen/_7sdp"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_drop_down"
+                android:tint="@color/spinner_arrow_color" />
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="@dimen/_7sdp"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_drop_down"
+                android:tint="@color/spinner_arrow_color" />
+
+            <Spinner
+                android:id="@+id/spinnerExperience"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="@dimen/_7sdp"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonSearch"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="0dp"
+            android:layout_gravity="right|center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:id="@+id/linearSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/submit_rectangle_for_settings"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/button_searchinside"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:tint="@color/white" />
+
+                <info.dkapp.flow.fontstyles.ButtonMedium
+                    android:id="@+id/button_searchinside"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <info.dkapp.flow.fontstyles.EditTextMedium
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/normal_text_color"
+        android:textSize="13sp"
+        android:imeOptions="actionDone"
+        android:ellipsize="end"
+        android:background="@color/transparent"
+        android:maxLines="1"
+        android:hint="@string/text_add_caption"
+        android:inputType="textPersonName"
+        android:id="@+id/etFeedCaption"
+        android:layout_height="35dp" />
+
+</LinearLayout>

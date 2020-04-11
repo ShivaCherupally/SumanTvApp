@@ -1,0 +1,41 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:id="@+id/coordinatorLayout"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/managerBackgroundColor"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/dark_grey"
+                android:text="Your Search Based On "
+                android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSearchItems"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewSearchManagShow"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="match_parent"
+                />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

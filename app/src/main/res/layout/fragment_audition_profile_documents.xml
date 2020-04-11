@@ -1,0 +1,15 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:id="@+id/coordinator_layout"
+                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.audionUserProfile.innerProfileFragmets.AuditionProfileDocuments">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

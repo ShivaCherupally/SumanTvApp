@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/llHeader"
+                layout="@layout/ipoll_feed_header_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/llMediaContentTextOnly"
+                layout="@layout/ipoll_feed_text_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llHeader" />
+
+            <include
+                android:id="@+id/llMedia"
+                layout="@layout/ipoll_feed_collage_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llMediaContentTextOnly" />
+
+            <include
+                android:id="@+id/llMediaAction"
+                layout="@layout/ipoll_feed_footer_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llMedia" />
+
+            <include
+                android:id="@+id/llMediaContent"
+                layout="@layout/ipoll_feed_content_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llMediaAction" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvAddComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llMediaContent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:text="Add a comment..."
+                android:textSize="@dimen/_12sdp" />
+
+            <info.dkapp.flow.fontstyles.TextViewRegular
+                android:id="@+id/tvTimeAgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAddComment"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="3 days ago"
+                android:textColor="@color/feed_des_color"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivLikeAnimation"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_below="@id/llMedia"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <include layout="@layout/feed_hide_layout" />
+
+        <include layout="@layout/ipoll_feed_updating" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/homescreenbackground" />
+    </LinearLayout>
+</LinearLayout>

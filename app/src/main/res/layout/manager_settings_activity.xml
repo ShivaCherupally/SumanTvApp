@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:id="@+id/coordinatorLayout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+            android:weightSum="10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewManagerPic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:scaleType="centerCrop"
+                android:background="@color/app_background_color"
+                android:src="@drawable/ic_profile_square_pleace_holder" />
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="8.5"
+               android:layout_marginBottom="@dimen/_7sdp"
+               android:layout_marginTop="@dimen/_7sdp"
+               android:orientation="vertical"
+               android:layout_height="match_parent">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:orientation="horizontal"
+                   >
+               <info.dkapp.flow.fontstyles.TextViewMedium
+                   android:id="@+id/textViewManagerProf"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center|left"
+                   android:background="@color/white"
+                   android:paddingLeft="@dimen/_10sdp"
+                   android:text=""
+                   android:textColor="@color/approved"
+                   android:textSize="@dimen/_9sdp" />
+
+                   <info.dkapp.flow.fontstyles.ButtonMedium
+                       android:id="@+id/button_delete"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentEnd="true"
+                       android:layout_alignParentTop="true"
+                       android:layout_gravity="center"
+                       android:layout_marginEnd="20dp"
+                       android:background="@null"
+                       android:gravity="left|center"
+                       android:paddingRight="@dimen/_10sdp"
+                       android:text="Suspend"
+                       android:textColor="@color/skyblueNew"
+                       android:textSize="@dimen/_11sdp" />
+
+               </RelativeLayout>
+               <info.dkapp.flow.fontstyles.TextViewBold
+                   android:id="@+id/textView_managerName"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:background="@color/white"
+                   android:gravity="top|left"
+                   android:paddingLeft="@dimen/_10sdp"
+                   android:text=""
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/_13sdp"
+                   android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                >
+                <info.dkapp.flow.fontstyles.TextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Access : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp" />
+                <Switch
+                    android:id="@+id/switch_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:theme="@style/SCBSwitch" />
+
+            </LinearLayout>
+           </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Manager Access"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider" />
+        <LinearLayout
+            android:id="@+id/linerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/gray_background"
+            android:orientation="horizontal">
+            <info.dkapp.flow.fontstyles.TextViewBold
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+            <info.dkapp.flow.fontstyles.TextViewBold
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:text="View"/>
+            <info.dkapp.flow.fontstyles.TextViewBold
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_13sdp"
+                android:text="Edit"/>
+            <info.dkapp.flow.fontstyles.TextViewBold
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_13sdp"
+                android:text="Full"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_background">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Settings"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_itempermissions"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp"
+                android:text="Permissions"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_itempermissions_celeb"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_toLeftOf="@+id/imageView_Check"
+                android:layout_toStartOf="@+id/textView_itempermissions"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Manager permissions"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView_Check"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:tint="@color/skyblueNew"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_weight="8"
+            android:layout_height="0dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_managerSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:scrollbarSize="5dp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+
+            android:scrollbars="vertical" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/preference_grey"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button_saveManagerSettings"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangel_box_grey_border"
+                android:text="Save Changes" />
+
+            <Button
+                android:id="@+id/button_cancelManagerSettings"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangel_box_grey_border"
+                android:text="Cancel" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
