@@ -55,7 +55,7 @@
                     android:layout_marginTop="@dimen/_7sdp"
                     android:layout_height="wrap_content">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvKeywords"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                         android:textSize="@dimen/_11sdp"/>
 
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvPostedDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                     android:orientation="horizontal">
 
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvMyAuditionsExpDateTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                     android:weightSum="2"
                     android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:text="Production Company"
                         android:layout_width="0dp"
                         android:layout_weight="0.9"
@@ -163,7 +163,7 @@
                         android:textColor="@color/approved"
                         android:textSize="@dimen/_10sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvCompanyName"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
                     android:weightSum="2"
                     android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="0dp"
                         android:layout_weight="0.9"
                         android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
                         android:textColor="@color/approved"
                         android:textSize="@dimen/_10sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvProductionTitile"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -211,7 +211,7 @@
                     android:weightSum="2"
                     android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="0dp"
                         android:layout_weight="0.9"
                         android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                         android:textColor="@color/approved"
                         android:textSize="@dimen/_10sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvProductionType"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -239,7 +239,7 @@
                     android:weightSum="2"
                     android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_height="wrap_content"
                         android:text="Sub Production Type"
                         android:textAllCaps="true"
@@ -248,7 +248,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="0.9"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvSubProductionType"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -268,7 +268,7 @@
 
                     android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_height="wrap_content"
                         android:text="Production Person"
                         android:textAllCaps="true"
@@ -277,7 +277,7 @@
                         android:textColor="@color/approved"
                         android:textSize="@dimen/_10sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvProductionPersion"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -296,7 +296,7 @@
                     android:weightSum="2"
                     android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
                         android:layout_weight="0.9"
@@ -305,7 +305,7 @@
                         android:textColor="@color/approved"
                         android:textSize="@dimen/_10sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvDetails"
                         android:layout_width="0dp"
                         android:layout_weight="1.1"
@@ -325,7 +325,7 @@
         </LinearLayout>
 
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvRolesCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -342,7 +342,7 @@
                 android:layout_marginTop="@dimen/_7sdp"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -351,7 +351,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Role Name"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvRoleName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -369,7 +369,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -379,7 +379,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Role Type"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvRoleType"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -398,7 +398,7 @@
                 android:id="@+id/llGender"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
 
                     android:text="Gender"
                     android:layout_width="0dp"
@@ -409,7 +409,7 @@
                     android:textColor="@color/approved"
                     android:textSize="@dimen/_10sdp"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvGender"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -428,7 +428,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -440,7 +440,7 @@
                     android:text="Age Range"
                     />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvAgeRange"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -460,7 +460,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -469,7 +469,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Height Range"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvHeightRange"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -488,7 +488,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
 
@@ -498,7 +498,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Ethnicity"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvEthnicity"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -517,7 +517,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -527,7 +527,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Hair Color"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvHairColor"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -556,7 +556,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Body Type"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvBodyType"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -575,7 +575,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -585,7 +585,7 @@
                     android:textSize="@dimen/_10sdp"
                     android:text="Eye Color"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvEyeColor"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -603,7 +603,7 @@
                 android:weightSum="2"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="0dp"
                     android:layout_weight="0.9"
                     android:layout_height="wrap_content"
@@ -613,7 +613,7 @@
                     android:text="Role Description"
                     />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvRoleDescription"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -639,7 +639,7 @@
                     android:orientation="vertical"
                     >
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:textAllCaps="true"
@@ -657,7 +657,7 @@
                     android:orientation="vertical"
                     >
 
-                <info.dkapp.flow.fontstyles.TextViewBold
+                <info.sumantv.flow.fontstyles.TextViewBold
                         android:id="@+id/tvAttachMedia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -666,7 +666,7 @@
                         android:paddingBottom="5dp"
                         android:textSize="@dimen/_11sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvMediaRequired"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -686,7 +686,7 @@
                 android:background="@color/light_gray"/>
 
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
                 android:id="@+id/btApply"
                 android:layout_width="@dimen/_70sdp"
                 android:layout_height="@dimen/_30sdp"

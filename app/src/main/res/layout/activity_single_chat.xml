@@ -55,7 +55,7 @@
                         android:gravity="center_vertical"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:id="@+id/tvTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                             android:textSize="@dimen/_12sdp"
                             android:textStyle="bold" />
 
-                        <info.dkapp.flow.fontstyles.TextViewRegular
+                        <info.sumantv.flow.fontstyles.TextViewRegular
                             android:id="@+id/tvOnlineStatus"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                             android:textSize="@dimen/_10sdp"
                             android:visibility="gone" />
 
-                        <info.dkapp.flow.fontstyles.TextViewRegular
+                        <info.sumantv.flow.fontstyles.TextViewRegular
                             android:id="@+id/tvTypingStatus"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
             android:orientation="horizontal"
             android:padding="5dp">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvAvailableBalance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
                 android:textColor="@color/skyblueNew"
                 android:textSize="@dimen/_10sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvMsgCharsCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
             android:gravity="bottom"
             android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.EditTextRegular
+            <info.sumantv.flow.fontstyles.EditTextRegular
                 android:id="@+id/etMessage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

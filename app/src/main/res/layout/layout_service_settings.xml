@@ -17,7 +17,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:gravity="right|center_vertical">
 
-            <info.dkapp.flow.fontstyles.ButtonMedium
+            <info.sumantv.flow.fontstyles.ButtonMedium
                 android:id="@+id/addScheduleBtn"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="@dimen/_100sdp"

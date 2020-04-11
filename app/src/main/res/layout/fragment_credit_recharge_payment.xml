@@ -76,7 +76,7 @@
                         android:paddingBottom="@dimen/_5sdp">
 
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Credits Price"
@@ -85,7 +85,7 @@
                             android:textSize="@dimen/_12sdp" />
 
 
-                        <info.dkapp.flow.fontstyles.TextViewRegular
+                        <info.sumantv.flow.fontstyles.TextViewRegular
                             android:id="@+id/creditsamount"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                         android:paddingBottom="@dimen/_5sdp">
 
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:id="@+id/gstpercentageLabel"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                             android:textColor="@color/appcolor"
                             android:textSize="@dimen/_12sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewRegular
+                        <info.sumantv.flow.fontstyles.TextViewRegular
                             android:id="@+id/gstamount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
                     android:paddingTop="@dimen/_5sdp"
                     android:paddingBottom="@dimen/_5sdp">
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -151,7 +151,7 @@
                         android:textColor="@color/appcolor"
                         android:textSize="@dimen/_12sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:id="@+id/totalamount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
                 android:layout_margin="@dimen/_15sdp"
                 android:orientation="vertical">
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:id="@+id/prefererLabel"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -180,7 +180,7 @@
                     android:textSize="@dimen/_12sdp" />
 
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:id="@+id/walletlabel"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -206,7 +206,7 @@
                         android:layout_marginRight="@dimen/_10sdp"
                         android:src="@drawable/ic_paytm" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -223,7 +223,7 @@
                         android:src="@drawable/manager_settings_checkbox_unselected" />
                 </LinearLayout>
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:id="@+id/creditCardLabel"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -249,7 +249,7 @@
                         android:layout_marginRight="@dimen/_10sdp"
                         android:src="@drawable/ic_instamojo" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -283,7 +283,7 @@
                         android:layout_marginRight="@dimen/_10sdp"
                         android:src="@drawable/ic_paypal_icon" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -312,7 +312,7 @@
             android:layout_marginRight="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_40sdp">
 
-            <info.dkapp.flow.fontstyles.ButtonMedium
+            <info.sumantv.flow.fontstyles.ButtonMedium
                 android:id="@+id/button_cancel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -322,7 +322,7 @@
                 android:textColor="@color/white"
                 android:visibility="gone" />
 
-            <info.dkapp.flow.fontstyles.ButtonMedium
+            <info.sumantv.flow.fontstyles.ButtonMedium
                 android:id="@+id/paynowbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 >
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvPostTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
                     android:text="Post Audition"
                     android:textSize="@dimen/_13sdp"/>
 
-            <info.dkapp.flow.fontstyles.TextViewSemiBold
+            <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:id="@+id/tvDraftDateTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         </RelativeLayout>
 
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvAuditionsDraftDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

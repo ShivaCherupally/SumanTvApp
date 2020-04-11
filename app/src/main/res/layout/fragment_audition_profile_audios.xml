@@ -3,7 +3,7 @@
                                                      android:id="@+id/coordinator_layout"
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
-                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.audionUserProfile.innerProfileFragmets.AuditionProfileAudios">
+                                                     tools:context="info.sumantv.flow.bottommenu.auditions.fragments.audionUserProfile.innerProfileFragmets.AuditionProfileAudios">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

@@ -28,7 +28,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_profile_square_pleace_holder"/>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -61,7 +61,7 @@
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="match_parent"/>
 
-                <info.dkapp.flow.fontstyles.ButtonMedium
+                <info.sumantv.flow.fontstyles.ButtonMedium
                         android:id="@+id/nav_add_credits"
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_15sdp"
@@ -85,7 +85,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                             android:id="@+id/nav_credit_balance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                             android:orientation="horizontal"
                             android:paddingRight="@dimen/_10sdp">
 
-                        <info.dkapp.flow.fontstyles.TextViewRegular
+                        <info.sumantv.flow.fontstyles.TextViewRegular
                                 android:id="@+id/referal_credits"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -247,7 +247,7 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
                 android:padding="@dimen/_5sdp">
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/livestatustxt"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -278,7 +278,7 @@
                 android:padding="@dimen/_10sdp"
                 android:background="@drawable/menu_divider_bg">
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/textHintColorNewDesign"

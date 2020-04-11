@@ -22,7 +22,7 @@
                 android:layout_height="@dimen/_190sdp"
                 >
 
-            <info.dkapp.flow.commonuses.TopCropImageView
+            <info.sumantv.flow.commonuses.TopCropImageView
                     android:id="@+id/imageViewProfilePic"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -36,7 +36,7 @@
                     />
 
 
-            <info.dkapp.flow.commonuses.ProportionalImageView
+            <info.sumantv.flow.commonuses.ProportionalImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_200sdp"
                     app:srcCompat="@drawable/ic_placeholder"/>
@@ -279,7 +279,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/rectangel_box_grey_border">
 
-                <info.dkapp.flow.commonuses.ProportionalImageView
+                <info.sumantv.flow.commonuses.ProportionalImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_200sdp"
                         app:srcCompat="@drawable/ic_placeholder"/>

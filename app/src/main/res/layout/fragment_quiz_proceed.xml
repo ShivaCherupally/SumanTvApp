@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="info.dkapp.flow.bottommenu.menuitemsmanager.fragments.QuizProceedFragment">
+    tools:context="info.sumantv.flow.bottommenu.menuitemsmanager.fragments.QuizProceedFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

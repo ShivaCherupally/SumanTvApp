@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/llMediaAction" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/tvAddComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:text="Add a comment..."
                 android:textSize="@dimen/_12sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/tvTimeAgo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -72,7 +72,7 @@
                             android:orientation="vertical"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Applications Notifications"
@@ -80,7 +80,7 @@
                                 android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black"/>
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Configure app notifications"
@@ -137,7 +137,7 @@
                             android:orientation="vertical"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Manager Settings"
@@ -145,7 +145,7 @@
                                 android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black"/>
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Configure manager settings"
@@ -200,7 +200,7 @@
                             android:orientation="vertical"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Business Charity"
@@ -208,7 +208,7 @@
                                 android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black"/>
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Configure charity settings"
@@ -262,7 +262,7 @@
                             android:orientation="vertical"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Feeds"
@@ -270,7 +270,7 @@
                                 android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black"/>
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Configure feed display settings"
@@ -325,7 +325,7 @@
                             android:gravity="center"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Activity Log"
@@ -380,7 +380,7 @@
                             android:layout_marginBottom="@dimen/_7sdp"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
@@ -447,7 +447,7 @@
                             android:layout_marginBottom="@dimen/_7sdp"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
@@ -513,7 +513,7 @@
                             android:layout_marginBottom="@dimen/_7sdp"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
@@ -560,7 +560,7 @@
                             android:layout_marginBottom="@dimen/_7sdp"
                             android:layout_weight="1">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"

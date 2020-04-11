@@ -17,7 +17,7 @@
         android:tint="@color/black"
         app:srcCompat="@drawable/ic_radio_btn_off" />
 
-    <info.dkapp.flow.fontstyles.TextViewMedium
+    <info.sumantv.flow.fontstyles.TextViewMedium
         android:id="@+id/tvUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

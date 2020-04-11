@@ -8,7 +8,7 @@
         android:padding="3dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
-    <info.dkapp.flow.fontstyles.TextViewSemiBold
+    <info.sumantv.flow.fontstyles.TextViewSemiBold
             android:id="@+id/tvUserName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

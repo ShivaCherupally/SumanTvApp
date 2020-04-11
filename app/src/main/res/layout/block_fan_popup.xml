@@ -10,7 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp">
 
-        <info.dkapp.flow.fontstyles.TextViewBlack
+        <info.sumantv.flow.fontstyles.TextViewBlack
                 android:id="@+id/textTitle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -32,7 +32,7 @@
     </LinearLayout>
 
 
-    <info.dkapp.flow.fontstyles.TextViewRegular
+    <info.sumantv.flow.fontstyles.TextViewRegular
             android:id="@+id/blockreport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:textSize="12sp"/>
 
 
-    <info.dkapp.flow.fontstyles.TextViewMedium
+    <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/blockreporttxt"
             android:visibility="gone"
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                 android:padding="@dimen/five"
                 android:layout_height="wrap_content"/>
 
-        <info.dkapp.flow.fontstyles.EditTextMedium
+        <info.sumantv.flow.fontstyles.EditTextMedium
             android:id="@+id/unblock_other"
             android:visibility="gone"
             android:layout_width="match_parent"

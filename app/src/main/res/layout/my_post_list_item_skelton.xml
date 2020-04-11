@@ -82,7 +82,7 @@
                         android:tint="@color/light_new_gray"
                         app:srcCompat="@drawable/ic_access_time_black_24dp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/time"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"

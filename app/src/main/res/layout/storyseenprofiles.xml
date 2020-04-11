@@ -72,7 +72,7 @@
             android:padding="@dimen/_7sdp">
 
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/sName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                 android:textSize="@dimen/_12sdp" />
 
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/sProfession"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
         </LinearLayout>
 
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/seentime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

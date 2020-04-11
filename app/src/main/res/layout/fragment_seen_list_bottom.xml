@@ -19,7 +19,7 @@
             android:layout_marginTop="@dimen/_16sdp"
             android:layout_marginEnd="@dimen/_10sdp">
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/seencount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

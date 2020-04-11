@@ -32,7 +32,7 @@
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/logo" />
 
-            <info.dkapp.flow.fontstyles.EditTextMediumWithoutEmoji
+            <info.sumantv.flow.fontstyles.EditTextMediumWithoutEmoji
                 android:id="@+id/email_signin"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_35sdp"
@@ -60,7 +60,7 @@
                 android:background="@color/newviewbackground"
                 android:gravity="center_vertical">
 
-                <info.dkapp.flow.fontstyles.EditTextMediumWithoutEmoji
+                <info.sumantv.flow.fontstyles.EditTextMediumWithoutEmoji
                     android:id="@+id/password_signin"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
@@ -114,7 +114,7 @@
                 android:layout_gravity="center_vertical"
                 android:buttonTint="@color/skyblueNew" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -128,7 +128,7 @@
                 android:layout_height="match_parent"
                 android:gravity="end">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/forgot_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/loginbtn"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
@@ -163,7 +163,7 @@
                 android:layout_weight="1"
                 android:background="@color/newviewbackground" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
@@ -211,7 +211,7 @@
                 app:srcCompat="@drawable/ic_twitter" />
         </LinearLayout>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/tvBackToMultiple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -255,7 +255,7 @@
                         android:gravity="center"
                         tools:ignore="MissingPrefix" />
 
-                    <info.dkapp.flow.utils.MyTextview
+                    <info.sumantv.flow.utils.MyTextview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -268,7 +268,7 @@
 
                 </LinearLayout>
 
-                <info.dkapp.flow.utils.MyTextview
+                <info.sumantv.flow.utils.MyTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -305,7 +305,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <info.dkapp.flow.utils.MyTextview
+                <info.sumantv.flow.utils.MyTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten"
@@ -314,7 +314,7 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/_10sdp" />
 
-                <info.dkapp.flow.utils.MyTextview
+                <info.sumantv.flow.utils.MyTextview
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -341,7 +341,7 @@
                     android:layout_weight="1"
                     android:background="@color/white" />
 
-                <info.dkapp.flow.utils.MyTextview
+                <info.sumantv.flow.utils.MyTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -554,14 +554,14 @@
             android:background="#7395C9"
             android:gravity="center">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Don't have an account?"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/newuser_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

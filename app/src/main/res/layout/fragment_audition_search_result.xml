@@ -4,7 +4,7 @@
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
                                                      android:background="@color/audition_background"
-                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.talentSearch.TalentSearchFragment">
+                                                     tools:context="info.sumantv.flow.bottommenu.auditions.fragments.talentSearch.TalentSearchFragment">
 
     <!--<android.support.v4.widget.SwipeRefreshLayout-->
         <!--android:id="@+id/swipeRefreshLayout"-->

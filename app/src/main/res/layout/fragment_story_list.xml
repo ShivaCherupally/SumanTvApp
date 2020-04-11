@@ -74,7 +74,7 @@
                 app:civ_border_width="2dp" />
 
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/celebrityname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/statustime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <info.dkapp.flow.utils.StoriesProgressView
+    <info.sumantv.flow.utils.StoriesProgressView
         android:id="@+id/stories"
         android:layout_width="match_parent"
         android:layout_height="3dp"
@@ -145,7 +145,7 @@
         android:background="@color/transparent_light"
         android:visibility="gone">
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/statusDes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
             android:orientation="horizontal"
             android:visibility="invisible">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/seentxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal" />
 
-            <info.dkapp.flow.fontstyles.TextViewSemiBold
+            <info.sumantv.flow.fontstyles.TextViewSemiBold
                 android:id="@+id/seencounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

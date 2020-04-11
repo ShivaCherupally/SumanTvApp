@@ -31,7 +31,7 @@
                         android:layout_centerVertical="true"
                         app:srcCompat="@drawable/ic_arrow_back_white"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -45,7 +45,7 @@
                         android:visibility="visible"
                         />
 
-                <info.dkapp.flow.fontstyles.ButtonMedium
+                <info.sumantv.flow.fontstyles.ButtonMedium
                         android:id="@+id/btnClear"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:orientation="vertical">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Role Name *"
@@ -89,7 +89,7 @@
                         android:layout_marginLeft="@dimen/_9sdp"
                         />
 
-                <info.dkapp.flow.fontstyles.EditTextMedium
+                <info.sumantv.flow.fontstyles.EditTextMedium
                         android:id="@+id/etRoleName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                         android:textSize="15sp"/>
 
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Role Type *"
@@ -166,7 +166,7 @@
                             android:orientation="vertical"
                             android:id="@+id/llGender">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Gender *"
@@ -230,7 +230,7 @@
                             android:visibility="visible"
                             >
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="AgeRange *"
@@ -357,7 +357,7 @@
                             android:orientation="vertical"
                             android:id="@+id/llHeightRange">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Height* (in cms)"
@@ -391,7 +391,7 @@
                             android:orientation="vertical"
                             android:id="@+id/llHairColor">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Hair Color *"
@@ -451,7 +451,7 @@
                             android:orientation="vertical"
                             android:id="@+id/llBodyType">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Body Type *"
@@ -513,7 +513,7 @@
                             android:orientation="vertical"
                             android:id="@+id/llEyeColor">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Eye Color *"
@@ -574,7 +574,7 @@
                             android:orientation="vertical"
                             android:id="@+id/llEthenicity">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Ethenicity *"
@@ -638,7 +638,7 @@
                         android:paddingBottom="@dimen/_10sdp"
                         android:paddingTop="@dimen/_8sdp">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -646,7 +646,7 @@
                             android:textColor="@color/color222"
                             android:textSize="16sp"/>
 
-                    <info.dkapp.flow.fontstyles.ButtonMedium
+                    <info.sumantv.flow.fontstyles.ButtonMedium
                             android:id="@+id/btnAddMediaRequired"
                             android:layout_width="70dp"
                             android:layout_height="40dp"
@@ -671,7 +671,7 @@
                         android:background="@color/light_gray"/>
 
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Role Description *"
@@ -683,7 +683,7 @@
                         android:layout_marginLeft="@dimen/_8sdp"/>
 
 
-                <info.dkapp.flow.fontstyles.EditTextMedium
+                <info.sumantv.flow.fontstyles.EditTextMedium
                         android:id="@+id/etRoleDescription"
                         android:layout_width="match_parent"
                         android:hint="Enter Role Description"
@@ -721,7 +721,7 @@
                             app:srcCompat="@drawable/ic_save"/>
 
 
-                    <info.dkapp.flow.fontstyles.ButtonMedium
+                    <info.sumantv.flow.fontstyles.ButtonMedium
                             android:id="@+id/btnSave"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_30sdp"

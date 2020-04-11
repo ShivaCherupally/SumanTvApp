@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/ic_add_audition"
             />
 
-        <info.dkapp.flow.fontstyles.TextViewSemiBold
+        <info.sumantv.flow.fontstyles.TextViewSemiBold
             android:id="@+id/tvIntrestName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

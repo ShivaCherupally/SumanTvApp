@@ -6,7 +6,7 @@
     android:gravity="center_horizontal"
     android:padding="4dp" >
 
-    <info.dkapp.flow.GPUFilter.RoundImageView
+    <info.sumantv.flow.GPUFilter.RoundImageView
         android:id="@+id/image_iv"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"

@@ -39,7 +39,7 @@
         android:layout_height="match_parent">
 
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/callgoingtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

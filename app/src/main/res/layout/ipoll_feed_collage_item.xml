@@ -4,13 +4,13 @@
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <info.dkapp.flow.bottommenu.customviews.images.CollageView
+    <info.sumantv.flow.bottommenu.customviews.images.CollageView
         android:visibility="visible"
         android:id="@+id/collageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    </info.dkapp.flow.bottommenu.customviews.images.CollageView>
+    </info.sumantv.flow.bottommenu.customviews.images.CollageView>
 
     <RelativeLayout
             android:id="@+id/rlParentViewPager"

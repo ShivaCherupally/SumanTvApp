@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <info.dkapp.flow.commonuses.zoomable.ZoomableDraweeView
+    <info.sumantv.flow.commonuses.zoomable.ZoomableDraweeView
         android:id="@+id/simpleDraweeView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

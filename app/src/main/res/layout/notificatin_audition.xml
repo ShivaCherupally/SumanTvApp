@@ -80,7 +80,7 @@
                     android:orientation="vertical">
 
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:id="@+id/tvTitile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                         android:textColorLink="@color/sky_blue"
                         android:textSize="@dimen/_9sdp"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

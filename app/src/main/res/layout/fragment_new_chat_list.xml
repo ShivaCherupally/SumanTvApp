@@ -26,7 +26,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:contentDescription="@string/image"/>
-            <info.dkapp.flow.fontstyles.EditTextRegular
+            <info.sumantv.flow.fontstyles.EditTextRegular
                 android:id="@+id/etSearch"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

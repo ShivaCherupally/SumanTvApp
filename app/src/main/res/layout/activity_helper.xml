@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.dkapp.flow.bottommenu.activity.HelperActivity">
+    tools:context="info.sumantv.flow.bottommenu.activity.HelperActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?android:actionBarSize">
 
-                <info.dkapp.flow.fontstyles.ButtonMedium
+                <info.sumantv.flow.fontstyles.ButtonMedium
                     android:id="@+id/btPreferenceSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

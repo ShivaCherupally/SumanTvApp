@@ -20,7 +20,7 @@
                 android:layout_height="@dimen/_30sdp"
                 android:src="@drawable/ic_profile_circle_pleace_holder"/>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/managerName"
                 android:layout_width="match_parent"
                 android:text="You"

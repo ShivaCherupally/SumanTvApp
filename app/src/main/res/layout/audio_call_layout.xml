@@ -19,7 +19,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -27,7 +27,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/textViewCelebName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/textViewDuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                 app:civ_border_width="@dimen/_2sdp" />
         </RelativeLayout>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/callgoingtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                 </RelativeLayout>
 
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:id="@+id/imageViewMic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
                         android:padding="8dp" />
                 </RelativeLayout>
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -205,7 +205,7 @@
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:background="@drawable/ic_end_call" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

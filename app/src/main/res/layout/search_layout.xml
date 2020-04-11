@@ -45,7 +45,7 @@
             android:padding="@dimen/_7sdp">
 
 
-            <info.dkapp.flow.fontstyles.TextViewSemiBold
+            <info.sumantv.flow.fontstyles.TextViewSemiBold
                 android:id="@+id/sName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:textSize="@dimen/_12sdp" />
 
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/sProfession"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

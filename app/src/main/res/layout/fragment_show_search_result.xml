@@ -12,7 +12,7 @@
 
             android:layout_height="match_parent">
 
-        <info.dkapp.flow.fontstyles.TextViewSemiBold
+        <info.sumantv.flow.fontstyles.TextViewSemiBold
                 android:layout_width="match_parent"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"

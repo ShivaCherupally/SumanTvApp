@@ -33,7 +33,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                         android:layout_width="13dp"
                         android:layout_height="13dp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvAddLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
     </LinearLayout>
 
 
-    <info.dkapp.flow.fontstyles.EditTextMedium
+    <info.sumantv.flow.fontstyles.EditTextMedium
         android:id="@+id/etTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
         android:textColor="@color/normal_text_color"
         android:textSize="14sp" />
 
-    <info.dkapp.flow.fontstyles.EditTextMedium
+    <info.sumantv.flow.fontstyles.EditTextMedium
         android:layout_marginTop="0.3dp"
         android:id="@+id/etDescription"
         android:layout_width="match_parent"

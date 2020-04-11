@@ -16,7 +16,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_weight="0.7">
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/bt_celebrity_settings"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:background="@drawable/submit_rectangle_for_settings"
             android:text="Celebrity Settings" />
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/bt_manager_settings"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

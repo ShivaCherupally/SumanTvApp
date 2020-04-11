@@ -40,7 +40,7 @@
             android:layout_marginTop="@dimen/_25sdp"
             >
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvCancel"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -48,7 +48,7 @@
                 android:textSize="@dimen/_14sdp"
                 android:layout_height="wrap_content"
                 android:text="Cancel"/>
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvAddCredits"
                 android:layout_width="0dp"
                 android:gravity="center"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context="info.dkapp.flow.bottommenu.auditions.media.MediaPickerFragment">
+    tools:context="info.sumantv.flow.bottommenu.auditions.media.MediaPickerFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout

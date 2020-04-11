@@ -21,7 +21,7 @@
             android:tint="@color/black"
             app:srcCompat="@drawable/ic_header_back" />
 
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_15sdp"
@@ -58,7 +58,7 @@
                     android:orientation="vertical">
 
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:id="@+id/credit_bal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_22sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
@@ -76,7 +76,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_14sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:id="@+id/refferalcreditstxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:id="@+id/refertxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                             android:textSize="@dimen/_13sdp"
                             android:textStyle="bold" />
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:id="@+id/reffercodetxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                                 android:padding="@dimen/_2sdp"
                                 app:srcCompat="@drawable/ic_copycode" />
 
-                            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            <info.sumantv.flow.fontstyles.TextViewSemiBold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/refertxt"
@@ -178,7 +178,7 @@
                                 android:padding="@dimen/_2sdp"
                                 app:srcCompat="@drawable/ic_sharecode" />
 
-                            <info.dkapp.flow.fontstyles.TextViewSemiBold
+                            <info.sumantv.flow.fontstyles.TextViewSemiBold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -214,7 +214,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/refertxt"
@@ -265,7 +265,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/refertxt"
@@ -283,7 +283,7 @@
                         android:layout_marginRight="@dimen/_10sdp"
                         android:layout_marginBottom="@dimen/_10sdp">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:id="@+id/amounttxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -293,7 +293,7 @@
                             android:text="0"
                             android:textSize="@dimen/_12sdp" />
 
-                        <info.dkapp.flow.fontstyles.EditTextMedium
+                        <info.sumantv.flow.fontstyles.EditTextMedium
                             android:id="@+id/entercreditEt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -324,7 +324,7 @@
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:background="@color/white" />
 
-                <info.dkapp.flow.fontstyles.ButtonMedium
+                <info.sumantv.flow.fontstyles.ButtonMedium
                     android:id="@+id/credit_recharge_btn"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
@@ -348,7 +348,7 @@
                     android:orientation="vertical">
 
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sdp"
@@ -359,7 +359,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_12sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:id="@+id/notetxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -379,7 +379,7 @@
                         android:layout_marginBottom="@dimen/_30sdp"
                         android:visibility="gone">
 
-                        <info.dkapp.flow.fontstyles.ButtonMedium
+                        <info.sumantv.flow.fontstyles.ButtonMedium
                             android:id="@+id/cancel_payment"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"

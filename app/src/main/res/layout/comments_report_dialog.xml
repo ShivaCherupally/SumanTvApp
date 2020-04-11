@@ -29,7 +29,7 @@
                 android:visibility="gone"
                 app:srcCompat="@drawable/ic_cancel" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="7dp"
@@ -41,7 +41,7 @@
                 android:textSize="@dimen/_15sdp" />
         </LinearLayout>
 
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -63,7 +63,7 @@
             android:layout_margin="7dp"
             android:background="@drawable/rectangle_bg_ccc">
 
-            <info.dkapp.flow.fontstyles.EditTextMedium
+            <info.sumantv.flow.fontstyles.EditTextMedium
                 android:id="@+id/etRemarks"
                 style="@style/etUnderline"
                 android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                 android:maxLines="3" />
         </LinearLayout>
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/btnSubmit"
             style="@style/btnAuditionRectangle"
             android:layout_width="100dp"

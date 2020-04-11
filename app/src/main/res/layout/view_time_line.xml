@@ -37,7 +37,7 @@
             android:paddingRight="@dimen/_10sdp"
             android:visibility="gone">
 
-            <info.dkapp.flow.fontstyles.EditTextMedium
+            <info.sumantv.flow.fontstyles.EditTextMedium
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/_10sdp"
@@ -48,7 +48,7 @@
                 android:textColorHint="@color/white"
                 android:textSize="@dimen/_12sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,30 +83,30 @@
             android:visibility="gone" />
 
 
-        <info.dkapp.flow.utils.videoTrimmer.view.TimeLineView
+        <info.sumantv.flow.utils.videoTrimmer.view.TimeLineView
             android:id="@+id/timeLineView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/handlerTop" />
 
-        <info.dkapp.flow.utils.videoTrimmer.view.RangeSeekBarView
+        <info.sumantv.flow.utils.videoTrimmer.view.RangeSeekBarView
             android:id="@+id/timeLineBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/timeLineView" />
 
-        <info.dkapp.flow.utils.videoTrimmer.view.ProgressBarView
+        <info.sumantv.flow.utils.videoTrimmer.view.ProgressBarView
             android:id="@+id/timeVideoView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/handlerTop" />
 
-        <info.dkapp.flow.utils.videoTrimmer.view.ProgressBarView
+        <info.sumantv.flow.utils.videoTrimmer.view.ProgressBarView
             android:id="@+id/timeVideoViewBottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/timeLineView" />
-        <info.dkapp.flow.utils.videoTrimmer.view.ProgressBarViewTrans
+        <info.sumantv.flow.utils.videoTrimmer.view.ProgressBarViewTrans
             android:id="@+id/timeVideoViewtotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -120,7 +120,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:visibility="visible">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/textSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:textColor="@android:color/white" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/textTimeSelection"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
                 android:textColor="@android:color/white"
                 android:visibility="gone" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/textTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

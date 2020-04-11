@@ -20,7 +20,7 @@
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"/>
-    <info.dkapp.flow.fontstyles.TextViewSemiBold
+    <info.sumantv.flow.fontstyles.TextViewSemiBold
             android:id="@+id/lblListItem"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

@@ -15,7 +15,7 @@
             android:padding="@dimen/_10sdp"
             android:background="@drawable/menu_divider_bg">
 
-        <info.dkapp.flow.fontstyles.TextViewBold
+        <info.sumantv.flow.fontstyles.TextViewBold
                 android:id="@+id/tvDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 android:orientation="vertical"
                 tools:ignore="NestedWeights">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

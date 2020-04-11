@@ -14,7 +14,7 @@
             android:orientation="vertical"
             android:padding="@dimen/_7sdp">
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvDuration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
                 android:textSize="@dimen/_14sdp"
                 android:textStyle="bold"/>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Schedule Duration"
@@ -36,7 +36,7 @@
                 android:layout_marginTop="@dimen/_7sdp"
                 android:orientation="horizontal">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvDate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                     android:gravity="center_vertical"
                     android:textColor="@color/gray"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:id="@+id/tvTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

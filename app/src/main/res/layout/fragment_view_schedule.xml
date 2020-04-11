@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/managerBackgroundColor"
     android:orientation="vertical"
-    tools:context="info.dkapp.flow.bottommenu.menuitemsmanager.fragments.my_schedules.ViewScheduleFragment">
+    tools:context="info.sumantv.flow.bottommenu.menuitemsmanager.fragments.my_schedules.ViewScheduleFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -32,7 +32,7 @@
                 android:layout_height="?android:actionBarSize"
                 android:layout_toRightOf="@+id/iVBack" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvDone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvPaymentCallType"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_18sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
@@ -88,7 +88,7 @@
                         android:textColor="@color/dark_grey"
                         android:textSize="@dimen/_14sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewBold
+                    <info.sumantv.flow.fontstyles.TextViewBold
                         android:id="@+id/tvPaymentCreditValue"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_35sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvContinue"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30sdp"
@@ -116,7 +116,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_15sdp"
@@ -140,7 +140,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_20sdp"
@@ -170,7 +170,7 @@
                                 android:src="@drawable/ic_chat_nav"
                                 android:tint="@color/chat_icon_color" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_5sdp"
@@ -196,7 +196,7 @@
                                 android:tint="@color/audio_icon_color"
                                 app:srcCompat="@drawable/ic_audio" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_5sdp"
@@ -221,7 +221,7 @@
                                 android:tint="@color/video_icon_color"
                                 app:srcCompat="@drawable/ic_video" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_5sdp"
@@ -252,7 +252,7 @@
                                 android:src="@drawable/ic_preferences"
                                 android:tint="@color/menu_bg_preferences" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_5sdp"
@@ -278,7 +278,7 @@
                                 android:src="@drawable/ic_auditions_new"
                                 android:tint="@color/menu_bg_auditions" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_5sdp"
@@ -302,7 +302,7 @@
                                 android:layout_height="@dimen/_30sdp"
                                 android:src="@drawable/ic_credits_navi" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_5sdp"
@@ -336,7 +336,7 @@
                         android:layout_marginTop="@dimen/_30sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -353,7 +353,7 @@
                             android:layout_marginLeft="@dimen/_minus8sdp"
                             android:layout_weight="0.15" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvCallType"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -370,7 +370,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -379,7 +379,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvScheduleDuration"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -395,7 +395,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -404,7 +404,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvScheduleDate"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -422,7 +422,7 @@
                         android:layout_marginBottom="@dimen/_15sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -431,7 +431,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvScheduleTime"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -462,7 +462,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -471,7 +471,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvSoltDuration"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -489,7 +489,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -498,7 +498,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvBreakDuration"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -515,7 +515,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -524,7 +524,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvTotalSolts"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -542,7 +542,7 @@
                         android:layout_marginBottom="@dimen/_15sdp"
                         android:orientation="horizontal">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -551,7 +551,7 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sdp" />
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvCreditPerMinute"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -578,7 +578,7 @@
                         android:background="@color/white"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/tvSlotTime"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -596,7 +596,7 @@
                             android:layout_marginBottom="@dimen/_15sdp"
                             android:orientation="horizontal">
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -605,7 +605,7 @@
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/_14sdp" />
 
-                            <info.dkapp.flow.fontstyles.TextViewMedium
+                            <info.sumantv.flow.fontstyles.TextViewMedium
                                 android:id="@+id/tvAvailableSlots"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -617,7 +617,7 @@
                         </LinearLayout>
                     </LinearLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvBookNow"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30sdp"
@@ -649,7 +649,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_20sdp"
@@ -683,7 +683,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/_30sdp" />
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15sdp"
@@ -704,7 +704,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvSuccessCallType"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -715,7 +715,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
@@ -725,7 +725,7 @@
                         android:textColor="@color/dark_grey"
                         android:textSize="@dimen/_14sdp" />
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/tvSuccessCredits"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -752,7 +752,7 @@
                     android:background="@color/white"
                     android:orientation="vertical">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_20sdp"

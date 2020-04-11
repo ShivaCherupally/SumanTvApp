@@ -5,7 +5,7 @@
     android:background="@color/white"
     android:gravity="center">
 
-    <info.dkapp.flow.fontstyles.TextViewRegular
+    <info.sumantv.flow.fontstyles.TextViewRegular
         android:id="@+id/textView_menu_version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -12,7 +12,7 @@
         android:layout_marginRight="@dimen/ten"
         android:orientation="horizontal">
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/notificationTypetxt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -7,7 +7,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-    <info.dkapp.flow.commonuses.TopCropImageView
+    <info.sumantv.flow.commonuses.TopCropImageView
             android:id="@+id/celeb_profile_img"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_profile_square_pleace_holder"
@@ -27,7 +27,7 @@
             android:layout_marginBottom="@dimen/_5sdp"
             android:layout_height="wrap_content">
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:textStyle="normal"
                 android:id="@+id/celeb_profession"
                 android:text=""
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/celeb_name_main"
                 android:text=""
                 android:textSize="@dimen/_10sdp"
@@ -81,7 +81,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
 
-                <info.dkapp.flow.fontstyles.ButtonRegular
+                <info.sumantv.flow.fontstyles.ButtonRegular
                         android:id="@+id/fanOrunfanBtn"
                         android:layout_width="match_parent"
                         android:background="@null"
@@ -115,7 +115,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
 
-                <info.dkapp.flow.fontstyles.ButtonRegular
+                <info.sumantv.flow.fontstyles.ButtonRegular
                         android:id="@+id/followorUnfollowBtn"
                         android:layout_width="match_parent"
                         android:background="@null"

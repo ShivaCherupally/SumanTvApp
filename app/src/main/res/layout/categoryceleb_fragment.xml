@@ -44,7 +44,7 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/image"/>
 
-        <info.dkapp.flow.fontstyles.TextViewBold
+        <info.sumantv.flow.fontstyles.TextViewBold
                 android:id="@+id/tvError"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:textStyle="bold"/>
 
 
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
                 android:id="@+id/tvNote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

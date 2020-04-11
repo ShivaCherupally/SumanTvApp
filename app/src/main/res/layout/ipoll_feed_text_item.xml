@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <info.dkapp.flow.fontstyles.TextViewMedium
+    <info.sumantv.flow.fontstyles.TextViewMedium
         android:id="@+id/tvFeedContentTextOnly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@ dark from west eastern india"
         android:textColorLink="@color/sky_blue"
         android:textSize="@dimen/_13sdp"/>
 
-    <info.dkapp.flow.fontstyles.TextViewRegular
+    <info.sumantv.flow.fontstyles.TextViewRegular
         android:id="@+id/tvFeedDescriptionTextOnly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

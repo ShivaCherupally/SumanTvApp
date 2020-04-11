@@ -34,7 +34,7 @@
 
         </RelativeLayout>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payment Check-out Failed for"
@@ -52,7 +52,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_15sdp" />
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/failure_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:background="@color/skyblue" />
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/order_failure_start_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             android:textSize="@dimen/_8sdp"
             android:visibility="gone" />
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/transactionId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/tryagainBtn"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -109,7 +109,7 @@
             android:text="Try Again"
             android:textColor="@color/white" />
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/backhomeBtn"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30dp"

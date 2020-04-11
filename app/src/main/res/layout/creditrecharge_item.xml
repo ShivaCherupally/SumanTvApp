@@ -53,7 +53,7 @@
             android:paddingBottom="@dimen/_13sdp">
 
 
-            <info.dkapp.flow.fontstyles.TextViewBlack
+            <info.sumantv.flow.fontstyles.TextViewBlack
                 android:id="@+id/creditsCounttxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:textColor="@color/sky_blue"
                 android:textSize="@dimen/_22sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewSemiBold
+            <info.sumantv.flow.fontstyles.TextViewSemiBold
                 android:id="@+id/creditlabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:background="@color/sky_blue" />
 
-            <info.dkapp.flow.fontstyles.TextViewSemiBold
+            <info.sumantv.flow.fontstyles.TextViewSemiBold
                 android:id="@+id/creditAmounttxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

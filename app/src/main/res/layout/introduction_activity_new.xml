@@ -13,7 +13,7 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:gravity="center">
-        <info.dkapp.flow.splashandintroscreens.TutorialScreens.AutoScrollViewPager
+        <info.sumantv.flow.splashandintroscreens.TutorialScreens.AutoScrollViewPager
             android:id="@+id/pagerBanners"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -2,7 +2,7 @@
                                                      xmlns:tools="http://schemas.android.com/tools"
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
-                                                     tools:context="info.dkapp.flow.managermodule.fragments.ManagerDeleteFragment">
+                                                     tools:context="info.sumantv.flow.managermodule.fragments.ManagerDeleteFragment">
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/recylerviewDeleteManager"

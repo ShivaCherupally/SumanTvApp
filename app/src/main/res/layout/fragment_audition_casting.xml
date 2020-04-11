@@ -20,7 +20,7 @@
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:padding="10dp">
 
-            <info.dkapp.flow.fontstyles.TextViewBold
+            <info.sumantv.flow.fontstyles.TextViewBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
@@ -70,7 +70,7 @@
 
                     </RelativeLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:id="@+id/createtxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/white">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="15sp"
@@ -167,7 +167,7 @@
 
                     </RelativeLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_30sdp"
@@ -221,7 +221,7 @@
 
                     </RelativeLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_30sdp"
@@ -279,7 +279,7 @@
 
                         </RelativeLayout>
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/_30sdp"
@@ -363,7 +363,7 @@
 
                     </RelativeLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_30sdp"
@@ -417,7 +417,7 @@
 
                     </RelativeLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_30sdp"
@@ -497,7 +497,7 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:background="@color/light_auditions"/>
 
-            <info.dkapp.flow.fontstyles.TextViewBold
+            <info.sumantv.flow.fontstyles.TextViewBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -542,7 +542,7 @@
 
                 </RelativeLayout>
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_30sdp"
@@ -600,7 +600,7 @@
 
                     </RelativeLayout>
 
-                    <info.dkapp.flow.fontstyles.TextViewSemiBold
+                    <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_30sdp"
@@ -703,7 +703,7 @@
 
                 </RelativeLayout>
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                         android:id="@+id/tvvvv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

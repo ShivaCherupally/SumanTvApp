@@ -15,7 +15,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <info.dkapp.flow.commonuses.zoomable.ZoomableDraweeView
+            <info.sumantv.flow.commonuses.zoomable.ZoomableDraweeView
                     android:id="@+id/imgContent"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
@@ -31,7 +31,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"/>
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                     android:layout_width="wrap_content"
                     android:text="UPLOAD"
                     android:id="@+id/tvUpload"
@@ -54,7 +54,7 @@
                     android:layout_marginLeft="@dimen/_15sdp"
                     android:layout_height="wrap_content">
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/textviewUserName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                         android:textSize="@dimen/_14sdp"
                         android:textColor="@color/white"/>
 
-                <info.dkapp.flow.fontstyles.TextViewMedium
+                <info.sumantv.flow.fontstyles.TextViewMedium
                         android:id="@+id/textviewPostTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

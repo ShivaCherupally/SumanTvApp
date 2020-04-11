@@ -10,5 +10,5 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context="info.dkapp.flow.bottommenu.auditions.fragments.auditionSearch.fragment.ItemFragment"
+        tools:context="info.sumantv.flow.bottommenu.auditions.fragments.auditionSearch.fragment.ItemFragment"
         tools:listitem="@layout/fragment_item"/>

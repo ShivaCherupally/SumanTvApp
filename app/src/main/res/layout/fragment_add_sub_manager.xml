@@ -6,7 +6,7 @@
                                                      android:orientation="vertical"
                                                      android:id="@+id/coordinatorLayout"
                                                      android:background="@color/white"
-                                                     tools:context="info.dkapp.flow.managermodule.fragments.AddSubManagerFragment">
+                                                     tools:context="info.sumantv.flow.managermodule.fragments.AddSubManagerFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

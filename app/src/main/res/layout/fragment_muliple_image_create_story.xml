@@ -33,7 +33,7 @@
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:layout_alignParentBottom="true"
                 />
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvShare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

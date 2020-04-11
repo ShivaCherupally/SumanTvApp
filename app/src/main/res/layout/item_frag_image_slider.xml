@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
 
-    <info.dkapp.flow.commonuses.zoomable.ZoomableDraweeView
+    <info.sumantv.flow.commonuses.zoomable.ZoomableDraweeView
         android:id="@+id/ZoomableDraweeViewImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -87,7 +87,7 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/tvUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             android:textSize="@dimen/_11sdp"
             android:textStyle="normal" />
 
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
             android:id="@+id/tvProfession"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/_11sdp" />
 
-                <info.dkapp.flow.fontstyles.TextViewBold
+                <info.sumantv.flow.fontstyles.TextViewBold
                     android:id="@+id/tvDot"
                     android:layout_width="@dimen/_15sdp"
                     android:layout_height="wrap_content"
@@ -255,7 +255,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
             android:id="@+id/tvTimeAgo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

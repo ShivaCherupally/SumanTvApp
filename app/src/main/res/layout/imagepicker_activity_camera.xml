@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent">
 
-    <info.dkapp.flow.imagepicker.widget.SnackBarView
+    <info.sumantv.flow.imagepicker.widget.SnackBarView
         android:id="@+id/snackbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
                                                      android:background="@color/white"
-                                                     tools:context="info.dkapp.flow.managermodule.fragments.Managing_celeb_or_sub_manger_list">
+                                                     tools:context="info.sumantv.flow.managermodule.fragments.Managing_celeb_or_sub_manger_list">
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"

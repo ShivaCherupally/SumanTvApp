@@ -51,7 +51,7 @@
                     android:padding="@dimen/_15sdp"
                     android:visibility="gone">
 
-                    <info.dkapp.flow.fontstyles.TextViewMedium
+                    <info.sumantv.flow.fontstyles.TextViewMedium
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Referral Code"
@@ -69,7 +69,7 @@
                         android:background="@drawable/rectangle_white_bg"
                         android:backgroundTint="@color/grey">
 
-                        <info.dkapp.flow.fontstyles.TextViewMedium
+                        <info.sumantv.flow.fontstyles.TextViewMedium
                             android:id="@+id/promotional_code"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:layout_alignParentBottom="true"
                     android:gravity="center">
 
-                    <info.dkapp.flow.fontstyles.ButtonMedium
+                    <info.sumantv.flow.fontstyles.ButtonMedium
                         android:id="@+id/invite_code_btn"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_30sdp"
@@ -108,7 +108,7 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:textColor="@color/white" />
 
-                    <info.dkapp.flow.fontstyles.ButtonMedium
+                    <info.sumantv.flow.fontstyles.ButtonMedium
                         android:id="@+id/generate_code_btn"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_30sdp"

@@ -34,14 +34,14 @@
             android:orientation="vertical">
 
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hiddenpost"
                 android:textColor="@color/color222"
                 android:textSize="@dimen/_12sdp" />
 
-            <info.dkapp.flow.fontstyles.TextViewRegular
+            <info.sumantv.flow.fontstyles.TextViewRegular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hideyoupost"
@@ -49,7 +49,7 @@
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 
-        <info.dkapp.flow.fontstyles.ButtonMedium
+        <info.sumantv.flow.fontstyles.ButtonMedium
             android:id="@+id/undobtn"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_20sdp"

@@ -24,7 +24,7 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:orientation="vertical">
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/roleType"
@@ -87,7 +87,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -128,7 +128,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="GENDER"
@@ -181,7 +181,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AGE RANGE"
@@ -240,7 +240,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="ETHENICITY"
@@ -290,7 +290,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="BODY TYPE"
@@ -347,7 +347,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="HAIR COLOR"
@@ -398,7 +398,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="EYE COLOR"
@@ -454,7 +454,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <info.dkapp.flow.fontstyles.TextViewSemiBold
+                        <info.sumantv.flow.fontstyles.TextViewSemiBold
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="HEIGHT"
@@ -533,7 +533,7 @@
                 </LinearLayout>
 
 
-                <info.dkapp.flow.fontstyles.TextViewSemiBold
+                <info.sumantv.flow.fontstyles.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Key Word Search"

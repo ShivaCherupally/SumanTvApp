@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-            <info.dkapp.flow.fontstyles.TextViewSemiBold
+            <info.sumantv.flow.fontstyles.TextViewSemiBold
                 android:id="@+id/tTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:background="@drawable/ic_celebkonect_logo" />
 
-                    <info.dkapp.flow.fontstyles.EditTextMedium
+                    <info.sumantv.flow.fontstyles.EditTextMedium
                         android:id="@+id/eSearchBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

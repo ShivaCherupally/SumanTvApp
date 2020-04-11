@@ -35,7 +35,7 @@
                     android:src="@drawable/ic_hide_post"
                     android:tint="@color/color222" />
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hidepost"
@@ -59,7 +59,7 @@
                     android:src="@drawable/ic_report_post"
                     android:tint="@color/color222" />
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/reportpost"
@@ -87,7 +87,7 @@
                     android:src="@drawable/ic_turn_on_notification"
                     android:tint="@color/color222" />
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:id="@+id/tvNotificationDetails"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                     android:src="@drawable/ic_edit"
                     android:tint="@color/color222" />
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_edit"
@@ -151,7 +151,7 @@
                     android:src="@drawable/ic_delete_notification"
                     android:tint="@color/color222" />
 
-                <info.dkapp.flow.fontstyles.TextViewRegular
+                <info.sumantv.flow.fontstyles.TextViewRegular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_delete"

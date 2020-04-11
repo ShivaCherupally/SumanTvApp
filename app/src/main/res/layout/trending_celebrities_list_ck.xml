@@ -6,7 +6,7 @@
               android:layout_height="wrap_content">
 
 
-    <info.dkapp.flow.fontstyles.TextViewSemiBold
+    <info.sumantv.flow.fontstyles.TextViewSemiBold
             android:text="@string/trendingactress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

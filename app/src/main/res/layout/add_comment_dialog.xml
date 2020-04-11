@@ -21,7 +21,7 @@
             android:background="@color/white"
             android:elevation="0.5dp"
             android:layout_below="@id/viewLine">
-            <info.dkapp.flow.fontstyles.EditTextRegular
+            <info.sumantv.flow.fontstyles.EditTextRegular
                 android:id="@+id/etAddComment"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

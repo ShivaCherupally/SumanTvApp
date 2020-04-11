@@ -5,7 +5,7 @@
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
                                                      android:fitsSystemWindows="true"
-                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.audionUserProfile.AuditionProfileFragment">
+                                                     tools:context="info.sumantv.flow.bottommenu.auditions.fragments.audionUserProfile.AuditionProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.appbar.AppBarLayout
@@ -46,7 +46,7 @@
                 android:layout_marginRight="@dimen/_16sdp"
                 android:orientation="vertical">
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:textSize="@dimen/_11sdp"
                 app:layout_collapseMode="none" />
 
-            <info.dkapp.flow.fontstyles.TextViewMedium
+            <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/tvProfileName"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_25sdp"

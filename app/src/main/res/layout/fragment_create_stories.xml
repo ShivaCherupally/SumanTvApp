@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <info.dkapp.flow.utils.videoTrimmer.HgLVideoTrimmer
+        <info.sumantv.flow.utils.videoTrimmer.HgLVideoTrimmer
             android:id="@+id/timeLine"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -37,7 +37,7 @@
             android:layout_height="match_parent"
             android:scaleType="fitCenter" />
 
-        <info.dkapp.flow.stories.emojiView.BrushDrawingView
+        <info.sumantv.flow.stories.emojiView.BrushDrawingView
             android:id="@+id/drawing_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
         android:paddingLeft="@dimen/_10sdp"
         android:paddingRight="@dimen/_10sdp">
 
-        <info.dkapp.flow.fontstyles.EditTextMedium
+        <info.sumantv.flow.fontstyles.EditTextMedium
             android:id="@+id/etCaption"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
             android:textColorHint="@color/white"
             android:textSize="@dimen/_12sdp" />
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
             android:id="@+id/tvShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -227,7 +227,7 @@
         android:background="@color/transparent100"
         android:visibility="gone">
 
-        <info.dkapp.flow.stories.emojiView.RealtimeBlurView
+        <info.sumantv.flow.stories.emojiView.RealtimeBlurView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:realtimeBlurRadius="10dp"

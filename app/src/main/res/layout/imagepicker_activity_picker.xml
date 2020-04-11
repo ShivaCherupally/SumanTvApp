@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <info.dkapp.flow.imagepicker.widget.ImagePickerToolbar
+    <info.sumantv.flow.imagepicker.widget.ImagePickerToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <info.dkapp.flow.imagepicker.widget.ProgressWheel xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    <info.sumantv.flow.imagepicker.widget.ProgressWheel xmlns:wheel="http://schemas.android.com/apk/res-auto"
         android:id="@+id/progressWheel"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -50,7 +50,7 @@
         android:layout_below="@+id/toolbar"
         android:visibility="gone" />
 
-    <info.dkapp.flow.imagepicker.widget.SnackBarView
+    <info.sumantv.flow.imagepicker.widget.SnackBarView
         android:id="@+id/snackbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

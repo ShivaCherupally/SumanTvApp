@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <info.dkapp.flow.fontstyles.TextViewMedium
+    <info.sumantv.flow.fontstyles.TextViewMedium
         android:id="@+id/textView_itemName"
         android:layout_width="0dp"
         android:layout_weight="1"

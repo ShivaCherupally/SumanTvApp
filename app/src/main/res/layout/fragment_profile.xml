@@ -4,7 +4,7 @@
     android:id="@+id/coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.dkapp.flow.bottommenu.auditions.fragments.createAuditionProfile.ProfileFragment">
+    tools:context="info.sumantv.flow.bottommenu.auditions.fragments.createAuditionProfile.ProfileFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -443,7 +443,7 @@
                     />
             </LinearLayout>
 
-            <info.dkapp.flow.utils.RoundCornersLayout
+            <info.sumantv.flow.utils.RoundCornersLayout
                 android:id="@+id/frameLayoutProfile"
                 android:layout_width="@dimen/_110sdp"
                 android:layout_height="@dimen/_110sdp"
@@ -493,7 +493,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
-            </info.dkapp.flow.utils.RoundCornersLayout>
+            </info.sumantv.flow.utils.RoundCornersLayout>
         </RelativeLayout>
     </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

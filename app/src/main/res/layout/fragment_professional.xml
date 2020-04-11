@@ -5,7 +5,7 @@
                                                      android:id="@+id/coordinator_layout"
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
-                                                     tools:context="info.dkapp.flow.bottommenu.auditions.fragments.createAuditionProfile.ProfessionalFragment">
+                                                     tools:context="info.sumantv.flow.bottommenu.auditions.fragments.createAuditionProfile.ProfessionalFragment">
 
     <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"

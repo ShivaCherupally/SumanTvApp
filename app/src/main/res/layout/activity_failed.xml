@@ -38,7 +38,7 @@
 
         </RelativeLayout>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Payment Check-out Failed for"
@@ -58,7 +58,7 @@
                 android:textSize="@dimen/_15sdp"
                 android:textStyle="bold"/>
 
-        <info.dkapp.flow.fontstyles.TextViewMedium
+        <info.sumantv.flow.fontstyles.TextViewMedium
                 android:id="@+id/failure_msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

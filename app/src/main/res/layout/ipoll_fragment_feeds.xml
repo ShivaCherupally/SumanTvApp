@@ -42,7 +42,7 @@
                         android:layout_height="@dimen/_100sdp"
                         app:srcCompat="@drawable/ic_no_data"
                         android:contentDescription="@string/image"/>
-                    <info.dkapp.flow.fontstyles.TextViewBold
+                    <info.sumantv.flow.fontstyles.TextViewBold
                         android:id="@+id/tvTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                         android:textColor="@color/dark_grey"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"/>
-                    <info.dkapp.flow.fontstyles.TextViewRegular
+                    <info.sumantv.flow.fontstyles.TextViewRegular
                         android:id="@+id/tvContent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
 
         <include layout="@layout/move_to_top_item"/>
 
-        <info.dkapp.flow.fontstyles.EditTextRegular
+        <info.sumantv.flow.fontstyles.EditTextRegular
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

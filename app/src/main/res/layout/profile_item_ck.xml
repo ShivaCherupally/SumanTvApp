@@ -25,7 +25,7 @@
             app:civ_border_color="@color/light_gray"
             app:civ_border_width="0.5dp" />
 
-        <info.dkapp.flow.fontstyles.TextViewSemiBold
+        <info.sumantv.flow.fontstyles.TextViewSemiBold
             android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp" />
 
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
             android:id="@+id/profession"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/lite_gray_txt"
             android:textSize="@dimen/_10sdp" />
-        <info.dkapp.flow.fontstyles.TextViewRegular
+        <info.sumantv.flow.fontstyles.TextViewRegular
             android:id="@+id/category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

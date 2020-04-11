@@ -24,7 +24,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp" />
 
-    <info.dkapp.flow.fontstyles.TextViewMedium
+    <info.sumantv.flow.fontstyles.TextViewMedium
         android:visibility="gone"
         android:id="@+id/tvGIFLabel"
         android:layout_width="wrap_content"

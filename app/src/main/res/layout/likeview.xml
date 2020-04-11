@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <info.dkapp.flow.utils.likebutton.DotsView
+    <info.sumantv.flow.utils.likebutton.DotsView
         android:id="@+id/dots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
 
-    <info.dkapp.flow.utils.likebutton.CircleView
+    <info.sumantv.flow.utils.likebutton.CircleView
         android:id="@+id/circle"
         android:visibility="gone"
         android:layout_width="wrap_content"
